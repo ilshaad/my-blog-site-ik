@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm i && npm run dev",
-    "tsconfig": "tsc --init"
+    "test": "jest --watch",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -16,11 +17,15 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "typescript": "4.7.4"
   }
 }
