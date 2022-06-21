@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm i && npm run dev"
+    "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm i && npm run dev",
+    "tsconfig": "tsc --init"
   },
   "dependencies": {
     "next": "12.1.6",
