@@ -9,9 +9,9 @@ exports[`Home renders a heading 1`] = `
       class="main"
     >
       <h1
-        class="title"
+        class="title text-primary"
       >
-        iK v2 Welcome to 
+        iK v3 Welcome to 
         <a
           href="https://nextjs.org"
         >
