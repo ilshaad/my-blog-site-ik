@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;
+
 // const withMDX = require("@next/mdx")({
 //   extension: /\.mdx?$/,
 //   options: {
@@ -16,16 +22,13 @@
 //   reactStrictMode: true,
 // });
 
+// /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/404",
-        destination: "/",
-        permanent: true,
-      },
-    ];
+  async rewrites() {
+    return {
+      afterFiles: [{ source: "/:path*", destination: "/_404/:path*" }],
+    };
   },
 };
 
