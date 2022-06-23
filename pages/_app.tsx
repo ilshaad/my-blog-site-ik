@@ -1,6 +1,8 @@
 import "normalize.css";
 // import "../styles/customBootstrap.scss";
 import "../styles/globals.scss";
+// import "bootstrap-icons/font/bootstrap-icons.css";
+
 import type { AppProps } from "next/app";
 
 import Layout from "../components/Layout";
