@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import AsideBox from "./AsideBox";
 import Footer from "./Footer";
 
 import Header from "./Header";
@@ -13,6 +14,10 @@ export default function Layout({ children }: Props) {
       </header>
 
       <main id="OuterGrid-main">{children}</main>
+
+      <aside id="OuterGrid-aside">
+        <AsideBox />
+      </aside>
 
       <footer id="OuterGrid-footer">
         <Footer />

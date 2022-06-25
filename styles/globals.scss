@@ -60,6 +60,14 @@ body,
     background-color: cornsilk;
   }
 
+  // will not be display until at bigger screen size
+  #OuterGrid-aside {
+    grid-area: OG-aside;
+    display: none;
+
+    background-color: pink;
+  }
+
   #OuterGrid-footer {
     grid-area: OG-footer;
 
@@ -75,11 +83,22 @@ body,
 // #####################################################
 @include media-breakpoint-up(sm) {
   #OuterGrid {
+    grid-template-columns: 1fr 4fr 2fr 1fr;
     grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+      "OG-header OG-header OG-header OG-header"
+      ". OG-main OG-aside ."
+      "OG-footer OG-footer OG-footer OG-footer";
 
     #OuterGrid-main {
-      width: 90%;
       margin: 10px auto; // center the box
+    }
+
+    #OuterGrid-aside {
+      display: block;
+
+      width: 90%;
+      margin: 10px 0; // keeping box to the left because it looks better
     }
   }
 }
@@ -93,8 +112,16 @@ body,
 // #####################################################
 // Large devices (desktops, 992px and up)
 // #####################################################
-// @include media-breakpoint-up(lg) {
-// }
+@include media-breakpoint-up(lg) {
+  #OuterGrid {
+    grid-template-columns: 2fr 5fr 3fr 2fr;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+      "OG-header OG-header OG-header OG-header"
+      ". OG-main OG-aside ."
+      "OG-footer OG-footer OG-footer OG-footer";
+  }
+}
 
 // #####################################################
 // X-Large devices (large desktops, 1200px and up)
