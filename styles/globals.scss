@@ -35,7 +35,7 @@ body,
 #OuterGrid {
   display: grid;
   grid-template-columns: 100%; // 1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to
-  grid-template-rows: 60px auto 60px;
+  grid-template-rows: 210px auto 60px;
   grid-template-areas:
     "OG-header"
     "OG-main"
@@ -84,7 +84,7 @@ body,
 @include media-breakpoint-up(sm) {
   #OuterGrid {
     grid-template-columns: 1fr 4fr 2fr 1fr;
-    grid-template-rows: 75px auto 75px;
+    grid-template-rows: 205px auto 75px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."
@@ -115,7 +115,7 @@ body,
 @include media-breakpoint-up(lg) {
   #OuterGrid {
     grid-template-columns: 2fr 5fr 3fr 2fr;
-    grid-template-rows: 75px auto 75px;
+    grid-template-rows: 150px auto 75px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."

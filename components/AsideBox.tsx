@@ -1,6 +1,8 @@
+// aside component containing 2 box, first the links, second a brief about blog description
+
 import React from "react";
 import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
-import Github_anchor_svg from "./anchor_svg/github_anchor_svg";
+import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
 import LinkedIn_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
 
@@ -8,7 +10,7 @@ type Props = {};
 
 export default function AsideBox({}: Props) {
   return (
-    <div>
+    <div data-testid="AsideBox_component">
       {/* svg links */}
       <div className="border border-3 border-primary">
         <h5>Get in touch</h5>

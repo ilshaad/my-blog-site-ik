@@ -2,15 +2,13 @@ import { render, screen } from "@testing-library/react";
 import Home from "../pages/index";
 
 describe("Home", () => {
-  it("renders a heading", () => {
-    const { container } = render(<Home />);
+  it("renders the blog posts collection list", () => {
+    const { getByRole } = render(<Home />);
 
-    const heading = screen.getByRole("heading", {
-      name: /welcome to next\.js!/i,
-    });
+    const ul_blogPosts = getByRole("list");
 
-    expect(heading).toBeInTheDocument();
+    expect(ul_blogPosts).toBeInTheDocument();
 
-    expect(container).toMatchSnapshot();
+    expect(ul_blogPosts.children.length).toBeGreaterThan(0);
   });
 });

@@ -3,7 +3,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
-import Github_anchor_svg from "./anchor_svg/github_anchor_svg";
+import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
 import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
 

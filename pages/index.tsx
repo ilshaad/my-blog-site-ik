@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { Button, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import styles from "../styles/pages/index.module.scss";
 
 const Home: NextPage = () => {
@@ -41,23 +40,44 @@ const Home: NextPage = () => {
 
       <h4>Latest</h4>
 
-      {/* /blog/1 */}
-      <Row className="bg-light">
-        <h5>blog title</h5>
+      {/* blog post collection list */}
+      <Container fluid as="ul">
+        {/* /blog/1 */}
+        <Row as="li" className="bg-light">
+          <h5>blog title</h5>
 
-        <p className={styles.index_page_blogPostSample}>
-          describe the post but not finish it, write a click me bait under it
-          with read more button. I am just adding more to it to increase the
-          word counts. I do not know how lines is suffiecient enough. Perhaps I
-          is should use three lines base on what I am seeing
-        </p>
+          <p className={styles.index_page_blogPostSample}>
+            describe the post but not finish it, write a click me bait under it
+            with read more button. I am just adding more to it to increase the
+            word counts. I do not know how lines is suffiecient enough. Perhaps
+            I is should use three lines base on what I am seeing
+          </p>
 
-        <Link href="/blog/1">Read more&rarr;</Link>
+          <Link href="/blog/1">Read more&rarr;</Link>
 
-        <time dateTime="2022-06-25" className="d-block">
-          2022 June 25th Friday
-        </time>
-      </Row>
+          <time dateTime="2022-06-25" className="d-block">
+            2022 June 25th Friday
+          </time>
+        </Row>
+
+        {/* /blog/2 */}
+        <Row as="li" className="bg-light">
+          <h5>blog title</h5>
+
+          <p className={styles.index_page_blogPostSample}>
+            describe the post but not finish it, write a click me bait under it
+            with read more button. I am just adding more to it to increase the
+            word counts. I do not know how lines is suffiecient enough. Perhaps
+            I is should use three lines base on what I am seeing
+          </p>
+
+          <Link href="/blog/1">Read more&rarr;</Link>
+
+          <time dateTime="2022-06-25" className="d-block">
+            2022 June 25th Friday
+          </time>
+        </Row>
+      </Container>
     </Container>
   );
 };
