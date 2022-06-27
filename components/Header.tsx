@@ -31,7 +31,7 @@ export default function Header({}: Props) {
           return;
         }
 
-        // setQuote(data.content);
+        setQuote(data.content);
         setAuthor(data.author);
       })
       .catch((error) => {
