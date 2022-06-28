@@ -3,7 +3,7 @@
 exports[`<1/> blog page renders blog post image 1`] = `
 <div>
   <div
-    class="container"
+    class="w-100 container"
   >
     <div
       class="row"
