@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+          createTimestampInSqlFormat () {
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         date = 
+        <span
+          class="keyword"
+        >
+          new
+        </span>
+         
+        <span
+          class="method"
+        >
+          Date
+        </span>
+        ();
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         year = 
+        <span
+          class="method"
+        >
+          date.getFullYear
+        </span>
+        ();
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         month = 
+        <span
+          class="method"
+        >
+          date.getMonth
+        </span>
+        () + 
+        <span
+          class="value"
+        >
+          1
+        </span>
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         day = 
+        <span
+          class="method"
+        >
+          date.getDate
+        </span>
+        ();
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         hour = 
+        <span
+          class="method"
+        >
+          date.getHours
+        </span>
+        ();
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         minute = 
+        <span
+          class="method"
+        >
+          date.getMinutes
+        </span>
+        ();
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         second = 
+        <span
+          class="method"
+        >
+          date.getSeconds
+        </span>
+        ();
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         timestampArray = [year, month, day, hour, minute, seconds];
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         timestampString = ""
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          for
+        </span>
+         (
+        <span
+          class="keyword"
+        >
+          let
+        </span>
+         dateNumber 
+        <span
+          class="keyword"
+        >
+          of
+        </span>
+          timestampArray) {
+      </div>
+      <div
+        class="comment tab2"
+      >
+        // if number is less than 10 than add a 0 in front of it
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          if
+        </span>
+         (dateNumber &gt;= 
+        <span
+          class="value"
+        >
+          10
+        </span>
+        ) {
+      </div>
+      <div
+        class="tab3"
+      >
+        timestampString += dateNumber;
+      </div>
+      <div
+        class="tab2"
+      >
+        } 
+        <span
+          class="keyword"
+        >
+          else
+        </span>
+         {
+      </div>
+      <div
+        class="tab3"
+      >
+        timestamString += \`
+        <span
+          class="value"
+        >
+          0
+        </span>
+        \${dateNumber}\`;
+      </div>
+      <div
+        class="tab2"
+      >
+        }
+      </div>
+      <div
+        class="tab1"
+      >
+        }
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const/
+        </span>
+         timestampRegEx = /(\\d{4})(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{2})/g;
+      </div>
+      <br />
+      <div
+        class="comment tab1"
+      >
+        // create the sql timestamp format.You could change the format here if need be
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const/
+        </span>
+         timestamp = timestampString
+        <span
+          class="method"
+        >
+          .replace
+        </span>
+        (
+      </div>
+      <div
+        class="tab2"
+      >
+        timestampRegEx,
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="value"
+        >
+          "$1-$2-$3 $4:$5:$6"
+        </span>
+      </div>
+      <div
+        class="tab1"
+      >
+        );
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          return
+        </span>
+         timestamp;
+      </div>
+      <div>
+        }
+      </div>
+    </code>
+  </pre>
+</div>
+`;

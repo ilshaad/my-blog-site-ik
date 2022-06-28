@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<1/> blog page renders blog post image 1`] = `
+<div>
+  <div
+    class="w-100 container"
+  >
+    <div
+      class="row"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="blog 1 image"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <div
+      class="row"
+    >
+      <h1>
+        Create timestamp in SQL format
+      </h1>
+    </div>
+    <div
+      class="row"
+    >
+      <h5>
+        Prequisite
+      </h5>
+      <p>
+        Javascript | Regular Expression
+      </p>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <h5>
+          What is a timestamp?
+        </h5>
+        <p>
+          A timestamp is to save the current date and time
+        </p>
+        <h5>
+          What is SQL format?
+        </h5>
+        <p>
+          SQL stands for Structured Query Language. It lets you access and manipulate databases. But there is one database field we are particularly interested in, the 
+          <code>
+            created_on
+          </code>
+           field. The
+           
+          <code>
+            created_on
+          </code>
+           field is where dates and time are stored within the database (there are other fields that can store date and times too).
+        </p>
+        <p>
+          In order to save timestamp within 
+          <code>
+            created_on
+          </code>
+          , you will first need to transform it to the required structure. Depending on the SQL server, you might have to format the timestamp yourself before sending to the server if the server is not setup for that. The most common SQL format is 
+          <code>
+            yyyy-mm-dd hh:mm:ss
+          </code>
+          . But that can be a little tricky do.
+        </p>
+        <h5>
+          Solution:
+        </h5>
+      </div>
+      <div
+        class="col"
+      >
+        <pre
+          class="preCode mx-auto"
+        >
+          <code
+            class="codeTag mx-auto"
+            role="code"
+          >
+            <div>
+              <span
+                class="keyword"
+              >
+                function
+              </span>
+                createTimestampInSqlFormat () {
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               date = 
+              <span
+                class="keyword"
+              >
+                new
+              </span>
+               
+              <span
+                class="method"
+              >
+                Date
+              </span>
+              ();
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               year = 
+              <span
+                class="method"
+              >
+                date.getFullYear
+              </span>
+              ();
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               month = 
+              <span
+                class="method"
+              >
+                date.getMonth
+              </span>
+              () + 
+              <span
+                class="value"
+              >
+                1
+              </span>
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               day = 
+              <span
+                class="method"
+              >
+                date.getDate
+              </span>
+              ();
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               hour = 
+              <span
+                class="method"
+              >
+                date.getHours
+              </span>
+              ();
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               minute = 
+              <span
+                class="method"
+              >
+                date.getMinutes
+              </span>
+              ();
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               second = 
+              <span
+                class="method"
+              >
+                date.getSeconds
+              </span>
+              ();
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               timestampArray = [year, month, day, hour, minute, seconds];
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               timestampString = ""
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                for
+              </span>
+               (
+              <span
+                class="keyword"
+              >
+                let
+              </span>
+               dateNumber 
+              <span
+                class="keyword"
+              >
+                of
+              </span>
+                timestampArray) {
+            </div>
+            <div
+              class="comment tab2"
+            >
+              // if number is less than 10 than add a 0 in front of it
+            </div>
+            <div
+              class="tab2"
+            >
+              <span
+                class="keyword"
+              >
+                if
+              </span>
+               (dateNumber &gt;= 
+              <span
+                class="value"
+              >
+                10
+              </span>
+              ) {
+            </div>
+            <div
+              class="tab3"
+            >
+              timestampString += dateNumber;
+            </div>
+            <div
+              class="tab2"
+            >
+              } 
+              <span
+                class="keyword"
+              >
+                else
+              </span>
+               {
+            </div>
+            <div
+              class="tab3"
+            >
+              timestamString += \`
+              <span
+                class="value"
+              >
+                0
+              </span>
+              \${dateNumber}\`;
+            </div>
+            <div
+              class="tab2"
+            >
+              }
+            </div>
+            <div
+              class="tab1"
+            >
+              }
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const/
+              </span>
+               timestampRegEx = /(\\d{4})(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{2})/g;
+            </div>
+            <br />
+            <div
+              class="comment tab1"
+            >
+              // create the sql timestamp format.You could change the format here if need be
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const/
+              </span>
+               timestamp = timestampString
+              <span
+                class="method"
+              >
+                .replace
+              </span>
+              (
+            </div>
+            <div
+              class="tab2"
+            >
+              timestampRegEx,
+            </div>
+            <div
+              class="tab2"
+            >
+              <span
+                class="value"
+              >
+                "$1-$2-$3 $4:$5:$6"
+              </span>
+            </div>
+            <div
+              class="tab1"
+            >
+              );
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                return
+              </span>
+               timestamp;
+            </div>
+            <div>
+              }
+            </div>
+          </code>
+        </pre>
+      </div>
+      <div
+        class="col"
+      >
+        <p>
+          Basically we collect the date as usual but setting it up in SQL format will require some help from regular expression.
+        </p>
+        <p>
+          So whenever you need to create a timestamp in SQL format, you can use this tried and test function before sending it off to the server api.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
