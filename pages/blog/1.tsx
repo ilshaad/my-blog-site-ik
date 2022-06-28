@@ -12,7 +12,7 @@ type Props = {};
 
 export default function blog1({}: Props) {
   return (
-    <Container className="bg-light">
+    <Container className="w-100">
       {/* blog post image if any */}
       <Row>
         <Image src={blog1Image} alt="blog 1 image" />
@@ -32,8 +32,6 @@ export default function blog1({}: Props) {
       {/* blog post main & codes example */}
       <Row>
         <Col>
-          <Blog1 />
-
           <h5>What is a timestamp?</h5>
           <p>A timestamp is to save the current date and time</p>
 
@@ -55,15 +53,24 @@ export default function blog1({}: Props) {
             that can be a little tricky do.
           </p>
 
-          <h5>How to create a timestamp</h5>
+          <h5>Solution:</h5>
+        </Col>
+
+        {/* the code block component */}
+        <Col>
+          <Blog1 />
         </Col>
 
         <Col>
-          <pre>
-            <div>&lt; Open and close tags / &gt; // for dummy code</div>
-
-            <code>You can use other tags for styling</code>
-          </pre>
+          <p>
+            Basically we collect the date as usual but setting it up in SQL
+            format will require some help from regular expression.
+          </p>
+          <p>
+            So whenever you need to create a timestamp in SQL format, you can
+            use this tried and test function before sending it off to the server
+            api.
+          </p>
         </Col>
       </Row>
     </Container>

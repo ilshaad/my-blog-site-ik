@@ -1,4 +1,4 @@
-// header with heading title & quote/author too
+// header with 3 main containers / image & title / get in touch svg links / random quote api
 
 import axios from "axios";
 import Image from "next/image";
@@ -9,6 +9,10 @@ import { Col, Container, Nav, Navbar, Offcanvas, Row } from "react-bootstrap";
 import styles from "../styles/components/Header.module.scss";
 
 import rsImage from "../public/mstile-150x150.png";
+import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
+import LinkedIn_svg from "./anchor_svg/LinkedIn_anchor_svg";
+import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
+import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
 
 type Props = {};
 
@@ -57,6 +61,8 @@ export default function Header({}: Props) {
             </Link>
           </Navbar.Brand>
         </Navbar>
+
+        {/* svg get in touch links (linkedin / portfolio / email / github) */}
       </Row>
 
       <Row className={`bg-info h-50 mx-auto ${styles.quoteAuthorContainer}`}>

@@ -1,5 +1,3 @@
-// copy boilerplate version if you want to add another blog codes examples within your blog post page
-
 import React from "react";
 import styles from "../../styles/components/blogPostCodes/codesStyle.module.scss";
 
@@ -21,7 +19,7 @@ export default function Blog1({}: Props) {
 
   return (
     <pre className={`${preCode} mx-auto`}>
-      <code className={`${codeTag} mx-auto`} role="code">
+      <code className={`${codeTag} mx-auto`}>
         <div>
           <span className={`${keyword}`}>function</span>&#160;
           createTimestampInSqlFormat () &#123;

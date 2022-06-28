@@ -3,13 +3,13 @@ import Footer from "../../components/Footer";
 
 describe("<Footer/>", () => {
   it("Footer component is showing", () => {
-    render(<Footer />);
-
-    const { getByText } = screen;
+    const { getByText, container } = render(<Footer />);
 
     const divFooter = getByText(/ilshaad kheerdali/i);
 
     expect(divFooter).toBeInTheDocument();
+
+    expect(container).toMatchSnapshot();
   });
 
   it("display the correct current year (new Date()) within the footer", () => {
