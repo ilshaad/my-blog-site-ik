@@ -23,22 +23,22 @@ export default function Footer({}: Props) {
       </div>
 
       {/* github / linkedin / portolio links using bootstrap icons */}
-      <Container
+      {/* <Container
         className="d-flex justify-content-center mt-1"
         data-testid="containerForPersonalLinks"
-      >
-        {/* github link to bug-tracker-ik repo */}
-        <Github_anchor_svg />
+      > */}
+      {/* github link to bug-tracker-ik repo */}
+      {/* <Github_anchor_svg /> */}
 
-        {/* link to linkedin  */}
-        <LinkedIn_anchor_svg />
+      {/* link to linkedin  */}
+      {/* <LinkedIn_anchor_svg /> */}
 
-        {/* link to my porfolio site */}
-        <Portfolio_anchor_svg />
+      {/* link to my porfolio site */}
+      {/* <Portfolio_anchor_svg /> */}
 
-        {/* link to mail me (contact me)*/}
-        <EmailMe_anchor_svg />
-      </Container>
+      {/* link to mail me (contact me)*/}
+      {/* <EmailMe_anchor_svg />
+      </Container> */}
     </small>
   );
 }

@@ -41,6 +41,13 @@ exports[`<1/> blog page renders blog post image 1`] = `
     <div
       class="row"
     >
+      <p>
+        4 min read
+      </p>
+    </div>
+    <div
+      class="row"
+    >
       <h5>
         Prequisite
       </h5>
@@ -54,33 +61,35 @@ exports[`<1/> blog page renders blog post image 1`] = `
       <div
         class="col"
       >
+        <p>
+          Sometimes the client side has to produce the date of the user interaction before sending it to the server api. And sometimes they have to format the date and time before sending it to the server api. And sometimes they have to specifically format the date and time in SQL date field before sending it to the server api. That's what we will be looking at.
+        </p>
         <h5>
           What is a timestamp?
         </h5>
         <p>
-          A timestamp is to save the current date and time
+          A timestamp is to store the current date and time for future references
         </p>
         <h5>
           What is SQL format?
         </h5>
         <p>
-          SQL stands for Structured Query Language. It lets you access and manipulate databases. But there is one database field we are particularly interested in, the 
+          SQL stands for Structured Query Language. It lets you access and manipulate databases. But there is one database field we are particularly interested in, the 
           <code>
             created_on
           </code>
-           field. The
-           
+           field. The 
           <code>
             created_on
           </code>
            field is where dates and time are stored within the database (there are other fields that can store date and times too).
         </p>
         <p>
-          In order to save timestamp within 
+          In order to store timestamp within 
           <code>
             created_on
           </code>
-          , you will first need to transform it to the required structure. Depending on the SQL server, you might have to format the timestamp yourself before sending to the server if the server is not setup for that. The most common SQL format is 
+          , you will first need to transform it to the required structure. Depending on the SQL server, you might have to format the timestamp yourself before sending to the server if the server is not setup for that. The most common SQL format is 
           <code>
             yyyy-mm-dd hh:mm:ss
           </code>
@@ -138,11 +147,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               year = 
+               year =  date
               <span
                 class="method"
               >
-                date.getFullYear
+                .getFullYear
               </span>
               ();
             </div>
@@ -154,11 +163,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               month = 
+               month =  date
               <span
                 class="method"
               >
-                date.getMonth
+                .getMonth
               </span>
               () + 
               <span
@@ -175,11 +184,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               day = 
+               day =  date
               <span
                 class="method"
               >
-                date.getDate
+                .getDate
               </span>
               ();
             </div>
@@ -191,11 +200,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               hour = 
+               hour =  date
               <span
                 class="method"
               >
-                date.getHours
+                .getHours
               </span>
               ();
             </div>
@@ -207,11 +216,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               minute = 
+               minute =  date
               <span
                 class="method"
               >
-                date.getMinutes
+                .getMinutes
               </span>
               ();
             </div>
@@ -223,11 +232,11 @@ exports[`<1/> blog page renders blog post image 1`] = `
               >
                 let
               </span>
-               second = 
+               second =  date
               <span
                 class="method"
               >
-                date.getSeconds
+                .getSeconds
               </span>
               ();
             </div>

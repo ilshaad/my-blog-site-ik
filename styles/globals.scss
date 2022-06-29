@@ -4,6 +4,8 @@
 
 @import "./customBootstrap.scss";
 // @import "../components/OuterGrid.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+// font-family: 'Rubik Moonrocks', cursive;
 
 // iK? xx-small small phones (above 360px)
 // X-Small devices (portrait phones, less than 576px)
@@ -29,13 +31,14 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: cursive;
 }
 
 // * Setup up Outer-grid of the screen (OuterGrid.tsx component)
 #OuterGrid {
   display: grid;
   grid-template-columns: 100%; // 1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to
-  grid-template-rows: 210px max-content 60px;
+  grid-template-rows: 210px minmax(max-content, 1fr) 60px;
   grid-template-areas:
     "OG-header"
     "OG-main"
@@ -58,7 +61,7 @@ body,
     width: 93%;
     margin: 7px auto; // center the box
 
-    background-color: #f7fbff;
+    background-color: #f1f8ff;
   }
 
   // will not be display until at bigger screen size
@@ -85,7 +88,7 @@ body,
 @include media-breakpoint-up(sm) {
   #OuterGrid {
     grid-template-columns: 1fr 5fr 2fr 1fr;
-    grid-template-rows: 205px max-content 75px;
+    grid-template-rows: 205px 1fr 75px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."
@@ -116,7 +119,7 @@ body,
 @include media-breakpoint-up(lg) {
   #OuterGrid {
     grid-template-columns: 2fr 7fr 3fr 2fr;
-    grid-template-rows: 150px max-content 75px;
+    grid-template-rows: 150px 1fr 75px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."

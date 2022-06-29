@@ -2,8 +2,6 @@
   "name": "Ilshaad blog",
   "short_name": "Ilshaad blog",
   "start_url": "/",
-  "scope": ".",
-  "id": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

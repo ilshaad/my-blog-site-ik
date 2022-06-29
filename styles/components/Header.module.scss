@@ -3,33 +3,59 @@
 
 // iK? begin from 360px & up for starting breakpoint
 
-.quoteAuthorContainer {
-  .quote {
-    font-size: 0.95rem;
-    padding: 0.3rem 0.5rem;
-    margin: auto;
+.Header_component {
+  position: relative;
+
+  img.rsLogo {
+    margin-top: -1rem !important;
+    margin-left: 0rem !important;
   }
 
-  .author {
-    font-size: 0.9rem;
-    padding-right: 3rem;
-    text-align: right;
-    margin: auto;
+  .brandHeading {
+    font-family: "Rubik Moonrocks", cursive;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  .svgLinks {
+    margin-top: -6rem;
+    text-align: end;
+    padding-right: 1rem;
+  }
+
+  .quoteAuthorContainer {
+    .quoteContainer {
+      font-size: 0.95rem;
+      padding: 0.3rem 0.5rem;
+      margin: auto;
+    }
+
+    .authorContainer {
+      font-size: 0.9rem;
+      padding-right: 3rem;
+      text-align: right;
+      margin: auto;
+    }
   }
 }
 
 // * breakpoint of > 576px (sm)
 @media screen and (min-width: 576px) {
-  .quote,
-  .author {
+  // hide the svg links because <Aside/> links will show up
+  .svgLinks {
+    display: none;
+  }
+
+  .quoteContainer,
+  .authorContainer {
     width: 72%;
   }
 } //END breakpoint of > 576px (md)
 
 // * breakpoint of > 768px (md)
 @media screen and (min-width: 768px) {
-  .quote,
-  .author {
+  .quoteContainer,
+  .authorContainer {
     width: 63%;
   }
 } //END breakpoint of > 768px (md)

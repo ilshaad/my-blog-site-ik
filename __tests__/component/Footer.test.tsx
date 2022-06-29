@@ -23,12 +23,4 @@ describe("<Footer/>", () => {
 
     expect(timeTag).toBeInTheDocument();
   });
-
-  it("Ensure all 4 links are showing (github/linkedin/portfolio/email me)", () => {
-    const { getByTestId } = render(<Footer />);
-
-    const linksContainer = getByTestId("containerForPersonalLinks");
-
-    expect(linksContainer.children.length).toEqual(4);
-  });
 });

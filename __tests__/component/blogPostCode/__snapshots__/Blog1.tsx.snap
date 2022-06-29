@@ -47,11 +47,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         year = 
+         year =  date
         <span
           class="method"
         >
-          date.getFullYear
+          .getFullYear
         </span>
         ();
       </div>
@@ -63,11 +63,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         month = 
+         month =  date
         <span
           class="method"
         >
-          date.getMonth
+          .getMonth
         </span>
         () + 
         <span
@@ -84,11 +84,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         day = 
+         day =  date
         <span
           class="method"
         >
-          date.getDate
+          .getDate
         </span>
         ();
       </div>
@@ -100,11 +100,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         hour = 
+         hour =  date
         <span
           class="method"
         >
-          date.getHours
+          .getHours
         </span>
         ();
       </div>
@@ -116,11 +116,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         minute = 
+         minute =  date
         <span
           class="method"
         >
-          date.getMinutes
+          .getMinutes
         </span>
         ();
       </div>
@@ -132,11 +132,11 @@ exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
         >
           let
         </span>
-         second = 
+         second =  date
         <span
           class="method"
         >
-          date.getSeconds
+          .getSeconds
         </span>
         ();
       </div>

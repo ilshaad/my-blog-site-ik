@@ -105,7 +105,7 @@ exports[`<Aside/> renders both svg link box & blog descript box 1`] = `
         About
       </h5>
       <p>
-        Hello and welcome! My name is Ilshaad, at your humble service. I been in web development for quite a while now and learn from many web developers online. Whilst I will always consider myself a student of the game, I also think it is important to give back to the wonderful community. This is the purpose of this blog, share what I have picked up for the years and possible help you on specific areas that you may come across. Are you coding bro!
+        Welcome! My name is Ilshaad, at your humble service. I been in web development for quite a while now. And whilst I will always consider myself a student of the game, I also think it is important to give back to the community. So I want to share my littles stumbles I have come across so you do not have to suffer the same frustration as I did.
       </p>
     </div>
   </div>
