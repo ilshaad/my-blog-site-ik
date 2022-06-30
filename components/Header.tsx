@@ -15,6 +15,7 @@ import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
 import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
 import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
+import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
 
 type Props = {};
 
@@ -127,6 +128,7 @@ export default function Header({}: Props) {
 
         {/* svg get in touch links (linkedin / portfolio / email / github) */}
         <Col col={12} className={`${svgLinks}`}>
+          <Home_anchor_svg />
           <Github_anchor_svg />
           <LinkedIn_anchor_svg />
           <Portfolio_anchor_svg />

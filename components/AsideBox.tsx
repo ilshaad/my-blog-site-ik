@@ -3,6 +3,7 @@
 import React from "react";
 import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
 import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
+import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
 import LinkedIn_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
 
@@ -14,6 +15,8 @@ export default function AsideBox({}: Props) {
       {/* svg links */}
       <div className="border border-3 border-primary">
         <h5>Get in touch</h5>
+        <Home_anchor_svg />
+
         <Github_anchor_svg />
 
         <LinkedIn_svg />

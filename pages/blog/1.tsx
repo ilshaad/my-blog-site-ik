@@ -1,13 +1,12 @@
 // blog post page
 
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import Head from "next/head";
 import { Col, Container, Row } from "react-bootstrap";
 
-import blog1Image from "../../public/blog1_timestamp in sql format - my-blog-site repo.jpg";
-import dummyImage from "../../public/android-chrome-384x384.png";
 import Blog1 from "../../components/blogPostCodes/Blog1";
-import Head from "next/head";
+import blog1Image from "../../public/blog1img/timestamp in sql format - my-blog-site repo.jpg";
 
 type Props = {};
 

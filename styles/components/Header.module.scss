@@ -5,6 +5,7 @@
 
 .Header_component {
   position: relative;
+  background-image: url("../../public/headerImage/freddie-marriage-vSchPA-YA_A-unsplash_flip.jpg");
 
   img.rsLogo {
     margin-top: -1rem !important;
@@ -15,10 +16,14 @@
     font-family: "Rubik Moonrocks", cursive;
     padding-top: 1rem;
     padding-right: 0.5rem;
+    font-size: 2rem;
+    margin-left: -2rem;
+    margin-top: -0.5rem;
   }
 
   .svgLinks {
     margin-top: -6rem;
+    margin-right: 1rem;
     text-align: end;
     padding-right: 1rem;
   }
@@ -38,6 +43,24 @@
     }
   }
 }
+
+// * breakpint of > 360px
+@media screen and (min-width: 360px) {
+  .brandHeading {
+    margin-left: -1rem !important;
+  }
+} // breakpoint of > 360px
+
+// * breakpint of > 400px
+// @media screen and (min-width: 400px) {
+// } // breakpoint of > 400px
+
+// * breakpint of > 500px
+@media screen and (min-width: 500px) {
+  .brandHeading {
+    font-size: 2.5rem !important;
+  }
+} // breakpoint of > 500px
 
 // * breakpoint of > 576px (sm)
 @media screen and (min-width: 576px) {
