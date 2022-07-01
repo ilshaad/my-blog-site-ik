@@ -11,7 +11,7 @@ export default function Github_anchor_svg({}: Props) {
         width="16"
         height="16"
         fill="currentColor"
-        className="bi bi-house text-decoration-underline text-light mx-2"
+        className="bi bi-house text-decoration-underline mx-2"
         viewBox="0 0 16 16"
       >
         <path

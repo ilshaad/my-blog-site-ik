@@ -6,7 +6,7 @@ export default function LinkedIn_svg({}: Props) {
   return (
     <a
       href="https://www.linkedin.com/in/rob-c-a7aa08199/"
-      className="text-decoration-underline text-light mx-2"
+      className="text-decoration-underline mx-2"
       target="_blank"
       rel="noopener noreferrer"
       title="LinkedIn"

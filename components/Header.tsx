@@ -28,6 +28,7 @@ export default function Header({}: Props) {
     authorContainer,
     rsLogo,
     Header_component,
+    quoteDiv,
   } = styles;
 
   // const [quote, setQuote] = useState(
@@ -45,10 +46,18 @@ export default function Header({}: Props) {
       .then((res) => {
         const { data } = res;
 
-        // if quote is greater than 139 than use the default quote
-        if (data.length >= 175) {
+        // if true than return the default quote & not the random quote
+        // acceptable character range between 80-133 in total
+        // we need to remove 2 characters so we can include quotes
+        if (data.length <= 78 || data.length >= 130) {
           setQuote("I am the greatest. I said that even before I knew I was.");
+          // setQuote(
+          //   "I am the greatest. I said that even before I knew I was. jjj jj j jjjj jjjj jd j 5 jj j jj jjjjj jjj jjj jjj jj jj j jjj j j j is s"
+          // );
+          // 'Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.'
+
           setAuthor("Muhammad Ali");
+
           return;
         }
 
@@ -106,7 +115,7 @@ export default function Header({}: Props) {
       className={`p-0 h-100 overflow-hidden w-100 mx-auto ${Header_component}`}
     >
       {/* image & heading */}
-      <Row className="bg-primary h-50">
+      <Row className="h-50">
         <Col xs={12} className={`p-0 mx-auto`}>
           <Navbar className="h-100 w-100 pt-0 pb-0 mx-auto">
             <Navbar.Brand>
@@ -119,7 +128,9 @@ export default function Header({}: Props) {
                     height={"150%"}
                     className={`${rsLogo}`}
                   />
-                  <h1 className={`${brandHeading}`}>Ilshaad Blog</h1>
+                  <h1 className={`${brandHeading} text-primary`}>
+                    Ilshaad Blog
+                  </h1>
                 </div>
               </Link>
             </Navbar.Brand>
@@ -127,8 +138,9 @@ export default function Header({}: Props) {
         </Col>
 
         {/* svg get in touch links (linkedin / portfolio / email / github) */}
-        <Col col={12} className={`${svgLinks}`}>
+        <Col xs={12} className={`${svgLinks} text-primary`}>
           <Home_anchor_svg />
+          |
           <Github_anchor_svg />
           <LinkedIn_anchor_svg />
           <Portfolio_anchor_svg />
@@ -136,12 +148,16 @@ export default function Header({}: Props) {
         </Col>
       </Row>
 
-      <Row className={`bg-info h-50 mx-auto ${quoteAuthorContainer}`}>
+      <Row className={`h-50 mx-auto ${quoteAuthorContainer}`}>
         {/* quote container */}
-        <Col className={`${quoteContainer}`}>{quoteBox()}</Col>
+        <Col xs={12} sm={12} className={`${quoteContainer}`}>
+          <div className={`${quoteDiv}`}>&#34;{quoteBox()}&#34;</div>
+        </Col>
 
         {/*  auther container */}
-        <Col className={authorContainer}>{authorBox()}</Col>
+        <Col xs={12} sm={12} className={authorContainer}>
+          {authorBox()}
+        </Col>
       </Row>
     </Container>
   );

@@ -6,7 +6,7 @@ export default function Github_anchor_svg({}: Props) {
   return (
     <a
       href="https://github.com/RechadSalma/bug-tracker-ik"
-      className="text-decoration-underline text-light mx-2"
+      className="text-decoration-underline mx-2"
       target="_blank"
       rel="noopener noreferrer"
       title="Github"

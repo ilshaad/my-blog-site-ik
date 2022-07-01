@@ -5,7 +5,11 @@
 
 .Header_component {
   position: relative;
-  background-image: url("../../public/headerImage/freddie-marriage-vSchPA-YA_A-unsplash_flip.jpg");
+  // background-image: url("../../public/headerImage/freddie-marriage-vSchPA-YA_A-unsplash_flip.jpg") !important;
+  // background-origin: border-box;
+  // background-position: top;
+  // background-size: contain;
+  // background-repeat: no-repeat;
 
   img.rsLogo {
     margin-top: -1rem !important;
@@ -13,7 +17,7 @@
   }
 
   .brandHeading {
-    font-family: "Rubik Moonrocks", cursive;
+    font-family: "Rubik Moonrocks", "Roboto", sans-serif, cursive;
     padding-top: 1rem;
     padding-right: 0.5rem;
     font-size: 2rem;
@@ -29,17 +33,33 @@
   }
 
   .quoteAuthorContainer {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 74, 173, 1) 54%,
+      rgba(3, 176, 212, 1) 100%
+    );
+
     .quoteContainer {
       font-size: 0.95rem;
       padding: 0.3rem 0.5rem;
       margin: auto;
+
+      .quoteDiv {
+        width: 97%;
+        margin: auto;
+        color: wheat;
+      }
     }
 
     .authorContainer {
-      font-size: 0.9rem;
-      padding-right: 3rem;
-      text-align: right;
+      // font-size: 0.9rem;
+      // padding-right: 3rem;
+      text-align: center;
       margin: auto;
+      font-style: italic;
+      margin-top: -8px;
+      color: white;
     }
   }
 }
@@ -49,41 +69,76 @@
   .brandHeading {
     margin-left: -1rem !important;
   }
+
+  .quoteDiv {
+    width: 89% !important;
+  }
+
+  .authorContainer {
+    margin-top: -13px;
+  }
 } // breakpoint of > 360px
 
 // * breakpint of > 400px
-// @media screen and (min-width: 400px) {
-// } // breakpoint of > 400px
+@media screen and (min-width: 400px) {
+  .quoteDiv {
+    width: 81% !important;
+  }
+} // breakpoint of > 400px
 
 // * breakpint of > 500px
 @media screen and (min-width: 500px) {
   .brandHeading {
     font-size: 2.5rem !important;
   }
+
+  .quoteDiv {
+    width: 64% !important;
+  }
 } // breakpoint of > 500px
 
 // * breakpoint of > 576px (sm)
 @media screen and (min-width: 576px) {
+  .brandHeading {
+    font-size: 3.5rem !important;
+    margin-left: 0rem !important;
+  }
+
   // hide the svg links because <Aside/> links will show up
   .svgLinks {
     display: none;
   }
 
-  .quoteContainer,
-  .authorContainer {
-    width: 72%;
+  // .quoteContainer,
+  // .authorContainer {
+  //   width: 72%;
+  // }
+
+  .quoteDiv {
+    width: 57% !important;
   }
 } //END breakpoint of > 576px (md)
 
 // * breakpoint of > 768px (md)
 @media screen and (min-width: 768px) {
-  .quoteContainer,
-  .authorContainer {
-    width: 63%;
+  .quoteDiv {
+    width: 47% !important;
   }
 } //END breakpoint of > 768px (md)
 
-//  @include media-breakpoint-up(md) {
+// * breakpoint of > 1200 (xl)
+@media screen and (min-width: 1200px) {
+  .quoteDiv {
+    width: 39% !important;
+  }
+} //END breakpoint of > 1200 (xl)
+
+// * breakpoint of > 1400 (xxl)
+@media screen and (min-width: 1400px) {
+  .quoteDiv {
+    width: 32% !important;
+  }
+} //END breakpoint of > 1400 (xxl)
 
 // * breakpoint of > 992 (lg)
 //  @include media-breakpoint-up(lg) {

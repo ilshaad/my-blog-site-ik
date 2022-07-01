@@ -7,8 +7,8 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import blog1Image from "../../public/blog1img/timestamp in sql format - my-blog-site repo.jpg";
-import dummyImage from "../../public/android-chrome-384x384.png";
+// import blog1Image from "../../public/blog1img/timestamp in sql format - my-blog-site repo.jpg";
+// import dummyImage from "../../public/android-chrome-384x384.png";
 import Blog1 from "../../components/blogPostCodes/Blog1";
 
 type Props = {};
@@ -17,9 +17,7 @@ export default function copy({}: Props) {
   return (
     <Container>
       {/* blog post image if any */}
-      <Row>
-        <Image src={blog1Image} alt="blog 1 image" />
-      </Row>
+      <Row>{/* <Image src={blog1Image} alt="blog 1 image" /> */}</Row>
 
       {/* blog post title */}
       <Row>

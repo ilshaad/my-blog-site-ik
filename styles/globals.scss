@@ -4,8 +4,9 @@
 
 @import "./customBootstrap.scss";
 // @import "../components/OuterGrid.scss";
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik+Moonrocks&display=swap");
 // font-family: 'Rubik Moonrocks', cursive;
+// font-family: 'Roboto', sans-serif;
 
 // iK? xx-small small phones (above 360px)
 // X-Small devices (portrait phones, less than 576px)
@@ -31,14 +32,14 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
 }
 
 // * Setup up Outer-grid of the screen (OuterGrid.tsx component)
 #OuterGrid {
   display: grid;
   grid-template-columns: 100%; // 1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to
-  grid-template-rows: 210px minmax(max-content, 1fr) 60px;
+  grid-template-rows: 210px minmax(max-content, 1fr) 44px;
   grid-template-areas:
     "OG-header"
     "OG-main"
@@ -74,6 +75,12 @@ body,
 
   #OuterGrid-footer {
     grid-area: OG-footer;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 74, 173, 1) 54%,
+      rgba(3, 176, 212, 1) 100%
+    );
 
     // background-color: yellow;
   }
@@ -88,7 +95,7 @@ body,
 @include media-breakpoint-up(sm) {
   #OuterGrid {
     grid-template-columns: 1fr 5fr 2fr 1fr;
-    grid-template-rows: 205px 1fr 75px;
+    grid-template-rows: 195px 1fr 55px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."
@@ -119,19 +126,19 @@ body,
 @include media-breakpoint-up(lg) {
   #OuterGrid {
     grid-template-columns: 2fr 7fr 3fr 2fr;
-    grid-template-rows: 150px 1fr 75px;
-    grid-template-areas:
-      "OG-header OG-header OG-header OG-header"
-      ". OG-main OG-aside ."
-      "OG-footer OG-footer OG-footer OG-footer";
+    grid-template-rows: 181px 1fr 55px;
   }
 }
 
 // #####################################################
 // X-Large devices (large desktops, 1200px and up)
 // #####################################################
-// @include media-breakpoint-up(xl) {
-// }
+@include media-breakpoint-up(xl) {
+  #OuterGrid {
+    // grid-template-columns: 2fr 7fr 3fr 2fr;
+    grid-template-rows: 175px 1fr 55px;
+  }
+}
 
 // #####################################################
 // XX-Large devices (larger desktops, 1400px and up)

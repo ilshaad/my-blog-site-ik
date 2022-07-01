@@ -13,8 +13,8 @@ export default function AsideBox({}: Props) {
   return (
     <div data-testid="AsideBox_component">
       {/* svg links */}
-      <div className="border border-3 border-primary">
-        <h5>Get in touch</h5>
+      <div className="bg-light border border-3 border-primary mx-auto">
+        <h5 className={`fs-6 mx-auto text-center`}>Get in touch</h5>
         <Home_anchor_svg />
 
         <Github_anchor_svg />

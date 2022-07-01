@@ -7,6 +7,15 @@
 // 2. Include any default variable overrides here
 $primary: #004aad;
 $secondary: #ffffff;
+$gradientBackground: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(0, 74, 173, 1) 54%,
+  rgba(3, 176, 212, 1) 100%
+);
+
+// allow bootstrap classname negative margins to apply
+$enable-negative-margins: true;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";

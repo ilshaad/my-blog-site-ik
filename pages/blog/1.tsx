@@ -6,7 +6,7 @@ import Head from "next/head";
 import { Col, Container, Row } from "react-bootstrap";
 
 import Blog1 from "../../components/blogPostCodes/Blog1";
-import blog1Image from "../../public/blog1img/timestamp in sql format - my-blog-site repo.jpg";
+import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 type Props = {};
 

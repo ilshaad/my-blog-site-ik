@@ -14,7 +14,7 @@ export default function Footer({}: Props) {
 
   return (
     <small
-      className="d-flex flex-column justify-content-center align-items-center h-100 text-light bg-primary bg-gradient"
+      className="d-flex flex-column justify-content-center align-items-center h-100 text-light"
       style={{ fontSize: "1em" }}
     >
       <div>

@@ -2,10 +2,24 @@
 
 // iK? begin from 360px & up for starting breakpoint
 
+.blogPostTitle {
+  font-weight: 600;
+}
+
 .index_page_blogPostSample {
   // background-color: white;
   height: 3rem;
   overflow: hidden;
+}
+
+.indexPage_readMoreLink {
+  font-size: 1.1rem;
+}
+
+.blogDate {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  padding-right: 1.25rem;
 }
 
 // * breakpoint of > 576px (sm)
