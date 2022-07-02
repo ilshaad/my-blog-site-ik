@@ -7,10 +7,18 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import Blog1 from "../../components/blogPostCodes/Blog1";
 import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
+import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
+import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
+import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_svg";
+import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
+import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
+import styles from "../../styles/pages/blogsExtras/svgLinks.module.scss";
 
 type Props = {};
 
 export default function blog1({}: Props) {
+  const { svgLinks } = styles;
+
   return (
     <Container className="w-100">
       <Head>
@@ -46,7 +54,17 @@ export default function blog1({}: Props) {
       </Head>
 
       {/* blog post image if any */}
-      <Row>
+      {/* svg get in touch links (linkedin / portfolio / email / github) */}
+      <Container className={`${svgLinks} text-primary`}>
+        <Home_anchor_svg />
+        <span className={`text-dark fw-bolder`}>|</span>
+        <Github_anchor_svg />
+        <LinkedIn_anchor_svg />
+        <Portfolio_anchor_svg />
+        <EmailMe_anchor_svg />
+      </Container>
+
+      <Row className="mt-2">
         <Image src={blog1Image} alt="blog 1 image" />
       </Row>
 

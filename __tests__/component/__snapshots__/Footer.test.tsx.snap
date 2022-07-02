@@ -3,8 +3,8 @@
 exports[`<Footer/> Footer component is showing 1`] = `
 <div>
   <small
-    class="d-flex flex-column justify-content-center align-items-center h-100 text-light bg-primary bg-gradient"
-    style="font-size: 1em;"
+    class="d-flex flex-column justify-content-center align-items-center h-100 text-light"
+    style="font-size: 0.8rem;"
   >
     <div>
       © 

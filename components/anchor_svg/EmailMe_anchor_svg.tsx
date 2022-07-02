@@ -5,7 +5,7 @@ type Props = {};
 export default function EmailMe_anchor_svg({}: Props) {
   return (
     <a
-      href="mailto:rechadsalma123@gmail.com?subject=From%20the%20Bug%20Tracker%20app%3A"
+      href="mailto:rechadsalma123@gmail.com?subject=From%20ilshaad%20blog%20site%202022%3A"
       className="text-decoration-underline mx-2"
       target="_blank"
       rel="noopener noreferrer"

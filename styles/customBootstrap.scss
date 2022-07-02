@@ -5,14 +5,9 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$primary: #004aad;
-$secondary: #ffffff;
-$gradientBackground: linear-gradient(
-  90deg,
-  rgba(2, 0, 36, 1) 0%,
-  rgba(0, 74, 173, 1) 54%,
-  rgba(3, 176, 212, 1) 100%
-);
+$primary: #780206;
+$secondary: rgb(237 255 0 / 16%);
+$gradientBackground: linear-gradient(to right, #061161, #780206);
 
 // allow bootstrap classname negative margins to apply
 $enable-negative-margins: true;

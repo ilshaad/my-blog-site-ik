@@ -29,6 +29,7 @@ export default function Header({}: Props) {
     rsLogo,
     Header_component,
     quoteDiv,
+    imageNHeadingContainer,
   } = styles;
 
   // const [quote, setQuote] = useState(
@@ -47,12 +48,13 @@ export default function Header({}: Props) {
         const { data } = res;
 
         // if true than return the default quote & not the random quote
-        // acceptable character range between 80-133 in total
+        // acceptable character range between 80-130 in total, but I could change that depending how risky I would like to go
         // we need to remove 2 characters so we can include quotes
-        if (data.length <= 78 || data.length >= 130) {
+        if (data.length <= 45 || data.length >= 133) {
+          // if (true) {
           setQuote("I am the greatest. I said that even before I knew I was.");
           // setQuote(
-          //   "I am the greatest. I said that even before I knew I was. jjj jj j jjjj jjjj jd j 5 jj j jj jjjjj jjj jjj jjj jj jj j jjj j j j is s"
+          //   "I am the greatest. I said that even before I knew I was. jjj jj j jjjj jjjj jd j 5 jj j jj jjjjj jjj jjj jjj jj jj j jjj j j j i"
           // );
           // 'Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.'
 
@@ -81,9 +83,9 @@ export default function Header({}: Props) {
           <Placeholder as="p" animation="glow">
             <Placeholder xs={12} />
           </Placeholder>
-          <Placeholder as="p" animation="wave">
+          {/* <Placeholder as="p" animation="wave">
             <Placeholder xs={12} />
-          </Placeholder>
+          </Placeholder> */}
         </>
       );
     }
@@ -115,17 +117,17 @@ export default function Header({}: Props) {
       className={`p-0 h-100 overflow-hidden w-100 mx-auto ${Header_component}`}
     >
       {/* image & heading */}
-      <Row className="h-50">
-        <Col xs={12} className={`p-0 mx-auto`}>
+      <Row className={`${imageNHeadingContainer}`}>
+        <Col xs={12} md={10} lg={9} xl={8} className={`p-0 mx-auto h-100`}>
           <Navbar className="h-100 w-100 pt-0 pb-0 mx-auto">
-            <Navbar.Brand>
-              <Link href="/">
-                <div className="d-flex">
+            <Navbar.Brand className="h-100 w-100">
+              <Link href="/" className="w-100 h-100">
+                <div className={`d-flex w-100`}>
                   <Image
                     src={rsImage}
                     alt="rechadsalma log"
-                    width={"150%"}
-                    height={"150%"}
+                    width={"100%"}
+                    height={"100%"}
                     className={`${rsLogo}`}
                   />
                   <h1 className={`${brandHeading} text-primary`}>
@@ -138,20 +140,22 @@ export default function Header({}: Props) {
         </Col>
 
         {/* svg get in touch links (linkedin / portfolio / email / github) */}
-        <Col xs={12} className={`${svgLinks} text-primary`}>
+        {/* <Col xs={12} className={`${svgLinks} text-primary`}>
           <Home_anchor_svg />
           |
           <Github_anchor_svg />
           <LinkedIn_anchor_svg />
           <Portfolio_anchor_svg />
           <EmailMe_anchor_svg />
-        </Col>
+        </Col> */}
       </Row>
 
-      <Row className={`h-50 mx-auto ${quoteAuthorContainer}`}>
+      <Row className={`mx-auto ${quoteAuthorContainer}`}>
         {/* quote container */}
         <Col xs={12} sm={12} className={`${quoteContainer}`}>
-          <div className={`${quoteDiv}`}>&#34;{quoteBox()}&#34;</div>
+          <div className={`${quoteDiv} align-middle`}>
+            &#34;{quoteBox()}&#34;
+          </div>
         </Col>
 
         {/*  auther container */}

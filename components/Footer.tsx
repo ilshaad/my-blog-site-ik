@@ -2,10 +2,10 @@
 
 import React from "react";
 import { Container } from "react-bootstrap";
-import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
-import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
-import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
-import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
+// import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
+// import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
+// import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
+// import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
 
 type Props = {};
 
@@ -15,7 +15,7 @@ export default function Footer({}: Props) {
   return (
     <small
       className="d-flex flex-column justify-content-center align-items-center h-100 text-light"
-      style={{ fontSize: "1em" }}
+      style={{ fontSize: "0.8rem" }}
     >
       <div>
         &copy; <time dateTime={`${currentYear}`}>{currentYear}</time> Copyright

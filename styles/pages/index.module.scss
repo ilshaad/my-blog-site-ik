@@ -2,6 +2,13 @@
 
 // iK? begin from 360px & up for starting breakpoint
 
+.svgLinks {
+  // margin-top: -6rem;
+  margin-right: -1rem;
+  text-align: end;
+  // padding-right: 1rem;
+}
+
 .blogPostTitle {
   font-weight: 600;
 }
@@ -23,8 +30,12 @@
 }
 
 // * breakpoint of > 576px (sm)
-//  @include media-breakpoint-up(sm) {
-//  } //END breakpoint of > 576px (sm)
+@media screen and (min-width: 576px) {
+  // hide the svg links because <Aside/> links will show up
+  .svgLinks {
+    display: none;
+  }
+} //END breakpoint of > 576px (md)
 
 // * breakpoint of > 768px (md)
 //  @include media-breakpoint-up(md) {

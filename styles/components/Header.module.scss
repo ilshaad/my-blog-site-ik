@@ -5,24 +5,26 @@
 
 .Header_component {
   position: relative;
-  // background-image: url("../../public/headerImage/freddie-marriage-vSchPA-YA_A-unsplash_flip.jpg") !important;
-  // background-origin: border-box;
-  // background-position: top;
-  // background-size: contain;
-  // background-repeat: no-repeat;
+
+  .imageNHeadingContainer {
+    // height: 35% !important;
+    height: 50px !important;
+  }
 
   img.rsLogo {
-    margin-top: -1rem !important;
+    margin-top: -1.3rem !important;
     margin-left: 0rem !important;
   }
 
   .brandHeading {
-    font-family: "Rubik Moonrocks", "Roboto", sans-serif, cursive;
+    font-family: monospace, "Roboto", Arial, Helvetica, "Montserrat", sans-serif,
+      cursive;
+    font-weight: 600;
     padding-top: 1rem;
     padding-right: 0.5rem;
     font-size: 2rem;
-    margin-left: -2rem;
-    margin-top: -0.5rem;
+    margin-left: 0rem;
+    margin-top: -1rem;
   }
 
   .svgLinks {
@@ -33,12 +35,8 @@
   }
 
   .quoteAuthorContainer {
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 74, 173, 1) 54%,
-      rgba(3, 176, 212, 1) 100%
-    );
+    // height: 65% !important;
+    background: linear-gradient(to right, #061161, #780206);
 
     .quoteContainer {
       font-size: 0.95rem;
@@ -66,9 +64,9 @@
 
 // * breakpint of > 360px
 @media screen and (min-width: 360px) {
-  .brandHeading {
-    margin-left: -1rem !important;
-  }
+  // .brandHeading {
+  //   margin-left: -1rem !important;
+  // }
 
   .quoteDiv {
     width: 89% !important;
@@ -90,6 +88,7 @@
 @media screen and (min-width: 500px) {
   .brandHeading {
     font-size: 2.5rem !important;
+    margin-left: 1rem !important;
   }
 
   .quoteDiv {
@@ -101,13 +100,22 @@
 @media screen and (min-width: 576px) {
   .brandHeading {
     font-size: 3.5rem !important;
-    margin-left: 0rem !important;
+    margin-left: 1rem !important;
+    margin-top: -1.8rem !important;
   }
 
+  // .imageNHeadingContainer {
+  //   height: 40% !important;
+  // }
+
+  // .quoteAuthorContainer {
+  //   height: 60% !important;
+  // }
+
   // hide the svg links because <Aside/> links will show up
-  .svgLinks {
-    display: none;
-  }
+  // .svgLinks {
+  //   display: none;
+  // }
 
   // .quoteContainer,
   // .authorContainer {
@@ -115,30 +123,46 @@
   // }
 
   .quoteDiv {
-    width: 57% !important;
+    width: 84% !important;
   }
 } //END breakpoint of > 576px (md)
 
 // * breakpoint of > 768px (md)
 @media screen and (min-width: 768px) {
   .quoteDiv {
-    width: 47% !important;
+    width: 63% !important;
   }
 } //END breakpoint of > 768px (md)
 
-// * breakpoint of > 1200 (xl)
-@media screen and (min-width: 1200px) {
+// * breakpoint of > 992px (lg)
+@media screen and (min-width: 992px) {
   .quoteDiv {
-    width: 39% !important;
+    width: 100% !important;
+    text-align: center;
   }
-} //END breakpoint of > 1200 (xl)
+} //END breakpoint of > 992px (lg)
+
+// * breakpoint of > 1200 (xl)
+// @media screen and (min-width: 1200px) {
+//   .imageNHeadingContainer {
+//     height: 58% !important;
+//   }
+
+//   .quoteAuthorContainer {
+//     height: 42% !important;
+//   }
+
+//   .quoteDiv {
+//     width: 76% !important;
+//   }
+// } //END breakpoint of > 1200 (xl)
 
 // * breakpoint of > 1400 (xxl)
-@media screen and (min-width: 1400px) {
-  .quoteDiv {
-    width: 32% !important;
-  }
-} //END breakpoint of > 1400 (xxl)
+// @media screen and (min-width: 1400px) {
+//   .quoteDiv {
+//     width: 32% !important;
+//   }
+// } //END breakpoint of > 1400 (xxl)
 
 // * breakpoint of > 992 (lg)
 //  @include media-breakpoint-up(lg) {

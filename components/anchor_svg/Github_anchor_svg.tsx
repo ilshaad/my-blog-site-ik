@@ -5,7 +5,7 @@ type Props = {};
 export default function Github_anchor_svg({}: Props) {
   return (
     <a
-      href="https://github.com/RechadSalma/bug-tracker-ik"
+      href="https://github.com/RechadSalma/my-blog-site-ik"
       className="text-decoration-underline mx-2"
       target="_blank"
       rel="noopener noreferrer"

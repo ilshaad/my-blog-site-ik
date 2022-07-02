@@ -1,7 +1,7 @@
 // copy boilerplate version if you want to add another blog codes examples within your blog post page
 
 import React from "react";
-import styles from "../../styles/components/blogPostCodes/codesStyle.module.scss";
+import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
 
 type Props = {};
 

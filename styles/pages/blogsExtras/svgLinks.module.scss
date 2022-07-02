@@ -1,0 +1,16 @@
+// for svg links on every blog post
+
+.svgLinks {
+  // margin-top: -6rem;
+  margin-right: -1rem;
+  text-align: end;
+  // padding-right: 1rem;
+}
+
+// * breakpoint of > 576px (sm)
+@media screen and (min-width: 576px) {
+  // hide the svg links because <Aside/> links will show up
+  .svgLinks {
+    display: none;
+  }
+} //END breakpoint of > 576px (md)
