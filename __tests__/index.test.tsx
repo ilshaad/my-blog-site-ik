@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react";
 import Home from "../pages/index";
 
 describe("Home", () => {
+  const HomeComponent = () => render(<Home />);
+
   it("renders the blog posts collection list", () => {
     const { getByRole } = render(<Home />);
 

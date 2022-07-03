@@ -49,8 +49,9 @@ export default function Header({}: Props) {
 
         // if true than return the default quote & not the random quote
         // acceptable character range between 80-130 in total, but I could change that depending how risky I would like to go
+        //  - 40-130
         // we need to remove 2 characters so we can include quotes
-        if (data.length <= 45 || data.length >= 133) {
+        if (data.length >= 133) {
           // if (true) {
           setQuote("I am the greatest. I said that even before I knew I was.");
           // setQuote(
@@ -138,16 +139,6 @@ export default function Header({}: Props) {
             </Navbar.Brand>
           </Navbar>
         </Col>
-
-        {/* svg get in touch links (linkedin / portfolio / email / github) */}
-        {/* <Col xs={12} className={`${svgLinks} text-primary`}>
-          <Home_anchor_svg />
-          |
-          <Github_anchor_svg />
-          <LinkedIn_anchor_svg />
-          <Portfolio_anchor_svg />
-          <EmailMe_anchor_svg />
-        </Col> */}
       </Row>
 
       <Row className={`mx-auto ${quoteAuthorContainer}`}>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Blog1/> code for blog1 component renders the <code> tag 1`] = `
+exports[`<Blog1/> code for blog1 component snapshot Blog1 code tag 1`] = `
 <div>
   <pre
     class="preCode mx-auto"

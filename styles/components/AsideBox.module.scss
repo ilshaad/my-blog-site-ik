@@ -1,0 +1,62 @@
+// scss module setup
+// @import "../global.scss";
+// @import "../customBootstrap.scss";
+
+// iK? begin from 320px & up for starting breakpoint
+.aboutBox {
+  font-size: 0.8rem;
+  padding: 0 0.3rem 0.3rem 0.3rem;
+  // font-family: Arial, Helvetica, sans-serif;
+}
+// * breakpint of > 360px
+// @media screen and (min-width: 360px) {
+// } // breakpoint of > 360px
+
+// * breakpint of > 400px
+// @media screen and (min-width: 400px) {
+// } // breakpoint of > 400px
+
+// * breakpint of > 500px
+// @media screen and (min-width: 500px) {
+// } // breakpoint of > 500px
+
+// * breakpint of > 576px
+// @media screen and (min-width: 576px) {
+// } // breakpoint of > 576px
+
+// * breakpint of > 768px
+// @media screen and (min-width: 768px) {
+// } // breakpoint of > 768px
+
+// * breakpint of > 992px
+// @media screen and (min-width: 992px) {
+// } // breakpoint of > 992px
+
+// * breakpint of > 1200px
+// @media screen and (min-width: 1200px) {
+// } // breakpoint of > 1200px
+
+// * breakpint of > 1400px
+// @media screen and (min-width: 1400px) {
+// } // breakpoint of > 1400px
+
+// BOOTSTRAP VERSION FROM 576px
+// * breakpoint of > 576px (sm)
+//  @include media-breakpoint-up(sm) {
+//  } //END breakpoint of > 576px (sm)
+
+// * breakpoint of > 768px (md)
+//  @include media-breakpoint-up(md) {
+//  } //END breakpoint of > 768px (md)
+
+// * breakpoint of > 992 (lg)
+//  @include media-breakpoint-up(lg) {
+//  } //END breakpoint of > 992 (lg)
+
+// * breakpoint of > 1200px (xl)
+//  @include media-breakpoint-up(xl) {
+//  } //END breakpoint of 1200px
+
+// * breakpoint of > 1400px (xxl)
+//  @include media-breakpoint-up(xxl) {
+//  } //END breakpoint of 1400px

@@ -6,7 +6,7 @@ export default function Portfolio_anchor_svg({}: Props) {
   return (
     <a
       href="#"
-      className="text-decoration-underline mx-2"
+      className="text-decoration-underline mx-auto"
       target="_blank"
       title="Portfolio site"
     >

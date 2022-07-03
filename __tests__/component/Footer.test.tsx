@@ -3,13 +3,11 @@ import Footer from "../../components/Footer";
 
 describe("<Footer/>", () => {
   it("Footer component is showing", () => {
-    const { getByText, container } = render(<Footer />);
+    const { getByText } = render(<Footer />);
 
     const divFooter = getByText(/ilshaad kheerdali/i);
 
     expect(divFooter).toBeInTheDocument();
-
-    expect(container).toMatchSnapshot();
   });
 
   it("display the correct current year (new Date()) within the footer", () => {
@@ -22,5 +20,12 @@ describe("<Footer/>", () => {
     const timeTag = getByText(currentYear);
 
     expect(timeTag).toBeInTheDocument();
+  });
+
+  //snapshot footer component
+  test("snapshot footer component", () => {
+    const { container } = render(<Footer />);
+
+    expect(container).toMatchSnapshot();
   });
 });

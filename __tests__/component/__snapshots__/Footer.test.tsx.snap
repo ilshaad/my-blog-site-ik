@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Footer/> Footer component is showing 1`] = `
+exports[`<Footer/> snapshot footer component 1`] = `
 <div>
   <small
     class="d-flex flex-column justify-content-center align-items-center h-100 text-light"

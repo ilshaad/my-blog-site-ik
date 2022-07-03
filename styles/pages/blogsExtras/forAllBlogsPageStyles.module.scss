@@ -1,0 +1,62 @@
+// for all the blog pages styles
+// eg blog date / svg links / etc
+
+// scss module setup
+// @import "../global.scss";
+// @import "../customBootstrap.scss";
+
+// iK? begin from 320px & up for starting breakpoint
+
+// for svg links on every blog post
+.svgLinks {
+  margin-right: -1rem;
+  text-align: end;
+}
+
+.minuteRead {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0rem;
+}
+
+// for blog date
+.blogDate {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  padding-right: 1.25rem;
+}
+
+// * breakpint of > 360px
+// @media screen and (min-width: 360px) {
+// } // breakpoint of > 360px
+
+// * breakpint of > 400px
+// @media screen and (min-width: 400px) {
+// } // breakpoint of > 400px
+
+// * breakpint of > 500px
+// @media screen and (min-width: 500px) {
+// } // breakpoint of > 500px
+
+// * breakpoint of > 576px (sm)
+@media screen and (min-width: 576px) {
+  // hide the svg links because <Aside/> links will show up
+  .svgLinks {
+    display: none;
+  }
+} //END breakpoint of > 576px (md)
+
+// * breakpint of > 768px
+// @media screen and (min-width: 768px) {
+// } // breakpoint of > 768px
+
+// * breakpint of > 992px
+// @media screen and (min-width: 992px) {
+// } // breakpoint of > 992px
+
+// * breakpint of > 1200px
+// @media screen and (min-width: 1200px) {
+// } // breakpoint of > 1200px
+
+// * breakpint of > 1400px
+// @media screen and (min-width: 1400px) {
+// } // breakpoint of > 1400px

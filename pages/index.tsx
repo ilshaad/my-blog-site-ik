@@ -57,13 +57,23 @@ const Home: NextPage = () => {
       </Head>
 
       {/* svg get in touch links (linkedin / portfolio / email / github) */}
-      <Container className={`${svgLinks} text-primary`}>
-        <Home_anchor_svg />
-        <span className={`text-dark fw-bolder`}>|</span>
-        <Github_anchor_svg />
-        <LinkedIn_anchor_svg />
-        <Portfolio_anchor_svg />
-        <EmailMe_anchor_svg />
+      <Container className={`${svgLinks} text-primary mt-2`}>
+        <span className={`ms-2 me-2`}>
+          <Home_anchor_svg />
+        </span>
+        <span className={`ms-2 me-2 text-dark fw-bolder`}>|</span>
+        <span className={`ms-2 me-2`}>
+          <Github_anchor_svg />
+        </span>
+        <span className={`ms-2 me-2`}>
+          <LinkedIn_anchor_svg />
+        </span>
+        <span className={`ms-2 me-2`}>
+          <Portfolio_anchor_svg />
+        </span>
+        <span className={`ms-2 me-2`}>
+          <EmailMe_anchor_svg />
+        </span>
       </Container>
 
       <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts:</h4>

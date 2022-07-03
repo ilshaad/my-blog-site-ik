@@ -5,13 +5,11 @@ describe("<1/> blog page", () => {
   const blogOnePage = () => render(<Blog_one />);
 
   test("renders blog post image", () => {
-    const { getByAltText, container } = blogOnePage();
+    const { getByAltText } = blogOnePage();
 
     const image = getByAltText("blog 1 image");
 
     expect(image).toBeInTheDocument();
-
-    expect(container).toMatchSnapshot();
   });
 
   test("renders blog post title", () => {
@@ -22,5 +20,11 @@ describe("<1/> blog page", () => {
     });
 
     expect(h1).toBeInTheDocument();
+  });
+
+  test("snapshot blog post 1", () => {
+    const { container } = blogOnePage();
+
+    expect(container).toMatchSnapshot();
   });
 });

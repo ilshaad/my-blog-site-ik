@@ -6,7 +6,7 @@ export default function Github_anchor_svg({}: Props) {
   return (
     <a
       href="https://github.com/RechadSalma/my-blog-site-ik"
-      className="text-decoration-underline mx-2"
+      className="text-decoration-underline mx-auto"
       target="_blank"
       rel="noopener noreferrer"
       title="Github"

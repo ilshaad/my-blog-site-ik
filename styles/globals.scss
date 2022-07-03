@@ -52,23 +52,28 @@ body,
   height: 100vh;
 
   // background-color: rgb(131, 130, 130);
-  background-color: rgb(237 255 0 / 16%);
+  background-color: rgb(237 255 0 / 31%);
 
   #OuterGrid-header {
     grid-area: OG-header;
+
+    font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
+      sans-serif, $font-family-sans-serif;
 
     // background-color: red;
   }
 
   #OuterGrid-main {
     grid-area: OG-main;
-    overflow-x: auto;
+    // overflow-x: auto;
 
     width: 93%;
     margin: 0.1rem auto 7px auto; // center the box
     // margin-top: 0px;
 
     background-color: #f1f8ff;
+    font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
+      sans-serif, $font-family-sans-serif;
   }
 
   // will not be display until at bigger screen size
@@ -76,12 +81,17 @@ body,
     grid-area: OG-aside;
     display: none;
 
-    background-color: pink;
+    font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
+      sans-serif, $font-family-sans-serif;
+
+    // background-color: pink;
   }
 
   #OuterGrid-footer {
     grid-area: OG-footer;
     background: linear-gradient(to right, #061161, #780206);
+
+    font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica;
 
     // background-color: yellow;
   }
@@ -102,9 +112,11 @@ body,
       ". OG-main OG-aside ."
       "OG-footer OG-footer OG-footer OG-footer";
 
-    // #OuterGrid-main {
-    //   margin: 10px auto; // center the box
-    // }
+    #OuterGrid-main {
+      overflow-x: auto;
+
+      // margin: 10px auto; // center the box
+    }
 
     #OuterGrid-aside {
       display: block;
