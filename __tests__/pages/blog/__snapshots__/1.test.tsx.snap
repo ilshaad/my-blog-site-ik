@@ -3,7 +3,7 @@
 exports[`<1/> blog page snapshot blog post 1 1`] = `
 <div>
   <div
-    class="w-100 container"
+    class="blogPostPage w-100 container"
   >
     <div
       class="svgLinks text-primary mt-2 container"
@@ -137,7 +137,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       </span>
     </div>
     <div
-      class="mt-3 ms-2 me-2 row"
+      class="mt-3 ms-2 me-2 ms-xl-5 me-xl-5 row"
     >
       <span
         style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -184,7 +184,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       class="mb-2 row"
     >
       <time
-        class="blogDate d-block text-start text-muted"
+        class="blogDate d-block text-start"
         datetime="2022-06-25"
       >
         2022 June 25th Friday
@@ -236,22 +236,30 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         </h5>
         <p>
           SQL stands for Structured Query Language. It lets you access and manipulate databases. But there is one database field we are particularly interested in, the 
-          <code>
+          <code
+            class="codeText"
+          >
             created_on
           </code>
            field. The 
-          <code>
+          <code
+            class="codeText"
+          >
             created_on
           </code>
            field is where dates and time are stored within the database (there are other fields that can store date and times too).
         </p>
         <p>
           In order to store timestamp within 
-          <code>
+          <code
+            class="codeText"
+          >
             created_on
           </code>
           , you will first need to transform it to the required structure. Depending on the SQL server, you might have to format the timestamp yourself before sending to the server if the server is not setup for that. The most common SQL format is 
-          <code>
+          <code
+            class="codeText"
+          >
             yyyy-mm-dd hh:mm:ss
           </code>
           . But that can be a little tricky do.

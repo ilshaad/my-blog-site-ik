@@ -3,6 +3,7 @@
 exports[`<Aside/> renders both svg link box & blog description box 1`] = `
 <div>
   <div
+    class="AsideBox_component"
     data-testid="AsideBox_component"
   >
     <div
@@ -12,29 +13,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
         class=" text-primary mx-auto container-fluid"
       >
         <div
-          class="mx-auto text-center justify-content-center mt-1 mb-1 row"
-        >
-          <svg
-            class="bi bi-house text-decoration-underline mx-auto p-0 w-auto"
-            fill="currentColor"
-            height="16"
-            style="cursor: pointer;"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-              fill-rule="evenodd"
-            />
-            <path
-              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          class="justify-content-center mx-auto text-center mt-1 mb-1 row"
+          class="justify-content-center mx-auto text-center mt-2 mb-1 row"
         >
           <div
             class="col-md-3 col-6"
@@ -137,6 +116,28 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
             </a>
           </div>
         </div>
+        <div
+          class="mx-auto text-center justify-content-center mt-2 mb-2 row"
+        >
+          <svg
+            class="bi bi-house text-decoration-underline mx-auto p-0 w-auto"
+            fill="currentColor"
+            height="16"
+            style="cursor: pointer;"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
       </div>
     </div>
     <div
@@ -148,9 +149,9 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
         About
       </h5>
       <p
-        class="aboutBox mb-0"
+        class="aboutBox mb-2"
       >
-        My name is Ilshaad, and I have been in web development for quite a while now. Whilst I will always consider myself a student, I also think it is important to give back to the community. So, sharing my stumbles I have come across, so you do not have to suffer the same frustration as I did.
+        My name is Ilshaad, and I have been in web development for quite a while now. Whilst I will always consider myself a student, I also think it is important to give back to the community. So, this blog is to share some of my knowledge / how to / solutions that I have come across. Feel free to contact me if there is something I can help with.
       </p>
     </div>
   </div>

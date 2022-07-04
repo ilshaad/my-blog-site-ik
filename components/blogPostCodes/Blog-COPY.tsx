@@ -1,5 +1,7 @@
+// copy boilerplate version if you want to add another blog codes examples within your blog post page
+
 import React from "react";
-import styles from "../../styles/components/blogPostCodes/codesStyle.module.scss";
+import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
 
 type Props = {};
 
@@ -19,7 +21,7 @@ export default function Blog1({}: Props) {
 
   return (
     <pre className={`${preCode} mx-auto`}>
-      <code className={`${codeTag} mx-auto`}>
+      <code className={`${codeTag} mx-auto`} role="code">
         <div>
           <span className={`${keyword}`}>function</span>&#160;
           createTimestampInSqlFormat () &#123;
@@ -31,29 +33,29 @@ export default function Blog1({}: Props) {
         </div>
 
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> year =&#160;
-          <span className={`${method}`}>date.getFullYear</span>();
+          <span className={`${keyword}`}>let</span> year =&#160; date
+          <span className={`${method}`}>.getFullYear</span>();
         </div>
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> month =&#160;
-          <span className={`${method}`}>date.getMonth</span>() +&#160;
+          <span className={`${keyword}`}>let</span> month =&#160; date
+          <span className={`${method}`}>.getMonth</span>() +&#160;
           <span className={`${value}`}>1</span>
         </div>
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> day =&#160;
-          <span className={`${method}`}>date.getDate</span>();
+          <span className={`${keyword}`}>let</span> day =&#160; date
+          <span className={`${method}`}>.getDate</span>();
         </div>
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> hour =&#160;
-          <span className={`${method}`}>date.getHours</span>();
+          <span className={`${keyword}`}>let</span> hour =&#160; date
+          <span className={`${method}`}>.getHours</span>();
         </div>
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> minute =&#160;
-          <span className={`${method}`}>date.getMinutes</span>();
+          <span className={`${keyword}`}>let</span> minute =&#160; date
+          <span className={`${method}`}>.getMinutes</span>();
         </div>
         <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> second =&#160;
-          <span className={`${method}`}>date.getSeconds</span>();
+          <span className={`${keyword}`}>let</span> second =&#160; date
+          <span className={`${method}`}>.getSeconds</span>();
         </div>
 
         <br />

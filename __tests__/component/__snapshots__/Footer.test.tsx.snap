@@ -4,7 +4,7 @@ exports[`<Footer/> snapshot footer component 1`] = `
 <div>
   <small
     class="d-flex flex-column justify-content-center align-items-center h-100 text-light"
-    style="font-size: 0.8rem;"
+    style="font-size: 0.8rem; font-family: 'Montserrat', monospace, 'Roboto', Arial, Helvetica, sans-serif !important;"
   >
     <div>
       © 

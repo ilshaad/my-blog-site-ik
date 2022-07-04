@@ -15,7 +15,11 @@ export default function Footer({}: Props) {
   return (
     <small
       className="d-flex flex-column justify-content-center align-items-center h-100 text-light"
-      style={{ fontSize: "0.8rem" }}
+      style={{
+        fontSize: "0.8rem",
+        fontFamily:
+          "'Montserrat', monospace, 'Roboto', Arial, Helvetica, sans-serif !important",
+      }}
     >
       <div>
         &copy; <time dateTime={`${currentYear}`}>{currentYear}</time> Copyright

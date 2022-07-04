@@ -15,17 +15,16 @@ import styles from "../styles/pages/index.module.scss";
 
 const Home: NextPage = () => {
   const {
+    home,
     blogPostTitle,
     index_page_blogPostSample,
     indexPage_readMoreLink,
     blogDate,
     svgLinks,
-    home,
   } = styles;
 
   return (
     <Container className={home}>
-      <h1>version 2</h1>
       <Head>
         <title>Ilshaad Blog</title>
         <meta
@@ -83,10 +82,10 @@ const Home: NextPage = () => {
       {/* blog post collection list */}
       <Container fluid as="ul">
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
-          </h5>
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -96,19 +95,13 @@ const Home: NextPage = () => {
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
           </div>
 
-          {/* must contain at least 187 characters */}
+          {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
             Sometimes the client side has to produce the date of the user
             interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
+            have to format the date and time
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -119,17 +112,17 @@ const Home: NextPage = () => {
 
           <time
             dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
+            className={`${blogDate} d-block text-end mb-2`}
           >
             2022 June 25th Friday
           </time>
         </Row>
 
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
-          </h5>
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -139,19 +132,13 @@ const Home: NextPage = () => {
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
           </div>
 
-          {/* must contain at least 187 characters */}
+          {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
             Sometimes the client side has to produce the date of the user
             interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
+            have to format the date and time
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -162,16 +149,17 @@ const Home: NextPage = () => {
 
           <time
             dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
+            className={`${blogDate} d-block text-end mb-2`}
           >
             2022 June 25th Friday
           </time>
         </Row>
+
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
-          </h5>
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -181,19 +169,13 @@ const Home: NextPage = () => {
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
           </div>
 
-          {/* must contain at least 187 characters */}
+          {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
             Sometimes the client side has to produce the date of the user
             interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
+            have to format the date and time
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -204,16 +186,17 @@ const Home: NextPage = () => {
 
           <time
             dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
+            className={`${blogDate} d-block text-end mb-2`}
           >
             2022 June 25th Friday
           </time>
         </Row>
+
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
-          </h5>
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -223,19 +206,13 @@ const Home: NextPage = () => {
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
           </div>
 
-          {/* must contain at least 187 characters */}
+          {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
             Sometimes the client side has to produce the date of the user
             interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
+            have to format the date and time
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -246,16 +223,17 @@ const Home: NextPage = () => {
 
           <time
             dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
+            className={`${blogDate} d-block text-end mb-2`}
           >
             2022 June 25th Friday
           </time>
         </Row>
+
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
-          </h5>
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -265,19 +243,13 @@ const Home: NextPage = () => {
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
           </div>
 
-          {/* must contain at least 187 characters */}
+          {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
             Sometimes the client side has to produce the date of the user
             interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
+            have to format the date and time
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -288,49 +260,7 @@ const Home: NextPage = () => {
 
           <time
             dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
-          >
-            2022 June 25th Friday
-          </time>
-        </Row>
-        {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-4">
-          <h5 className={`${blogPostTitle} mt-1 mb-0`}>
-            Create timestamp in SQL format
-          </h5>
-
-          {/* list of prequisite skills for the blog */}
-          <div>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              js
-            </Badge>
-          </div>
-
-          {/* must contain at least 187 characters */}
-          <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time before sending it to the
-          </p>
-
-          <span className={`mt-n4`}>...</span>
-
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
-            Read more &rarr;
-          </Link>
-
-          <time
-            dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end text-muted`}
+            className={`${blogDate} d-block text-end mb-2`}
           >
             2022 June 25th Friday
           </time>

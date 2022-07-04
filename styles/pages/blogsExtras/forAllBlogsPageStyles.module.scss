@@ -4,8 +4,13 @@
 // scss module setup
 // @import "../global.scss";
 // @import "../customBootstrap.scss";
+// @import "../../components/blogPosts/codesStyle.module.scss";
 
 // iK? begin from 320px & up for starting breakpoint
+.blogPostPage {
+  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+  width: 95%;
+}
 
 // for svg links on every blog post
 .svgLinks {
@@ -25,6 +30,12 @@
   padding-right: 1.25rem;
 }
 
+// code tags
+.codeText {
+  color: rgb(13 189 130);
+  font-size: 0.9rem;
+}
+
 // * breakpint of > 360px
 // @media screen and (min-width: 360px) {
 // } // breakpoint of > 360px
@@ -39,6 +50,10 @@
 
 // * breakpoint of > 576px (sm)
 @media screen and (min-width: 576px) {
+  // .blogPostPage {
+  //   width: 95% !important;
+  // }
+
   // hide the svg links because <Aside/> links will show up
   .svgLinks {
     display: none;
@@ -47,11 +62,17 @@
 
 // * breakpint of > 768px
 // @media screen and (min-width: 768px) {
+//   .blogPostPage {
+//     width: 95% !important;
+//   }
 // } // breakpoint of > 768px
 
 // * breakpint of > 992px
-// @media screen and (min-width: 992px) {
-// } // breakpoint of > 992px
+@media screen and (min-width: 992px) {
+  .blogPostPage {
+    width: 80% !important;
+  }
+} // breakpoint of > 992px
 
 // * breakpint of > 1200px
 // @media screen and (min-width: 1200px) {

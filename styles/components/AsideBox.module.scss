@@ -3,9 +3,13 @@
 // @import "../customBootstrap.scss";
 
 // iK? begin from 320px & up for starting breakpoint
+.AsideBox_component {
+  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+}
+
 .aboutBox {
   font-size: 0.8rem;
-  padding: 0 0.3rem 0.3rem 0.3rem;
+  padding: 0 0.4rem 0.3rem 0.4rem;
   // font-family: Arial, Helvetica, sans-serif;
 }
 // * breakpint of > 360px
@@ -21,16 +25,25 @@
 // } // breakpoint of > 500px
 
 // * breakpint of > 576px
-// @media screen and (min-width: 576px) {
-// } // breakpoint of > 576px
+@media screen and (min-width: 576px) {
+  .AsideBox_component {
+    width: 122%;
+  }
+} // breakpoint of > 576px
 
 // * breakpint of > 768px
 // @media screen and (min-width: 768px) {
+//   .AsideBox_component {
+//     width: 130%;
+//   }
 // } // breakpoint of > 768px
 
 // * breakpint of > 992px
-// @media screen and (min-width: 992px) {
-// } // breakpoint of > 992px
+@media screen and (min-width: 992px) {
+  .AsideBox_component {
+    width: 100%;
+  }
+} // breakpoint of > 992px
 
 // * breakpint of > 1200px
 // @media screen and (min-width: 1200px) {

@@ -1,4 +1,6 @@
-// blog post page
+// tite:  Create timestamp in SQL format
+// date: 2022 06 25 Friday
+// blog1
 
 import React from "react";
 import Image from "next/image";
@@ -10,6 +12,7 @@ import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
 import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_svg";
 import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
 import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
+
 import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
 
 // iK blog image
@@ -20,11 +23,13 @@ import Blog1 from "../../components/blogPostCodes/Blog1";
 
 type Props = {};
 
+// iK for <code> tags, use codeText eg. <code className={`${codeText}`}>iKcode</code>
 export default function blog1({}: Props) {
-  const { svgLinks, blogDate, minuteRead } = forAllBlogsPageStyles;
+  const { blogPostPage, svgLinks, blogDate, minuteRead, codeText } =
+    forAllBlogsPageStyles;
 
   return (
-    <Container className="w-100">
+    <Container className={`${blogPostPage}`}>
       <Head>
         <title>Create timestamp in SQL format | Ilshaad Blog</title>
         <meta
@@ -80,7 +85,7 @@ export default function blog1({}: Props) {
       </Container>
 
       {/* iK insert your image */}
-      <Row className="mt-3 ms-2 me-2">
+      <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
         <Image src={blog1Image} alt="blog 1 image" />
       </Row>
 
@@ -93,23 +98,23 @@ export default function blog1({}: Props) {
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row>
-        <p className={`${minuteRead}`}>4 min read</p>
+        <p className={`${minuteRead}`}>&#160;&#160;4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
       <Row className={`mb-2`}>
         <time
           dateTime="2022-06-25"
-          className={`${blogDate} d-block text-start text-muted`}
+          className={`${blogDate} d-block text-start`}
         >
-          2022 June 25th Friday
+          &#160;&#160;2022 June 25th Friday
         </time>
       </Row>
 
       {/* iK put all the programming language you need to know */}
       {/* language know how */}
       <Row>
-        <h5>Prequisite:</h5>
+        <h5>&#160;&#160;Prequisite:</h5>
         <div className={`mt-n2 mb-3`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Javascript
@@ -128,7 +133,7 @@ export default function blog1({}: Props) {
       {/* iK Write your blog here */}
       {/* blog post main & codes example */}
       <Row>
-        <Col>
+        <Col xs={12}>
           {/* iK Leave 10 empty space at the start of the paragraph */}
           <p>
             &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sometimes
@@ -151,18 +156,21 @@ export default function blog1({}: Props) {
           <p>
             SQL stands for Structured Query Language. It lets you access and
             manipulate databases. But there is one database field we are
-            particularly interested in, the&#160;<code>created_on</code> field.
-            The&#160;<code>created_on</code> field is where dates and time are
-            stored within the database (there are other fields that can store
-            date and times too).
+            particularly interested in, the&#160;
+            <code className={`${codeText}`}>created_on</code> field. The&#160;
+            <code className={`${codeText}`}>created_on</code> field is where
+            dates and time are stored within the database (there are other
+            fields that can store date and times too).
           </p>
           <p>
-            In order to store timestamp within&#160;<code>created_on</code>, you
-            will first need to transform it to the required structure. Depending
-            on the SQL server, you might have to format the timestamp yourself
-            before sending to the server if the server is not setup for that.
-            The most common SQL format is&#160;<code>yyyy-mm-dd hh:mm:ss</code>.
-            But that can be a little tricky do.
+            In order to store timestamp within&#160;
+            <code className={`${codeText}`}>created_on</code>, you will first
+            need to transform it to the required structure. Depending on the SQL
+            server, you might have to format the timestamp yourself before
+            sending to the server if the server is not setup for that. The most
+            common SQL format is&#160;
+            <code className={`${codeText}`}>yyyy-mm-dd hh:mm:ss</code>. But that
+            can be a little tricky do.
           </p>
 
           <h5>Solution:</h5>
@@ -170,11 +178,11 @@ export default function blog1({}: Props) {
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
-        <Col>
+        <Col xs={12}>
           <Blog1 />
         </Col>
 
-        <Col>
+        <Col xs={12}>
           <p>
             Basically we collect the date as usual but setting it up in SQL
             format will require some help from regular expression.
