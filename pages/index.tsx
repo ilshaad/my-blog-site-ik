@@ -20,10 +20,12 @@ const Home: NextPage = () => {
     indexPage_readMoreLink,
     blogDate,
     svgLinks,
+    home,
   } = styles;
 
   return (
-    <Container>
+    <Container className={home}>
+      <h1>version 1</h1>
       <Head>
         <title>Ilshaad Blog</title>
         <meta
@@ -76,7 +78,7 @@ const Home: NextPage = () => {
         </span>
       </Container>
 
-      <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts: 2</h4>
+      <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts:</h4>
 
       {/* blog post collection list */}
       <Container fluid as="ul">
