@@ -76,7 +76,7 @@ const Home: NextPage = () => {
         </span>
       </Container>
 
-      <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts:</h4>
+      <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts: 2</h4>
 
       {/* blog post collection list */}
       <Container fluid as="ul">

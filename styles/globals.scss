@@ -36,7 +36,7 @@ body,
   width: 100%;
   margin: 0;
   font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
-    sans-serif, $font-family-sans-serif;
+    sans-serif, $font-family-sans-serif !important;
 }
 
 // * Setup up Outer-grid of the screen (OuterGrid.tsx component)
@@ -58,7 +58,7 @@ body,
     grid-area: OG-header;
 
     font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
-      sans-serif, $font-family-sans-serif;
+      sans-serif, $font-family-sans-serif !important;
 
     // background-color: red;
   }

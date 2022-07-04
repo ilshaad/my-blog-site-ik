@@ -6,7 +6,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
     class="w-100 container"
   >
     <div
-      class="svgLinks text-primary container"
+      class="svgLinks text-primary mt-2 container"
     >
       <span
         class="ms-2 me-2"
@@ -137,7 +137,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       </span>
     </div>
     <div
-      class="mt-2 row"
+      class="mt-3 ms-2 me-2 row"
     >
       <span
         style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -165,19 +165,23 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
     <div
       class="row"
     >
-      <h1>
+      <h1
+        class="text-primary mt-3"
+      >
         Create timestamp in SQL format
       </h1>
     </div>
     <div
       class="row"
     >
-      <p>
+      <p
+        class="minuteRead"
+      >
         4 min read
       </p>
     </div>
     <div
-      class="row"
+      class="mb-2 row"
     >
       <time
         class="blogDate d-block text-start text-muted"
@@ -190,11 +194,27 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       class="row"
     >
       <h5>
-        Prequisite
+        Prequisite:
       </h5>
-      <p>
-        Javascript | Regular Expression
-      </p>
+      <div
+        class="mt-n2 mb-3"
+      >
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          Javascript
+        </span>
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          Regular Expression
+        </span>
+      </div>
+    </div>
+    <div
+      class="text-primary w-75 mx-auto overflow-hidden mt-2 row"
+    >
+      <hr />
     </div>
     <div
       class="row"
@@ -203,7 +223,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         class="col"
       >
         <p>
-          Sometimes the client side has to produce the date of the user interaction before sending it to the server api. And sometimes they have to format the date and time before sending it to the server api. And sometimes they have to specifically format the date and time in SQL date field before sending it to the server api. That's what we will be looking at.
+                    Sometimes the client side has to produce the date of the user interaction before sending it to the server api. And sometimes they have to format the date and time before sending it to the server api. And sometimes they have to specifically format the date and time in SQL date field before sending it to the server api. That's what we will be looking at.
         </p>
         <h5>
           What is a timestamp?
