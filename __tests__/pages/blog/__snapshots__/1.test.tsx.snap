@@ -3,7 +3,7 @@
 exports[`<1/> blog page snapshot blog post 1 1`] = `
 <div>
   <div
-    class="blogPostPage w-100 container"
+    class="blogPostPage container"
   >
     <div
       class="svgLinks text-primary mt-2 container"
@@ -163,41 +163,44 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       </span>
     </div>
     <div
-      class="row"
+      class="mx-auto row"
     >
       <h1
-        class="text-primary mt-3"
+        class="text-primary mt-3 text-center"
       >
         Create timestamp in SQL format
       </h1>
     </div>
     <div
-      class="row"
+      class="mx-auto row"
     >
       <p
-        class="minuteRead"
+        class="minuteRead text-center"
       >
-        4 min read
+          4 min read
       </p>
     </div>
     <div
-      class="mb-2 row"
+      class="mb-2 mx-auto row"
     >
       <time
-        class="blogDate d-block text-start"
+        class="blogDate d-block text-center"
         datetime="2022-06-25"
       >
+          
         2022 June 25th Friday
       </time>
     </div>
     <div
-      class="row"
+      class="mx-auto row"
     >
-      <h5>
+      <h5
+        class="text-center"
+      >
         Prequisite:
       </h5>
       <div
-        class="mt-n2 mb-3"
+        class="text-center mt-n2 mb-3"
       >
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
@@ -208,6 +211,11 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
           Regular Expression
+        </span>
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          SQL
         </span>
       </div>
     </div>
@@ -220,7 +228,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       class="row"
     >
       <div
-        class="col"
+        class="col-12"
       >
         <p>
                     Sometimes the client side has to produce the date of the user interaction before sending it to the server api. And sometimes they have to format the date and time before sending it to the server api. And sometimes they have to specifically format the date and time in SQL date field before sending it to the server api. That's what we will be looking at.
@@ -269,7 +277,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         </h5>
       </div>
       <div
-        class="col"
+        class="col-12"
       >
         <pre
           class="preCode mx-auto"
@@ -582,7 +590,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         </pre>
       </div>
       <div
-        class="col"
+        class="col-12"
       >
         <p>
           Basically we collect the date as usual but setting it up in SQL format will require some help from regular expression.

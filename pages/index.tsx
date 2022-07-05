@@ -12,6 +12,7 @@ import Home_anchor_svg from "../components/anchor_svg/Home_anchor_svg";
 import LinkedIn_anchor_svg from "../components/anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "../components/anchor_svg/Portfolio_anchor_svg";
 import styles from "../styles/pages/index.module.scss";
+import { blogsData } from "../scripts/blogsData";
 
 const Home: NextPage = () => {
   const {
@@ -93,6 +94,9 @@ const Home: NextPage = () => {
               Javascript
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              SQL
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
             </Badge>
           </div>
@@ -111,18 +115,16 @@ const Home: NextPage = () => {
           </Link>
 
           <time
-            dateTime="2022-06-25"
+            dateTime={blogsData.blog1.dateTime_attribute}
             className={`${blogDate} d-block text-end mb-2`}
           >
-            2022 June 25th Friday
+            {blogsData.blog1.dateDisplay}
           </time>
         </Row>
 
-        {/* /blog/1 */}
+        {/* /blog/2 */}
         <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
-          </h4>
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>Parse SQL timestamp</h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -130,41 +132,7 @@ const Home: NextPage = () => {
               Javascript
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
-            </Badge>
-          </div>
-
-          {/* must contain at least 163 characters */}
-          <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
-          </p>
-
-          <span className={`mt-n4`}>...</span>
-
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
-            Read more &rarr;
-          </Link>
-
-          <time
-            dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end mb-2`}
-          >
-            2022 June 25th Friday
-          </time>
-        </Row>
-
-        {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
-          </h4>
-
-          {/* list of prequisite skills for the blog */}
-          <div>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
+              SQL
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               Regular Expression
@@ -173,96 +141,22 @@ const Home: NextPage = () => {
 
           {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
+            IK COME BACK TO BLA BLA BLA Sometimes the client side has to produce
+            the date of the user interaction before sending it to the server
+            api. And sometimes they have to FORMat
           </p>
 
           <span className={`mt-n4`}>...</span>
 
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
+          <Link href="/blog/2" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
           </Link>
 
           <time
-            dateTime="2022-06-25"
+            dateTime={blogsData.blog2.dateTime_attribute}
             className={`${blogDate} d-block text-end mb-2`}
           >
-            2022 June 25th Friday
-          </time>
-        </Row>
-
-        {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
-          </h4>
-
-          {/* list of prequisite skills for the blog */}
-          <div>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
-            </Badge>
-          </div>
-
-          {/* must contain at least 163 characters */}
-          <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
-          </p>
-
-          <span className={`mt-n4`}>...</span>
-
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
-            Read more &rarr;
-          </Link>
-
-          <time
-            dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end mb-2`}
-          >
-            2022 June 25th Friday
-          </time>
-        </Row>
-
-        {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
-          </h4>
-
-          {/* list of prequisite skills for the blog */}
-          <div>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
-            </Badge>
-          </div>
-
-          {/* must contain at least 163 characters */}
-          <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
-          </p>
-
-          <span className={`mt-n4`}>...</span>
-
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
-            Read more &rarr;
-          </Link>
-
-          <time
-            dateTime="2022-06-25"
-            className={`${blogDate} d-block text-end mb-2`}
-          >
-            2022 June 25th Friday
+            {blogsData.blog2.dateDisplay}
           </time>
         </Row>
       </Container>

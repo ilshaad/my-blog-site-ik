@@ -5,6 +5,20 @@
 // date: 2022 06 25 Friday
 // blog1
 
+// IK TODO LIST FOR NEW BLOGS
+// -note route / title / date on /Route-n-features.txt file in your dropbox folder
+// -enter the title & date of blog within the ./scripts/blogsData.ts (blogsData object literal)
+// -write the material as you would
+// -estimate reading time
+// -find or create image for blog post
+//   -save image within dropbox blog-site folder
+//   -save image within /public folder in you app
+// -seo
+// -test
+//   - ./__tests__/pages/blog/2.test.tsx	(for actual page)
+//   - ./__tests__/components/blogPostCodes/Blog2.tsx	(for possible code blocks you may use within the blog page)
+// -update / page blog list
+
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
@@ -18,6 +32,9 @@ import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
 
 import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
 
+// blogs data object
+import { blogsData } from "../../scripts/blogsData";
+
 // iK blog image
 import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
@@ -29,6 +46,9 @@ type Props = {};
 export default function blog1({}: Props) {
   const { blogPostPage, svgLinks, blogDate, minuteRead, codeText } =
     forAllBlogsPageStyles;
+
+  // ensure you are collecting the correct blog number
+  const { blog1 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
@@ -92,36 +112,42 @@ export default function blog1({}: Props) {
 
       {/* iK type your title */}
       {/* blog post title */}
-      <Row>
-        <h1 className={`text-primary mt-3`}>Create timestamp in SQL format</h1>
+      <Row className={`mx-auto`}>
+        <h1 className={`text-primary mt-3 text-center`}>
+          Create timestamp in SQL format
+        </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
-      <Row>
-        <p className={`${minuteRead}`}>&#160;&#160;4 min read</p>
+      <Row className={`mx-auto`}>
+        <p className={`${minuteRead} text-center`}>4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
-      <Row className={`mb-2`}>
+      {/* iK collect your blog date from blogsData object */}
+      <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime="2022-06-25"
-          className={`${blogDate} d-block text-start`}
+          dateTime={blog1.dateTime_attribute}
+          className={`${blogDate} d-block text-center`}
         >
-          &#160;&#160;2022 June 25th Friday
+          {blog1.dateDisplay}
         </time>
       </Row>
 
       {/* iK put all the programming language you need to know */}
       {/* language know how */}
-      <Row>
-        <h5>&#160;&#160;Prequisite:</h5>
-        <div className={`mt-n2 mb-3`}>
+      <Row className={`mx-auto`}>
+        <h5 className={`text-center`}>Prequisite:</h5>
+        <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Javascript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Regular Expression
+          </Badge>
+          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+            SQL
           </Badge>
         </div>
       </Row>

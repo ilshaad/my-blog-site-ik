@@ -2,6 +2,20 @@
 // date: 2022 07 04 Monday
 // blog1
 
+// IK TODO LIST FOR NEW BLOGS
+// -note route / title / date on /Route-n-features.txt file in your dropbox folder
+// -enter the title & date of blog within the ./scripts/blogsData.ts (blogsData object literal)
+// -write the material as you would
+// -estimate reading time
+// -find or create image for blog post
+//   -save image within dropbox blog-site folder
+//   -save image within /public folder in you app
+// -seo
+// -test
+//   - ./__tests__/pages/blog/2.test.tsx	(for actual page)
+//   - ./__tests__/components/blogPostCodes/Blog2.tsx	(for possible code blocks you may use within the blog page)
+// -update / page blog list
+
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
@@ -15,13 +29,14 @@ import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
 
 import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
 
+// blogs data object
+import { blogsData } from "../../scripts/blogsData";
+
 // iK blog image
-import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
+import blog2Image from "../../public/blog2img/Parse SQL timestamp.jpg";
 
 // iK code block I used
-import Blog1 from "../../components/blogPostCodes/Blog1";
-
-import { blogsData } from "../../scripts/blogsData";
+import Blog2 from "../../components/blogPostCodes/Blog2";
 
 type Props = {};
 
@@ -47,7 +62,8 @@ export default function blog2({}: Props) {
   const { blogPostPage, svgLinks, blogDate, minuteRead, codeText } =
     forAllBlogsPageStyles;
 
-  console.log(blogsData);
+  // ensure you are collecting the correct blog number
+  const { blog2 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
@@ -103,38 +119,42 @@ export default function blog2({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog1Image} alt="blog 1 image" />
+        <Image src={blog2Image} alt="blog 1 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
-      <Row>
-        <h1 className={`text-primary mt-3`}>Parse SQL timestamp</h1>
+      <Row className={`mx-auto`}>
+        <h1 className={`text-primary mt-3 text-center`}>Parse SQL timestamp</h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
-      <Row>
-        <p className={`${minuteRead}`}>&#160;&#160;4 min read</p>
+      <Row className={`mx-auto`}>
+        <p className={`${minuteRead} text-center`}>3 min read</p>
       </Row>
 
       {/* iK date your blog post */}
-      <Row className={`mb-2`}>
+      {/* iK collect your blog date from blogsData object */}
+      <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime="2022-07-03"
-          className={`${blogDate} d-block text-start`}
+          dateTime={blog2.dateTime_attribute}
+          className={`${blogDate} d-block text-center`}
         >
-          &#160;&#160;2022 July 04 Monday
+          {blog2.dateDisplay}
         </time>
       </Row>
 
       {/* iK put all the programming language you need to know */}
       {/* language know how */}
-      <Row>
-        <h5>&#160;&#160;Prequisite:</h5>
-        <div className={`mt-n2 mb-3`}>
+      <Row className={`mx-auto`}>
+        <h5 className={`text-center`}>Prequisite:</h5>
+        <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Javascript
+          </Badge>
+          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+            SQL
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Regular Expression
@@ -156,24 +176,26 @@ export default function blog2({}: Props) {
           {/* iK for <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;If you
-            regularly collect api data from the server, you might have sometimes
+            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; If you
+            regularly collect api data from the server, you might sometimes
             notice something peculiar when gathering the date data. The date
             value could appear as&#160;
             <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>. The
             &#160;<code className={`${codeText}`}>T</code> and &#160;
-            <code className={`${codeText}`}>Z</code> is something you normally
+            <code className={`${codeText}`}>Z</code> are something you normally
             do not want appearing if you require the date value to be displayed
-            within the web UI. Plus the milli seconds does not look great to the
-            average person unless its for something very specific. The ideal
-            output of date and time would be &#160;
+            within the web UI. Plus, the milli seconds does not look great to
+            the average person unless it&#39;s for something very specific. The
+            ideal output date and time would be &#160;
             <code className={`${codeText}`}>2021-06-01 11:08:01</code>.
           </p>
 
           <p>
-            In order to do get the desirable date output, we should create a
-            function with the use of regular expression. It is fairly short and
-            simple code but can save you a lot of hassle
+            In order to get the desirable date output, we need to do a bit of
+            conversion. One way is to use a regular expression to replace&#160;
+            <code className={`${codeText}`}>T</code> with an empty space and
+            then cut off everything after seconds. Funny enough, I am going to
+            show you how.
           </p>
 
           <h5>Solution:</h5>
@@ -181,19 +203,14 @@ export default function blog2({}: Props) {
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
-        {/* <Col xs={12}>
-          <Blog1 />
-        </Col> */}
+        <Col xs={12}>
+          <Blog2 />
+        </Col>
 
         <Col xs={12}>
           <p>
-            Basically we collect the date as usual but setting it up in SQL
-            format will require some help from regular expression.
-          </p>
-          <p>
-            So whenever you need to create a timestamp in SQL format, you can
-            use this tried and test function before sending it off to the server
-            api.
+            That&#39;s about it. A short function which could save you some
+            hassle when parsing SQL date format.
           </p>
         </Col>
       </Row>
