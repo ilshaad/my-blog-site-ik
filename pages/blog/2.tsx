@@ -5,6 +5,8 @@
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
 // -enter the title & date of blog within the ./scripts/blogsData.ts (blogsData object literal)
+// -add a quick link in the index.tsx page so you can go to the page easily
+//  - we will update it properly later
 // -write the material as you would
 // -estimate reading time
 // -find or create image for blog post
@@ -19,7 +21,7 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import { Badge, Col, Container, Row } from "react-bootstrap";
+import { Badge, Breadcrumb, Col, Container, Row } from "react-bootstrap";
 
 import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
 import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
@@ -37,6 +39,7 @@ import blog2Image from "../../public/blog2img/Parse SQL timestamp.jpg";
 
 // iK code block I used
 import Blog2 from "../../components/blogPostCodes/Blog2";
+import Link from "next/link";
 
 type Props = {};
 
@@ -59,8 +62,14 @@ type Props = {};
 // };
 
 export default function blog2({}: Props) {
-  const { blogPostPage, svgLinks, blogDate, minuteRead, codeText } =
-    forAllBlogsPageStyles;
+  const {
+    blogPostPage,
+    svgLinks,
+    blogDate,
+    minuteRead,
+    codeText,
+    homeBreadcrumb,
+  } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
   const { blog2 } = blogsData;
@@ -117,9 +126,21 @@ export default function blog2({}: Props) {
         </span>
       </Container>
 
+      {/* iK do not touch */}
+      {/* breadcrumb for blog pages */}
+      <Breadcrumb
+        className={`d-none d-sm-block mt-2 mb-n2 ms-2 me-2 ms-xl-5 me-xl-5`}
+      >
+        <Link href="/" passHref>
+          <Breadcrumb.Item className={homeBreadcrumb}>Home</Breadcrumb.Item>
+        </Link>
+
+        <Breadcrumb.Item active>blog</Breadcrumb.Item>
+      </Breadcrumb>
+
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog2Image} alt="blog 1 image" />
+        <Image src={blog2Image} alt="blog 2 image" />
       </Row>
 
       {/* iK type your title */}
@@ -171,15 +192,14 @@ export default function blog2({}: Props) {
       {/* blog post main & codes example */}
       <Row>
         <Col xs={12}>
-          {/* iK Leave 10 empty space at the start of the paragraph */}
-          {/* &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; */}
-          {/* iK for <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
+          {/* iK Leave 6 empty space at the start of the paragraph */}
+          {/* &#160;&#160;&#160;&#160;&#160;&#160; */}
+          {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; If you
-            regularly collect api data from the server, you might sometimes
-            notice something peculiar when gathering the date data. The date
-            value could appear as&#160;
+            &#160;&#160;&#160;&#160;&#160;&#160; If you regularly collect api
+            data from the server, you might sometimes notice something peculiar
+            when gathering the date data. The date value could appear as&#160;
             <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>. The
             &#160;<code className={`${codeText}`}>T</code> and &#160;
             <code className={`${codeText}`}>Z</code> are something you normally

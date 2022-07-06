@@ -258,7 +258,7 @@ exports[`<Blog1/> code for blog1 component snapshot Blog1 code tag 1`] = `
       <div
         class="comment tab1"
       >
-        // create the sql timestamp format.You could change the format here if need be
+        // create the sql timestamp format.You could change the format here if need be 
       </div>
       <div
         class="tab1"

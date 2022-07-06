@@ -32,6 +32,12 @@
   padding-right: 1.25rem;
 }
 
+// code tags
+.codeText {
+  color: #83008c;
+  font-size: 0.9rem;
+}
+
 // * breakpoint of > 576px (sm)
 @media screen and (min-width: 576px) {
   // hide the svg links because <Aside/> links will show up

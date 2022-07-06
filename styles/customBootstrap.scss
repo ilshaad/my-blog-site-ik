@@ -11,6 +11,7 @@ $gradientBackground: linear-gradient(to right, #061161, #780206);
 
 // allow bootstrap classname negative margins to apply
 $enable-negative-margins: true;
+$breadcrumb-divider: quote(">");
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -35,7 +36,7 @@ $enable-negative-margins: true;
 @import "../node_modules/bootstrap/scss/navbar";
 // @import "../node_modules/bootstrap/scss/card";
 // @import "../node_modules/bootstrap/scss/accordion";
-// @import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/badge";
 // @import "../node_modules/bootstrap/scss/alert";

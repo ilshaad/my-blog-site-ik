@@ -1,16 +1,42 @@
-import React from "react";
-import Link from "next/link";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 
-type Props = {};
+export default function One() {
+  // for the change event
+  const [changeValue, setChangeValue] = useState<string>("initial");
+  // for the submit event
+  const [submittedValue, setSubmittedValue] = useState<string>("");
 
-export default function one({}: Props) {
+  // when user submit form
+  const submittedForm = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // collects the textarea element
+    const textarea = event.currentTarget.children[0] as HTMLTextAreaElement;
+
+    setSubmittedValue(textarea.value);
+  };
+
+  // when user types within the textarea
+  const changedTextarea = (event: ChangeEvent) => {
+    const textarea = event.currentTarget as HTMLTextAreaElement;
+
+    // collects the textarea element
+    setChangeValue(textarea.value);
+  };
+
   return (
     <div>
-      <Link href="/two">
-        <a>to /two route</a>
-      </Link>
+      <form onSubmit={submittedForm}>
+        <textarea
+          name="textareaName"
+          value={changeValue}
+          onChange={changedTextarea}
+        />
 
-      <h1>page one</h1>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div>{submittedValue}</div>
     </div>
   );
 }

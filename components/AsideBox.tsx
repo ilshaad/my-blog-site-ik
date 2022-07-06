@@ -19,8 +19,14 @@ export default function AsideBox({}: Props) {
       {/* svg links */}
       <div className="bg-light border border-3 border-primary mx-auto">
         <Container fluid={true} className={` text-primary mx-auto`}>
+          <h6
+            className={`w-100 text-center mt-2 text-decoration-underline text-dark`}
+          >
+            Get in touch
+          </h6>
+
           <Row
-            className={`justify-content-center mx-auto text-center mt-2 mb-1`}
+            className={`justify-content-center mx-auto text-center mt-n1 mb-2`}
           >
             <Col xs={6} md={3}>
               <Github_anchor_svg />
@@ -39,17 +45,19 @@ export default function AsideBox({}: Props) {
             </Col>
           </Row>
 
-          <Row
+          {/* <Row
             className={`mx-auto text-center justify-content-center mt-2 mb-2`}
           >
             <Home_anchor_svg />
-          </Row>
+          </Row> */}
         </Container>
       </div>
 
       {/* blog description box */}
       <div className="border border-3 border-primary mx-auto mt-1 bg-light">
-        <h5 className={`text-center mt-2 mb-1`}>About</h5>
+        <h6 className={`text-center mt-2 mb-1 text-decoration-underline`}>
+          About
+        </h6>
         <p className={`${aboutBox} mb-2`}>
           My name is Ilshaad, and I have been in web development for quite a
           while now. Whilst I will always consider myself a student, I also

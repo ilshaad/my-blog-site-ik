@@ -22,8 +22,8 @@ export default function Footer({}: Props) {
       }}
     >
       <div>
-        &copy; <time dateTime={`${currentYear}`}>{currentYear}</time> Copyright
-        Ilshaad Kheerdali
+        &copy;<time dateTime={`${currentYear}`}>{currentYear}</time> Ilshaad
+        Kheerdali
       </div>
 
       {/* github / linkedin / portolio links using bootstrap icons */}

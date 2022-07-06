@@ -12,9 +12,16 @@ export const blogsData: blogsDataType = {
     dateDisplay: "2022 June 25th Friday",
     dateTime_attribute: "2022-06-25",
   },
+
   blog2: {
     title: "Parse SQL timestamp",
     dateDisplay: "2022 July 4th Monday",
     dateTime_attribute: "2022-07-04",
+  },
+
+  blog3: {
+    title: "How to create a controlled form with React-Typescript",
+    dateDisplay: "2022 July 8th Friday",
+    dateTime_attribute: "2022-07-08",
   },
 };

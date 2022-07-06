@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<1/> blog page snapshot blog post 1 1`] = `
+exports[`<2/> blog page snapshot blog post 2 1`] = `
 <div>
   <div
     class="blogPostPage container"
@@ -177,7 +177,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
           />
         </span>
         <img
-          alt="blog 1 image"
+          alt="blog 2 image"
           data-nimg="intrinsic"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -192,7 +192,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       <h1
         class="text-primary mt-3 text-center"
       >
-        Create timestamp in SQL format
+        Parse SQL timestamp
       </h1>
     </div>
     <div
@@ -201,7 +201,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
       <p
         class="minuteRead text-center"
       >
-          4 min read
+        3 min read
       </p>
     </div>
     <div
@@ -209,10 +209,9 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-06-25"
+        datetime="2022-07-04"
       >
-          
-        2022 June 25th Friday
+        2022 July 4th Monday
       </time>
     </div>
     <div
@@ -224,7 +223,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         Prequisite:
       </h5>
       <div
-        class="text-center mt-n2 mb-3"
+        class="mt-n2 mb-3 text-center"
       >
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
@@ -234,12 +233,12 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          Regular Expression
+          SQL
         </span>
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          SQL
+          Regular Expression
         </span>
       </div>
     </div>
@@ -255,46 +254,40 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         class="col-12"
       >
         <p>
-                Sometimes the client side has to produce the date of the user interaction before sending it to the server api. And sometimes they have to format the date and time before sending it to the server api. And sometimes they have to specifically format the date and time in SQL date field before sending it to the server api. That's what we will be looking at.
+                 If you regularly collect api data from the server, you might sometimes notice something peculiar when gathering the date data. The date value could appear as 
+          <code
+            class="codeText"
+          >
+            2021-06-01T11:08:01.000Z
+          </code>
+          . The  
+          <code
+            class="codeText"
+          >
+            T
+          </code>
+           and  
+          <code
+            class="codeText"
+          >
+            Z
+          </code>
+           are something you normally do not want appearing if you require the date value to be displayed within the web UI. Plus, the milli seconds does not look great to the average person unless it's for something very specific. The ideal output date and time would be  
+          <code
+            class="codeText"
+          >
+            2021-06-01 11:08:01
+          </code>
+          .
         </p>
-        <h5>
-          What is a timestamp?
-        </h5>
         <p>
-          A timestamp is to store the current date and time for future references
-        </p>
-        <h5>
-          What is SQL format?
-        </h5>
-        <p>
-          SQL stands for Structured Query Language. It lets you access and manipulate databases. But there is one database field we are particularly interested in, the 
+          In order to get the desirable date output, we need to do a bit of conversion. One way is to use a regular expression to replace 
           <code
             class="codeText"
           >
-            created_on
+            T
           </code>
-           field. The 
-          <code
-            class="codeText"
-          >
-            created_on
-          </code>
-           field is where dates and time are stored within the database (there are other fields that can store date and times too).
-        </p>
-        <p>
-          In order to store timestamp within 
-          <code
-            class="codeText"
-          >
-            created_on
-          </code>
-          , you will first need to transform it to the required structure. Depending on the SQL server, you might have to format the timestamp yourself before sending to the server if the server is not setup for that. The most common SQL format is 
-          <code
-            class="codeText"
-          >
-            yyyy-mm-dd hh:mm:ss
-          </code>
-          . But that can be a little tricky do.
+           with an empty space and then cut off everything after seconds. Funny enough, I am going to show you how.
         </p>
         <h5>
           Solution:
@@ -312,11 +305,18 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
           >
             <div>
               <span
+                class="comment"
+              >
+                // eg. sqlTimestamp: 2021-06-01T11:08:01.000Z
+              </span>
+            </div>
+            <div>
+              <span
                 class="keyword"
               >
                 function
               </span>
-                createTimestampInSqlFormat () {
+              (sqlTimestamp) {
             </div>
             <div
               class="tab1"
@@ -326,275 +326,59 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
               >
                 const
               </span>
-               date = 
-              <span
-                class="keyword"
-              >
-                new
-              </span>
-               
-              <span
-                class="method"
-              >
-                Date
-              </span>
-              ();
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               year =  date
-              <span
-                class="method"
-              >
-                .getFullYear
-              </span>
-              ();
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               month =  date
-              <span
-                class="method"
-              >
-                .getMonth
-              </span>
-              () + 
-              <span
-                class="value"
-              >
-                1
-              </span>
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               day =  date
-              <span
-                class="method"
-              >
-                .getDate
-              </span>
-              ();
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               hour =  date
-              <span
-                class="method"
-              >
-                .getHours
-              </span>
-              ();
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               minute =  date
-              <span
-                class="method"
-              >
-                .getMinutes
-              </span>
-              ();
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               second =  date
-              <span
-                class="method"
-              >
-                .getSeconds
-              </span>
-              ();
-            </div>
-            <br />
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                const
-              </span>
-               timestampArray = [year, month, day, hour, minute, seconds];
-            </div>
-            <br />
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               timestampString = ""
-            </div>
-            <br />
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                for
-              </span>
-               (
-              <span
-                class="keyword"
-              >
-                let
-              </span>
-               dateNumber 
-              <span
-                class="keyword"
-              >
-                of
-              </span>
-                timestampArray) {
-            </div>
-            <div
-              class="comment tab2"
-            >
-              // if number is less than 10 than add a 0 in front of it
-            </div>
-            <div
-              class="tab2"
-            >
-              <span
-                class="keyword"
-              >
-                if
-              </span>
-               (dateNumber &gt;= 
-              <span
-                class="value"
-              >
-                10
-              </span>
-              ) {
-            </div>
-            <div
-              class="tab3"
-            >
-              timestampString += dateNumber;
-            </div>
-            <div
-              class="tab2"
-            >
-              } 
-              <span
-                class="keyword"
-              >
-                else
-              </span>
-               {
-            </div>
-            <div
-              class="tab3"
-            >
-              timestamString += \`
-              <span
-                class="value"
-              >
-                0
-              </span>
-              \${dateNumber}\`;
-            </div>
-            <div
-              class="tab2"
-            >
-              }
-            </div>
-            <div
-              class="tab1"
-            >
-              }
-            </div>
-            <br />
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                const/
-              </span>
-               timestampRegEx = /(\\d{4})(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{2})/g;
-            </div>
-            <br />
-            <div
-              class="comment tab1"
-            >
-              // create the sql timestamp format.You could change the format here if need be 
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                const/
-              </span>
-               timestamp = timestampString
+               removeT = sqlTimestamp
               <span
                 class="method"
               >
                 .replace
               </span>
               (
-            </div>
-            <div
-              class="tab2"
-            >
-              timestampRegEx,
-            </div>
-            <div
-              class="tab2"
-            >
               <span
                 class="value"
               >
-                "$1-$2-$3 $4:$5:$6"
+                "T"
               </span>
+              , 
+              <span
+                class="value"
+              >
+                " "
+              </span>
+              );
             </div>
+            <br />
             <div
               class="tab1"
             >
-              );
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               removeMilliSecondRegEx = /\\.\\w+/g;
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               timestamp = removeT
+              <span
+                class="method"
+              >
+                .replace
+              </span>
+              (removeMilliSecondRegEx, 
+              <span
+                class="value"
+              >
+                ""
+              </span>
+              ); 
             </div>
             <br />
             <div
@@ -605,10 +389,15 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
               >
                 return
               </span>
-               timestamp;
+               timestamp
             </div>
             <div>
               }
+            </div>
+            <div
+              class="comment"
+            >
+              // Output: "2021-06-01 11:08:01"
             </div>
           </code>
         </pre>
@@ -617,10 +406,7 @@ exports[`<1/> blog page snapshot blog post 1 1`] = `
         class="col-12"
       >
         <p>
-          Basically we collect the date as usual but setting it up in SQL format will require some help from regular expression.
-        </p>
-        <p>
-          So whenever you need to create a timestamp in SQL format, you can use this tried and test function before sending it off to the server api.
+          That's about it. A short function which could save you some hassle when parsing SQL date format.
         </p>
       </div>
     </div>

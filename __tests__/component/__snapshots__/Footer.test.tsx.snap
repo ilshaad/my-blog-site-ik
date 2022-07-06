@@ -7,13 +7,13 @@ exports[`<Footer/> snapshot footer component 1`] = `
     style="font-size: 0.8rem; font-family: 'Montserrat', monospace, 'Roboto', Arial, Helvetica, sans-serif !important;"
   >
     <div>
-      © 
+      ©
       <time
         datetime="2022"
       >
         2022
       </time>
-       Copyright Ilshaad Kheerdali
+       Ilshaad Kheerdali
     </div>
   </small>
 </div>

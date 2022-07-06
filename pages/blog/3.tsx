@@ -1,6 +1,9 @@
-// tite:  Create timestamp in SQL format
-// date: 2022 06 25 Friday
-// blog1
+// COPY VERSION OF ADDING ANOTHER BLOG POST
+//    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
+
+// tite:  How to create a controlled form with React-Typescript
+// date: 2022 07 08 Friday
+// blog3
 
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
@@ -38,12 +41,11 @@ import { blogsData } from "../../scripts/blogsData";
 import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 // iK code block I used
-import Blog1 from "../../components/blogPostCodes/Blog1";
+import Blog3 from "../../components/blogPostCodes/Blog3";
 import Link from "next/link";
 
 type Props = {};
 
-// iK for <code> tags, use codeText eg. <code className={`${codeText}`}>iKcode</code>
 export default function blog1({}: Props) {
   const {
     blogPostPage,
@@ -55,7 +57,7 @@ export default function blog1({}: Props) {
   } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
-  const { blog1 } = blogsData;
+  const { blog3 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
@@ -91,8 +93,7 @@ export default function blog1({}: Props) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      {/* Do not touch */}
-      {/* blog post image if any */}
+      {/* iK Do not touch */}
       {/* svg get in touch links (linkedin / portfolio / email / github) */}
       <Container className={`${svgLinks} text-primary mt-2`}>
         <span className={`ms-2 me-2`}>
@@ -134,24 +135,24 @@ export default function blog1({}: Props) {
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Create timestamp in SQL format
+          How to create a controlled form with React-Typescript
         </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>&#160;&#160;4 min read</p>
+        <p className={`${minuteRead} text-center`}>4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
       {/* iK collect your blog date from blogsData object */}
       <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime={blog1.dateTime_attribute}
+          dateTime={blog3.dateTime_attribute}
           className={`${blogDate} d-block text-center`}
         >
-          &#160;&#160;{blog1.dateDisplay}
+          {blog3.dateDisplay}
         </time>
       </Row>
 
@@ -159,15 +160,15 @@ export default function blog1({}: Props) {
       {/* language know how */}
       <Row className={`mx-auto`}>
         <h5 className={`text-center`}>Prequisite:</h5>
-        <div className={`text-center mt-n2 mb-3`}>
+        <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Javascript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Regular Expression
+            Typescript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            SQL
+            React
           </Badge>
         </div>
       </Row>
@@ -186,61 +187,49 @@ export default function blog1({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;Sometimes the client side has to
-            produce the date of the user interaction before sending it to the
-            server api. And sometimes they have to format the date and time
-            before sending it to the server api. And sometimes they have to
-            specifically format the date and time in SQL date field before
-            sending it to the server api. That&#39;s what we will be looking at.
+            &#160;&#160;&#160;&#160;&#160;&#160;It is always tricky when
+            creating forms, especially when it is a large form. You have to
+            configure your inputs you want the user to insert but also able to
+            collect the form values and complete the desired task such as pass
+            the data to the API server.
           </p>
 
-          {/* iK put heading as h5 if need be */}
-          <h5>What is a timestamp?</h5>
           <p>
-            A timestamp is to store the current date and time for future
-            references
+            In React, it is strongly recommended to use form control. Form
+            control in simple terms is watching and controlling every in&#39;s
+            and out&#39;s value within the form. Say the user has a simple text
+            box to type in, as they type character by character, form control
+            takes each one and updates the state simonaneously. However it does
+            require a bit of a setup. But this is made a bit more complicated
+            with the inclusion of Typescript.
           </p>
 
-          <h5>What is SQL format?</h5>
           <p>
-            SQL stands for Structured Query Language. It lets you access and
-            manipulate databases. But there is one database field we are
-            particularly interested in, the&#160;
-            <code className={`${codeText}`}>created_on</code> field. The&#160;
-            <code className={`${codeText}`}>created_on</code> field is where
-            dates and time are stored within the database (there are other
-            fields that can store date and times too).
-          </p>
-          <p>
-            In order to store timestamp within&#160;
-            <code className={`${codeText}`}>created_on</code>, you will first
-            need to transform it to the required structure. Depending on the SQL
-            server, you might have to format the timestamp yourself before
-            sending to the server if the server is not setup for that. The most
-            common SQL format is&#160;
-            <code className={`${codeText}`}>yyyy-mm-dd hh:mm:ss</code>. But that
-            can be a little tricky do.
+            With React-Typescript you are more often than not, expected to
+            include types and DOM casting, which can be quite daunting and
+            confusing at first (it certainly confused me). But with a bit of
+            know how, it will soon become second nature. For example collecting
+            input elements within the form when submitted requres using
+            the&#160;<code className={codeText}>event</code> object. But the
+            &#160;<code className={codeText}>event</code> object needs to be
+            type first, otherwise warning on your terminal will crop up. So for
+            submit &#160;<code className={codeText}>event</code> we will need to
+            give it a type of&#160;
+            <code className={codeText}>FormEvent&#60;HTMLFormElement&#62;</code>
+            , the&#160;<code className={codeText}>FormEvent</code> is imported
+            from the React library.
           </p>
 
-          <h5>Solution:</h5>
+          <p>
+            But lets have a look at an form control example to see how it is
+            done in full.
+          </p>
         </Col>
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
         <Col xs={12}>
-          <Blog1 />
-        </Col>
-
-        <Col xs={12}>
-          <p>
-            Basically we collect the date as usual but setting it up in SQL
-            format will require some help from regular expression.
-          </p>
-          <p>
-            So whenever you need to create a timestamp in SQL format, you can
-            use this tried and test function before sending it off to the server
-            api.
-          </p>
+          <Blog3 />
         </Col>
       </Row>
     </Container>

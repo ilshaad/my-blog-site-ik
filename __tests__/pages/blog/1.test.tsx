@@ -4,7 +4,7 @@ import Blog_one from "../../../pages/blog/1";
 describe("<1/> blog page", () => {
   const blogOnePage = () => render(<Blog_one />);
 
-  test("renders blog post image", () => {
+  test("renders blog 1 post image", () => {
     const { getByAltText } = blogOnePage();
 
     const image = getByAltText("blog 1 image");
@@ -12,7 +12,7 @@ describe("<1/> blog page", () => {
     expect(image).toBeInTheDocument();
   });
 
-  test("renders blog post title", () => {
+  test("renders blog 1 post title", () => {
     const { getByRole } = blogOnePage();
 
     const h1 = getByRole("heading", {

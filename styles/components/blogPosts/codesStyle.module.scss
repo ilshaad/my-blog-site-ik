@@ -1,6 +1,15 @@
 // style for code blocks within html file
 // mostly used next.js documentation codes as references
 
+// iKBIM add extra space &#160; at the end of the longest line because padding-right does not work for pre & code tag. border does work but does not look great
+
+// If you are just using some incline <code> within normal text, you can use this to represent codes
+// code tags
+// .codeText {
+//   color: #83008c;
+//   font-size: 0.9rem;
+// }
+
 // iK? begin from 360px & up for starting breakpoint
 // <pre>
 .preCode {
@@ -10,7 +19,7 @@
   // adjust as you see fit for each responsive size
   padding: 0.3rem;
   font-size: 0.8rem;
-  border-right: #1d1f21 0.3rem solid;
+  // border-right: #1d1f21 0.3rem solid;
 }
 
 // <code> will be nested within <pre>

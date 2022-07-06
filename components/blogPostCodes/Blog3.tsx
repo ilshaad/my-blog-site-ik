@@ -6,7 +6,7 @@ import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
 
 type Props = {};
 
-export default function Blog1({}: Props) {
+export default function Blog3({}: Props) {
   // all the styles
   const {
     preCode,
@@ -23,6 +23,27 @@ export default function Blog1({}: Props) {
   return (
     <pre className={`${preCode} mx-auto`}>
       <code className={`${codeTag} mx-auto`} role="code">
+        <div>
+          <span className={keyword}>import</span> React, &#123; ChangeEvent,
+          FormEvent, useState &#125;&#160;<span className={keyword}>from</span>
+          &#160;&#34;react&#34;;
+        </div>
+        <br />
+
+        <div>
+          <span className={keyword}>export default function</span> FormControl()
+          &#123;
+        </div>
+
+        <div className={`${tab1} ${comment}`}>
+          &#47;&#47; for the change event
+        </div>
+
+        <div>&#125;;</div>
+        {/* END OF */}
+
+        <br />
+
         <div>
           <span className={`${keyword}`}>function</span>&#160;
           createTimestampInSqlFormat () &#123;

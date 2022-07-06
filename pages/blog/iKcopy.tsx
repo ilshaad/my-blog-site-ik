@@ -8,6 +8,8 @@
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
 // -enter the title & date of blog within the ./scripts/blogsData.ts (blogsData object literal)
+// -add a quick link in the index.tsx page so you can go to the page easily
+//  - we will update it properly later
 // -write the material as you would
 // -estimate reading time
 // -find or create image for blog post
@@ -15,14 +17,14 @@
 //   -save image within /public folder in you app
 // -seo
 // -test
-//   - ./__tests__/pages/blog/2.test.tsx	(for actual page)
-//   - ./__tests__/components/blogPostCodes/Blog2.tsx	(for possible code blocks you may use within the blog page)
+//   - ./__tests__/pages/blog/1.test.tsx	(for actual page)
+//   - ./__tests__/components/blogPostCodes/Blog1.test.tsx	(for possible code blocks you may use within the blog page)
 // -update / page blog list
 
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import { Badge, Col, Container, Row } from "react-bootstrap";
+import { Badge, Breadcrumb, Col, Container, Row } from "react-bootstrap";
 
 import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
 import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
@@ -40,12 +42,19 @@ import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 // iK code block I used
 import Blog1 from "../../components/blogPostCodes/Blog1";
+import Link from "next/link";
 
 type Props = {};
 
 export default function blog1({}: Props) {
-  const { blogPostPage, svgLinks, blogDate, minuteRead, codeText } =
-    forAllBlogsPageStyles;
+  const {
+    blogPostPage,
+    svgLinks,
+    blogDate,
+    minuteRead,
+    codeText,
+    homeBreadcrumb,
+  } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
   const { blog1 } = blogsData;
@@ -105,6 +114,18 @@ export default function blog1({}: Props) {
         </span>
       </Container>
 
+      {/* iK do not touch */}
+      {/* breadcrumb for blog pages */}
+      <Breadcrumb
+        className={`d-none d-sm-block mt-2 mb-n2 ms-2 me-2 ms-xl-5 me-xl-5`}
+      >
+        <Link href="/" passHref>
+          <Breadcrumb.Item className={homeBreadcrumb}>Home</Breadcrumb.Item>
+        </Link>
+
+        <Breadcrumb.Item active>blog</Breadcrumb.Item>
+      </Breadcrumb>
+
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
         <Image src={blog1Image} alt="blog 1 image" />
@@ -161,17 +182,17 @@ export default function blog1({}: Props) {
       {/* blog post main & codes example */}
       <Row>
         <Col xs={12}>
-          {/* iK Leave 10 empty space at the start of the paragraph */}
-          {/* &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; */}
-          {/* iK for <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
+          {/* iK Leave 6 empty space at the start of the paragraph */}
+          {/* &#160;&#160;&#160;&#160;&#160;&#160; */}
+          {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
+          {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sometimes
-            the client side has to produce the date of the user interaction
+            &#160;&#160;&#160;&#160;&#160;&#160;Sometimes the client side has to
+            produce the date of the user interaction before sending it to the
+            server api. And sometimes they have to format the date and time
             before sending it to the server api. And sometimes they have to
-            format the date and time before sending it to the server api. And
-            sometimes they have to specifically format the date and time in SQL
-            date field before sending it to the server api. That&#39;s what we
-            will be looking at.
+            specifically format the date and time in SQL date field before
+            sending it to the server api. That&#39;s what we will be looking at.
           </p>
 
           {/* iK put heading as h5 if need be */}

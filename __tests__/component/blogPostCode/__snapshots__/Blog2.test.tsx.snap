@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog2/> code for blog2 component snapshot Blog2 code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        <span
+          class="comment"
+        >
+          // eg. sqlTimestamp: 2021-06-01T11:08:01.000Z
+        </span>
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+        (sqlTimestamp) {
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         removeT = sqlTimestamp
+        <span
+          class="method"
+        >
+          .replace
+        </span>
+        (
+        <span
+          class="value"
+        >
+          "T"
+        </span>
+        , 
+        <span
+          class="value"
+        >
+          " "
+        </span>
+        );
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         removeMilliSecondRegEx = /\\.\\w+/g;
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         timestamp = removeT
+        <span
+          class="method"
+        >
+          .replace
+        </span>
+        (removeMilliSecondRegEx, 
+        <span
+          class="value"
+        >
+          ""
+        </span>
+        ); 
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          return
+        </span>
+         timestamp
+      </div>
+      <div>
+        }
+      </div>
+      <div
+        class="comment"
+      >
+        // Output: "2021-06-01 11:08:01"
+      </div>
+    </code>
+  </pre>
+</div>
+`;

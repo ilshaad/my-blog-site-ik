@@ -1,4 +1,5 @@
 // copy boilerplate version if you want to add another blog codes examples within your blog post page
+// iKBIM ensure you put empty space &#160; for the longest code block so it will add a nice padding to the end
 
 import React from "react";
 import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
@@ -23,9 +24,8 @@ export default function Blog1({}: Props) {
     <pre className={`${preCode} mx-auto`}>
       <code className={`${codeTag} mx-auto`} role="code">
         <div>
-          &#47;&#47;{" "}
           <span className={`${comment}`}>
-            eg. sqlTimestamp: 2021-06-01T11:08:01.000Z
+            &#47;&#47; eg. sqlTimestamp: 2021-06-01T11:08:01.000Z
           </span>
         </div>
         <div>
@@ -52,7 +52,7 @@ export default function Blog1({}: Props) {
         <div className={tab1}>
           <span className={keyword}>const</span> timestamp = removeT
           <span className={method}>.replace</span>(removeMilliSecondRegEx,&#160;
-          <span className={value}>&#34;&#34;</span>);
+          <span className={value}>&#34;&#34;</span>);&#160;
         </div>
 
         <br />
