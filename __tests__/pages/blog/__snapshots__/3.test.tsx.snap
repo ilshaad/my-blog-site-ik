@@ -1,0 +1,695 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<3/> blog page snapshot blog post 3 1`] = `
+<div>
+  <div
+    class="blogPostPage container"
+  >
+    <div
+      class="svgLinks text-primary mt-2 container"
+    >
+      <span
+        class="ms-2 me-2"
+      >
+        <svg
+          class="bi bi-house text-decoration-underline mx-auto p-0 w-auto"
+          fill="currentColor"
+          height="16"
+          style="cursor: pointer;"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+            fill-rule="evenodd"
+          />
+          <path
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <span
+        class="ms-2 me-2 text-dark fw-bolder"
+      >
+        |
+      </span>
+      <span
+        class="ms-2 me-2"
+      >
+        <a
+          class="text-decoration-underline mx-auto"
+          href="https://github.com/RechadSalma/my-blog-site-ik"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Github"
+        >
+          <svg
+            class="bi bi-github"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+        </a>
+      </span>
+      <span
+        class="ms-2 me-2"
+      >
+        <a
+          class="text-decoration-underline mx-auto"
+          href="https://www.linkedin.com/in/rob-c-a7aa08199/"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <svg
+            class="bi bi-linkedin"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            />
+          </svg>
+        </a>
+      </span>
+      <span
+        class="ms-2 me-2"
+      >
+        <a
+          class="text-decoration-underline mx-auto"
+          href="#"
+          target="_blank"
+          title="Portfolio site"
+        >
+          <svg
+            class="bi bi-journal-code text-primary bg-light"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+            />
+            <path
+              d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+            />
+          </svg>
+        </a>
+      </span>
+      <span
+        class="ms-2 me-2"
+      >
+        <a
+          class="text-decoration-underline mx-auto"
+          href="mailto:rechadsalma123@gmail.com?subject=From%20ilshaad%20blog%20site%202022%3A"
+          title="Email me"
+        >
+          <svg
+            class="bi bi-envelope-fill"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+            />
+          </svg>
+        </a>
+      </span>
+    </div>
+    <nav
+      aria-label="breadcrumb"
+      class="d-none d-sm-block mt-2 mb-n2 ms-2 me-2 ms-xl-5 me-xl-5"
+    >
+      <ol
+        class="breadcrumb"
+      >
+        <li
+          class="breadcrumb-item homeBreadcrumb"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          aria-current="page"
+          class="breadcrumb-item active"
+        >
+          blog
+        </li>
+      </ol>
+    </nav>
+    <div
+      class="mt-3 ms-2 me-2 ms-xl-5 me-xl-5 row"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="blog 3 image"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </div>
+    <div
+      class="mx-auto row"
+    >
+      <h1
+        class="text-primary mt-3 text-center"
+      >
+        How to create a controlled form component with React-Typescript
+      </h1>
+    </div>
+    <div
+      class="mx-auto row"
+    >
+      <p
+        class="minuteRead text-center"
+      >
+        6 min read
+      </p>
+    </div>
+    <div
+      class="mb-2 mx-auto row"
+    >
+      <time
+        class="blogDate d-block text-center"
+        datetime="2022-07-08"
+      >
+        2022 July 8th Friday
+      </time>
+    </div>
+    <div
+      class="mx-auto row"
+    >
+      <h5
+        class="text-center"
+      >
+        Prequisite:
+      </h5>
+      <div
+        class="mt-n2 mb-3 text-center"
+      >
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          Javascript
+        </span>
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          Typescript
+        </span>
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          React
+        </span>
+      </div>
+    </div>
+    <div
+      class="text-primary w-75 mx-auto overflow-hidden mt-2 row"
+    >
+      <hr />
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col-12"
+      >
+        <p>
+                It is always tricky when creating forms, especially when it is a large form. You have to configure your inputs you want the user to insert but also be able to collect the form values and complete the desired task, such as pass the data to the API server.
+        </p>
+        <p>
+          In React, it is strongly recommended to use controlled form components. Controlled forms in simple terms is watching and controlling every in's and out's value within the form. Say the user has a simple text box to type in, as they type in character by character, controlled forms takes each one and updates the state simultaneously. However, it does require a bit of a setup. But this is made a bit more complicated by the inclusion of Typescript.
+        </p>
+        <p>
+          With React-Typescript you are, more often than not, expected to include types and DOM casting, which can be quite daunting and confusing at first (it certainly did for me). But with a bit of know how, it will soon become second nature. For example, collecting input elements within the form when submitted requires using the 
+          <code
+            class="codeText"
+          >
+            event
+          </code>
+           object. But the 
+          <code
+            class="codeText"
+          >
+            event
+          </code>
+           object needs to be typed first, otherwise warnings on your terminal will crop up. So, for 
+          <code
+            class="codeText"
+          >
+            submit event
+          </code>
+           we will need to give it a type of 
+          <code
+            class="codeText"
+          >
+            FormEvent&lt;HTMLFormElement&gt;
+          </code>
+          . The 
+          <code
+            class="codeText"
+          >
+            FormEvent
+          </code>
+           is imported from the React library. But that's just one type of 
+          <span
+            class="codeText"
+          >
+            event
+          </span>
+          , there are others.
+        </p>
+        <p>
+          Besides from 
+          <span
+            class="codeText"
+          >
+            event
+          </span>
+           object, we also need to collect the elements, setup the state, reassign the state when user inputs values, etc...
+        </p>
+        <p>
+          Lets just have a look at a simple controlled form component example with an 
+          <span
+            class="codeText"
+          >
+            &lt;textarea&gt;
+          </span>
+           element to see how it is done in full.
+        </p>
+      </div>
+      <div
+        class="col-12"
+      >
+        <pre
+          class="preCode mx-auto"
+        >
+          <code
+            class="codeTag mx-auto"
+            role="code"
+          >
+            <div>
+              <span
+                class="keyword"
+              >
+                import
+              </span>
+               React, { ChangeEvent, FormEvent, useState } 
+              <span
+                class="keyword"
+              >
+                from
+              </span>
+               "react";
+            </div>
+            <br />
+            <div>
+              <span
+                class="keyword"
+              >
+                export default function
+              </span>
+               FormControl() {
+            </div>
+            <div
+              class="tab1 comment"
+            >
+              // For the change event
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               [changeValue, setChangeValue] = 
+              <span
+                class="method"
+              >
+                useState
+              </span>
+              &lt;string&gt;(
+              <span
+                class="value"
+              >
+                "initial value"
+              </span>
+              );
+            </div>
+            <br />
+            <div
+              class="tab1 comment"
+            >
+              // For the submit event
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               [submitValue, setSubmitValue] = 
+              <span
+                class="method"
+              >
+                useState
+              </span>
+              &lt;string&gt;(
+              <span
+                class="value"
+              >
+                ""
+              </span>
+              );
+            </div>
+            <br />
+            <div
+              class="tab1 comment"
+            >
+              // When user submit form
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                const
+              </span>
+               submittedForm = (event: 
+              <span
+                class="keyword"
+              >
+                FormEvent
+              </span>
+              &lt;HTMLFormElement&gt;) =&gt; {
+            </div>
+            <div
+              class="tab2"
+            >
+              <span
+                class="comment"
+              >
+                // Prevent page reloading
+              </span>
+              <div>
+                event
+                <span
+                  class="method"
+                >
+                  .preventDefault
+                </span>
+                ()
+              </div>
+              <div>
+                <span
+                  class="comment"
+                >
+                  // Collects the textarea element
+                </span>
+              </div>
+              <div>
+                <span
+                  class="keyword"
+                >
+                  const
+                </span>
+                 textarea = event
+                <span
+                  class="method"
+                >
+                  .currentTarget.children
+                </span>
+                [0] 
+                <span
+                  class="keyword"
+                >
+                  as
+                </span>
+                 HTMLTextAreaElement; 
+              </div>
+              <span
+                class="comment"
+              >
+                // Set the final value
+              </span>
+              <div>
+                setSubmitValue(textarea
+                <span
+                  class="method"
+                >
+                  .value
+                </span>
+                );
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              };
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <div>
+                <span
+                  class="comment"
+                >
+                  //When user types within the textarea
+                </span>
+              </div>
+              <div>
+                <span
+                  class="keyword"
+                >
+                  const
+                </span>
+                 changeTextarea = (event: 
+                <span
+                  class="keyword"
+                >
+                  ChangeEvent
+                </span>
+                ) =&gt; {
+              </div>
+            </div>
+            <div
+              class="tab2"
+            >
+              <div
+                class="comment"
+              >
+                // Collects the textarea element
+              </div>
+              <div>
+                <span
+                  class="keyword"
+                >
+                  const
+                </span>
+                 textarea = event
+                <span
+                  class="method"
+                >
+                  .currentTarget
+                </span>
+                 
+                <span
+                  class="keyword"
+                >
+                  as
+                </span>
+                 HTMLTextAreaElement;
+              </div>
+              <span
+                class="comment"
+              >
+                // Update the textarea element value with the user inputs
+              </span>
+              <div>
+                setChangeValue(textarea
+                <span
+                  class="method"
+                >
+                  .value
+                </span>
+                );
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              };
+            </div>
+            <br />
+            <div
+              class="tab1"
+            >
+              <div>
+                <span
+                  class="keyword"
+                >
+                  return
+                </span>
+                 (
+              </div>
+            </div>
+            <div
+              class="tab2"
+            >
+              <div>
+                &lt;div&gt;
+              </div>
+            </div>
+            <div
+              class="tab3"
+            >
+              <div>
+                &lt;form 
+                <span
+                  class="keyword"
+                >
+                  onSubmit
+                </span>
+                ={submittedForm}&gt;
+              </div>
+            </div>
+            <div
+              class="tab4"
+            >
+              <div>
+                &lt;textarea
+              </div>
+            </div>
+            <div
+              class="tab5"
+            >
+              <div>
+                name=
+                <span
+                  class="value"
+                >
+                  "textareaName"
+                </span>
+              </div>
+              <div>
+                value={changeValue}
+              </div>
+              <div>
+                onChange={changeTextarea}
+              </div>
+            </div>
+            <div
+              class="tab4"
+            >
+              /&gt;
+            </div>
+            <div
+              class="tab4"
+            >
+              &lt;button type=
+              <span
+                class="value"
+              >
+                "submit"
+              </span>
+              &gt;Submit&lt;/button&gt;
+            </div>
+            <div
+              class="tab3"
+            >
+              <div>
+                &lt;/form&gt;
+              </div>
+              <br />
+              <div>
+                &lt;div&gt;{submitValue}&lt;/div&gt;
+              </div>
+            </div>
+            <div
+              class="tab2"
+            >
+              &lt;/div&gt;
+            </div>
+            <div
+              class="tab1"
+            >
+              );
+            </div>
+            <div>
+              };
+            </div>
+            <br />
+          </code>
+        </pre>
+      </div>
+      <div
+        class="col-12"
+      >
+        <p>
+          The most significant thing you will notice is how we set the textarea element value but also change the value using the 
+          <span
+            class="codeText"
+          >
+            change event
+          </span>
+           handler. By doing this, we record everything the user inserts within the textarea element but also assign the value of the textarea at the same time. This is the main gist of controlled form component.
+        </p>
+        <p>
+          We only care about the 
+          <span
+            class="codeText"
+          >
+            submitValue
+          </span>
+           state value, which will be the final data value. Once you have got the submitted value, you can go ahead and complete the form task.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

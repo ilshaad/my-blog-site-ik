@@ -47,7 +47,7 @@ body {
 #OuterGrid {
   display: grid;
   grid-template-columns: 100%; // 1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to
-  grid-template-rows: 150px minmax(max-content, 1fr) 28px;
+  grid-template-rows: 163px minmax(max-content, 1fr) 28px;
   grid-template-areas:
     "OG-header"
     "OG-main"
@@ -103,6 +103,13 @@ body {
 
 // ! iK Beware I notice media query does not work accordingly unless your elements have higher specificity than < 576px. Not sure if this is a one off or not?
 // * However the other breakpoints are working fine with each other so you do not have to compete for specificity there
+
+// * breakpint of > 360px
+@media screen and (min-width: 360px) {
+  #OuterGrid {
+    grid-template-rows: 148px minmax(max-content, 1fr) 28px;
+  }
+} // breakpoint of > 360px
 
 // #####################################################
 // Small devices (landscape phones, 576px and up)

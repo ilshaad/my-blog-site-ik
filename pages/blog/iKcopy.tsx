@@ -11,6 +11,7 @@
 // -add a quick link in the index.tsx page so you can go to the page easily
 //  - we will update it properly later
 // -write the material as you would
+// -check spelling grammer
 // -estimate reading time
 // -find or create image for blog post
 //   -save image within dropbox blog-site folder

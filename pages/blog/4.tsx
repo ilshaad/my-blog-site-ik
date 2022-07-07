@@ -1,6 +1,9 @@
-// tite:  Parse SQL timestamp
-// date: 2022 07 04 Monday
-// blog1
+// COPY VERSION OF ADDING ANOTHER BLOG POST
+//    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
+
+// tite:  Create an instance with Axios
+// date: 2022 07 17 Sunday
+// blog4
 
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
@@ -15,8 +18,8 @@
 //   -save image within /public folder in you app
 // -seo
 // -test
-//   - ./__tests__/pages/blog/2.test.tsx	(for actual page)
-//   - ./__tests__/components/blogPostCodes/Blog2.tsx	(for possible code blocks you may use within the blog page)
+//   - ./__tests__/pages/blog/1.test.tsx	(for actual page)
+//   - ./__tests__/components/blogPostCodes/Blog1.test.tsx	(for possible code blocks you may use within the blog page)
 // -update / page blog list
 
 import React from "react";
@@ -36,33 +39,15 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog2Image from "../../public/blog2img/Parse SQL timestamp.jpg";
+import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 // iK code block I used
-import Blog2 from "../../components/blogPostCodes/Blog2";
+import { InstanceCreate } from "../../components/blogPostCodes/Blog4";
 import Link from "next/link";
 
 type Props = {};
 
-// parse timestamp - remove sql T & microseconds for clean date & time
-/** parse sql timestamp
- * just return date & time format string from a typical sql timestamp format
- * sql timestampe would look like this "2021-06-01T11:08:01.000Z"
- *  - we want it to look like this "2021-06-01 11:08:01"
- */
-//  export default (timestampP: string) => {
-//   // let timestampP = "2021-06-01T11:08:01.000Z";
-
-//   const removeT = timestampP.replace("T", " ");
-
-//   const removeMicroSecondsRegEx = /\.\w+/g;
-
-//   const timestamp = removeT.replace(removeMicroSecondsRegEx, "");
-
-//   return timestamp;
-// };
-
-export default function blog2({}: Props) {
+export default function blog1({}: Props) {
   const {
     blogPostPage,
     svgLinks,
@@ -73,13 +58,16 @@ export default function blog2({}: Props) {
   } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
-  const { blog2 } = blogsData;
+  const { blog4 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
-        <title>Parse SQL timestamp | Ilshaad Blog</title>
-        <meta name="description" content="Parse SQL timestamp | Ilshaad Blog" />
+        <title>Create timestamp in SQL format | Ilshaad Blog</title>
+        <meta
+          name="description"
+          content="Create timestamp in SQL format | Ilshaad Blog"
+        />
 
         <link
           rel="apple-touch-icon"
@@ -141,29 +129,31 @@ export default function blog2({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog2Image} alt="blog 2 image" />
+        <Image src={blog1Image} alt="blog 1 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
-        <h1 className={`text-primary mt-3 text-center`}>Parse SQL timestamp</h1>
+        <h1 className={`text-primary mt-3 text-center`}>
+          Create an instance with Axios
+        </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>3 min read</p>
+        <p className={`${minuteRead} text-center`}>4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
       {/* iK collect your blog date from blogsData object */}
       <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime={blog2.dateTime_attribute}
+          dateTime={blog4.dateTime_attribute}
           className={`${blogDate} d-block text-center`}
         >
-          {blog2.dateDisplay}
+          {blog4.dateDisplay}
         </time>
       </Row>
 
@@ -176,10 +166,10 @@ export default function blog2({}: Props) {
             Javascript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            SQL
+            Axios
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Regular Expression
+            REST API
           </Badge>
         </div>
       </Row>
@@ -198,40 +188,40 @@ export default function blog2({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160; If you regularly collect api
-            data from the server, you might sometimes notice something peculiar
-            when gathering the date data. The date value could appear as&#160;
-            <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>. The
-            &#160;<code className={`${codeText}`}>T</code> and &#160;
-            <code className={`${codeText}`}>Z</code> are something you normally
-            do not want appearing if you require the date value to be displayed
-            within the web UI. Plus, the milli seconds does not look great to
-            the average person unless it&#39;s for something very specific. The
-            ideal output date and time would be &#160;
-            <code className={`${codeText}`}>2021-06-01 11:08:01</code>.
+            &#160;&#160;&#160;&#160;&#160;&#160;If you are into programming,
+            than you will likely have heard of DRY (don&#39; repeat yourself).
+            Basically writing the same code over and over can be quite tedious.
+            And it becomes more tedious when trying to remember the url to do
+            your Axios fetch request everytime. Would it not be great to just
+            type in the url once, and code any methods you require out of it.
+            That&#39;s where&#160;<span className={codeText}>create()</span>
+            method comes in.
           </p>
 
           <p>
-            In order to get the desirable date output, we need to do a bit of
-            conversion. One way is to use a regular expression to replace&#160;
-            <code className={`${codeText}`}>T</code> with an empty space and
-            then cut off everything after seconds. Funny enough, I am going to
-            show you how.
+            Axios provide methods you can use but&#160;
+            <span className={codeText}>create()</span> is one of the useful
+            ones. It creates an instance Promise object of the url api you will
+            be regulary using in your app, and you can use that instance Promise
+            however many times you like and whichever methods you need.
           </p>
 
-          <h5>Solution:</h5>
+          <p>
+            Usually it is best to create a separate file just for the instance
+            alone, and than we can use the instance on any file as we need to.
+          </p>
         </Col>
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
         <Col xs={12}>
-          <Blog2 />
+          <InstanceCreate />
         </Col>
 
         <Col xs={12}>
           <p>
-            That&#39;s about it. A short function which could save you some
-            hassle when parsing SQL date format.
+            Basically we collect the date as usual but setting it up in SQL
+            format will require some help from regular expression.
           </p>
         </Col>
       </Row>

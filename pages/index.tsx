@@ -80,11 +80,17 @@ const Home: NextPage = () => {
       </Container>
 
       {/* breadcrumb for home page */}
-      <Breadcrumb className={`d-none d-sm-block mt-2 mb-n3`}>
+      <Breadcrumb
+        className={`d-none d-sm-block mt-2 mb-n3 ms-2 me-2 ms-xl-4 me-xl-4`}
+      >
         <Breadcrumb.Item active>Home</Breadcrumb.Item>
       </Breadcrumb>
 
-      <h4 className={`text-decoration-underline mt-2 mb-2`}>Latest posts:</h4>
+      <h4
+        className={`text-decoration-underline mt-2 mb-2 ms-2 me-2 ms-xl-4 me-xl-4`}
+      >
+        Latest posts:
+      </h4>
 
       {/* blog post collection list */}
       <Container fluid as="ul" data-testid="blog list box">
@@ -169,7 +175,9 @@ const Home: NextPage = () => {
 
         {/* /blog/3 */}
         <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>react typescript</h4>
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+            How to create a controlled form component with React-Typescript
+          </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -177,19 +185,18 @@ const Home: NextPage = () => {
               Javascript
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              SQL
+              Typescript
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
+              React
             </Badge>
           </div>
 
           {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
-            If you regularly collect api data from the server, you might
-            sometimes notice something peculiar when gathering the date data.
-            The date value could appear as&#160;
-            <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>.
+            It is always tricky when creating forms, especially when it is a
+            large form. You have to configure your inputs you want the user to
+            insert but also be able to collect
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -199,10 +206,50 @@ const Home: NextPage = () => {
           </Link>
 
           <time
-            dateTime={blogsData.blog2.dateTime_attribute}
+            dateTime={blogsData.blog3.dateTime_attribute}
             className={`${blogDate} d-block text-end mb-2`}
           >
-            {blogsData.blog2.dateDisplay}
+            {blogsData.blog3.dateDisplay}
+          </time>
+        </Row>
+
+        {/* /blog/4 */}
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+            Create an instance with Axios
+          </h4>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Axios
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              REST API
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            It is always tricky when creating forms, especially when it is a
+            large form. You have to configure your inputs you want the user to
+            insert but also be able to collect
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/4" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog4.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog4.dateDisplay}
           </time>
         </Row>
       </Container>

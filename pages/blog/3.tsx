@@ -1,7 +1,7 @@
 // COPY VERSION OF ADDING ANOTHER BLOG POST
 //    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
 
-// tite:  How to create a controlled form with React-Typescript
+// tite:  How to create a controlled form component with React-Typescript
 // date: 2022 07 08 Friday
 // blog3
 
@@ -11,6 +11,7 @@
 // -add a quick link in the index.tsx page so you can go to the page easily
 //  - we will update it properly later
 // -write the material as you would
+// -check spelling grammer
 // -estimate reading time
 // -find or create image for blog post
 //   -save image within dropbox blog-site folder
@@ -38,7 +39,7 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
+import blog3Image from "../../public/blog3img/How to create a form controlled component with React-Typescript - my-blog-site repo.jpg";
 
 // iK code block I used
 import Blog3 from "../../components/blogPostCodes/Blog3";
@@ -62,10 +63,13 @@ export default function blog1({}: Props) {
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
-        <title>Create timestamp in SQL format | Ilshaad Blog</title>
+        <title>
+          How to create a controlled form component with React-Typescript |
+          Ilshaad Blog
+        </title>
         <meta
           name="description"
-          content="Create timestamp in SQL format | Ilshaad Blog"
+          content="How to create a controlled form component with React-Typescript | Ilshaad Blog"
         />
 
         <link
@@ -128,21 +132,21 @@ export default function blog1({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog1Image} alt="blog 1 image" />
+        <Image src={blog3Image} alt="blog 3 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          How to create a controlled form with React-Typescript
+          How to create a controlled form component with React-Typescript
         </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>4 min read</p>
+        <p className={`${minuteRead} text-center`}>6 min read</p>
       </Row>
 
       {/* iK date your blog post */}
@@ -189,40 +193,50 @@ export default function blog1({}: Props) {
           <p>
             &#160;&#160;&#160;&#160;&#160;&#160;It is always tricky when
             creating forms, especially when it is a large form. You have to
-            configure your inputs you want the user to insert but also able to
-            collect the form values and complete the desired task such as pass
-            the data to the API server.
+            configure your inputs you want the user to insert but also be able
+            to collect the form values and complete the desired task, such as
+            pass the data to the API server.
           </p>
 
           <p>
-            In React, it is strongly recommended to use form control. Form
-            control in simple terms is watching and controlling every in&#39;s
-            and out&#39;s value within the form. Say the user has a simple text
-            box to type in, as they type character by character, form control
-            takes each one and updates the state simonaneously. However it does
-            require a bit of a setup. But this is made a bit more complicated
-            with the inclusion of Typescript.
+            In React, it is strongly recommended to use controlled form
+            components. Controlled forms in simple terms is watching and
+            controlling every in&#39;s and out&#39;s value within the form. Say
+            the user has a simple text box to type in, as they type in character
+            by character, controlled forms takes each one and updates the state
+            simultaneously. However, it does require a bit of a setup. But this
+            is made a bit more complicated by the inclusion of Typescript.
           </p>
 
           <p>
-            With React-Typescript you are more often than not, expected to
+            With React-Typescript you are, more often than not, expected to
             include types and DOM casting, which can be quite daunting and
-            confusing at first (it certainly confused me). But with a bit of
-            know how, it will soon become second nature. For example collecting
-            input elements within the form when submitted requres using
-            the&#160;<code className={codeText}>event</code> object. But the
-            &#160;<code className={codeText}>event</code> object needs to be
-            type first, otherwise warning on your terminal will crop up. So for
-            submit &#160;<code className={codeText}>event</code> we will need to
-            give it a type of&#160;
+            confusing at first (it certainly did for me). But with a bit of know
+            how, it will soon become second nature. For example, collecting
+            input elements within the form when submitted requires using
+            the&#160;
+            <code className={codeText}>event</code> object. But the&#160;
+            <code className={codeText}>event</code> object needs to be typed
+            first, otherwise warnings on your terminal will crop up. So,
+            for&#160;<code className={codeText}>submit event</code> we will need
+            to give it a type of&#160;
             <code className={codeText}>FormEvent&#60;HTMLFormElement&#62;</code>
-            , the&#160;<code className={codeText}>FormEvent</code> is imported
-            from the React library.
+            . The&#160;<code className={codeText}>FormEvent</code> is imported
+            from the React library. But that&#39;s just one type of&#160;
+            <span className={codeText}>event</span>, there are others.
           </p>
 
           <p>
-            But lets have a look at an form control example to see how it is
-            done in full.
+            Besides from&#160;<span className={codeText}>event</span> object, we
+            also need to collect the elements, setup the state, reassign the
+            state when user inputs values, etc...
+          </p>
+
+          <p>
+            Lets just have a look at a simple controlled form component example
+            with an&#160;
+            <span className={codeText}>&#60;textarea&#62;</span> element to see
+            how it is done in full.
           </p>
         </Col>
 
@@ -230,6 +244,23 @@ export default function blog1({}: Props) {
         {/* the code block component */}
         <Col xs={12}>
           <Blog3 />
+        </Col>
+
+        <Col xs={12}>
+          <p>
+            The most significant thing you will notice is how we set the
+            textarea element value but also change the value using the&#160;
+            <span className={codeText}>change event</span> handler. By doing
+            this, we record everything the user inserts within the textarea
+            element but also assign the value of the textarea at the same time.
+            This is the main gist of controlled form component.
+          </p>
+          <p>
+            We only care about the&#160;
+            <span className={codeText}>submitValue</span> state value, which
+            will be the final data value. Once you have got the submitted value,
+            you can go ahead and complete the form task.
+          </p>
         </Col>
       </Row>
     </Container>

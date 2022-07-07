@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog3/> code for blog3 component snapshot Blog3 code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        <span
+          class="keyword"
+        >
+          import
+        </span>
+         React, { ChangeEvent, FormEvent, useState } 
+        <span
+          class="keyword"
+        >
+          from
+        </span>
+         "react";
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          export default function
+        </span>
+         FormControl() {
+      </div>
+      <div
+        class="tab1 comment"
+      >
+        // For the change event
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         [changeValue, setChangeValue] = 
+        <span
+          class="method"
+        >
+          useState
+        </span>
+        &lt;string&gt;(
+        <span
+          class="value"
+        >
+          "initial value"
+        </span>
+        );
+      </div>
+      <br />
+      <div
+        class="tab1 comment"
+      >
+        // For the submit event
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         [submitValue, setSubmitValue] = 
+        <span
+          class="method"
+        >
+          useState
+        </span>
+        &lt;string&gt;(
+        <span
+          class="value"
+        >
+          ""
+        </span>
+        );
+      </div>
+      <br />
+      <div
+        class="tab1 comment"
+      >
+        // When user submit form
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          const
+        </span>
+         submittedForm = (event: 
+        <span
+          class="keyword"
+        >
+          FormEvent
+        </span>
+        &lt;HTMLFormElement&gt;) =&gt; {
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="comment"
+        >
+          // Prevent page reloading
+        </span>
+        <div>
+          event
+          <span
+            class="method"
+          >
+            .preventDefault
+          </span>
+          ()
+        </div>
+        <div>
+          <span
+            class="comment"
+          >
+            // Collects the textarea element
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           textarea = event
+          <span
+            class="method"
+          >
+            .currentTarget.children
+          </span>
+          [0] 
+          <span
+            class="keyword"
+          >
+            as
+          </span>
+           HTMLTextAreaElement; 
+        </div>
+        <span
+          class="comment"
+        >
+          // Set the final value
+        </span>
+        <div>
+          setSubmitValue(textarea
+          <span
+            class="method"
+          >
+            .value
+          </span>
+          );
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        };
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="comment"
+          >
+            //When user types within the textarea
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           changeTextarea = (event: 
+          <span
+            class="keyword"
+          >
+            ChangeEvent
+          </span>
+          ) =&gt; {
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div
+          class="comment"
+        >
+          // Collects the textarea element
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           textarea = event
+          <span
+            class="method"
+          >
+            .currentTarget
+          </span>
+           
+          <span
+            class="keyword"
+          >
+            as
+          </span>
+           HTMLTextAreaElement;
+        </div>
+        <span
+          class="comment"
+        >
+          // Update the textarea element value with the user inputs
+        </span>
+        <div>
+          setChangeValue(textarea
+          <span
+            class="method"
+          >
+            .value
+          </span>
+          );
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        };
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           (
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          &lt;div&gt;
+        </div>
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          &lt;form 
+          <span
+            class="keyword"
+          >
+            onSubmit
+          </span>
+          ={submittedForm}&gt;
+        </div>
+      </div>
+      <div
+        class="tab4"
+      >
+        <div>
+          &lt;textarea
+        </div>
+      </div>
+      <div
+        class="tab5"
+      >
+        <div>
+          name=
+          <span
+            class="value"
+          >
+            "textareaName"
+          </span>
+        </div>
+        <div>
+          value={changeValue}
+        </div>
+        <div>
+          onChange={changeTextarea}
+        </div>
+      </div>
+      <div
+        class="tab4"
+      >
+        /&gt;
+      </div>
+      <div
+        class="tab4"
+      >
+        &lt;button type=
+        <span
+          class="value"
+        >
+          "submit"
+        </span>
+        &gt;Submit&lt;/button&gt;
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          &lt;/form&gt;
+        </div>
+        <br />
+        <div>
+          &lt;div&gt;{submitValue}&lt;/div&gt;
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        &lt;/div&gt;
+      </div>
+      <div
+        class="tab1"
+      >
+        );
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+    </code>
+  </pre>
+</div>
+`;

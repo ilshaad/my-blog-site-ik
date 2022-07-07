@@ -20,8 +20,14 @@ export const blogsData: blogsDataType = {
   },
 
   blog3: {
-    title: "How to create a controlled form with React-Typescript",
+    title: "How to create a controlled form component with React-Typescript",
     dateDisplay: "2022 July 8th Friday",
     dateTime_attribute: "2022-07-08",
+  },
+
+  blog4: {
+    title: "Create an instance with Axios",
+    dateDisplay: "2022 July 17th Sunday",
+    dateTime_attribute: "2022-07-17",
   },
 };

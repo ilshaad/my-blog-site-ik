@@ -18,6 +18,9 @@ export default function Blog3({}: Props) {
     tab1,
     tab2,
     tab3,
+    tab4,
+    tab5,
+    tab6,
   } = styles;
 
   return (
@@ -29,124 +32,140 @@ export default function Blog3({}: Props) {
           &#160;&#34;react&#34;;
         </div>
         <br />
-
         <div>
           <span className={keyword}>export default function</span> FormControl()
           &#123;
         </div>
-
         <div className={`${tab1} ${comment}`}>
-          &#47;&#47; for the change event
+          &#47;&#47; For the change event
+        </div>
+        <div className={tab1}>
+          <span className={keyword}>const</span> &#91;changeValue,
+          setChangeValue&#93; =&#160;<span className={method}>useState</span>
+          &#60;string&#62;(
+          <span className={value}>&#34;initial value&#34;</span>);
+        </div>
+        <br />
+        <div className={`${tab1} ${comment}`}>
+          &#47;&#47; For the submit event
+        </div>
+        <div className={tab1}>
+          <span className={keyword}>const</span> &#91;submitValue,
+          setSubmitValue&#93; =&#160;<span className={method}>useState</span>
+          &#60;string&#62;(
+          <span className={value}>&#34;&#34;</span>);
+        </div>
+        <br />
+        <div className={`${tab1} ${comment}`}>
+          &#47;&#47; When user submit form
+        </div>
+        <div className={tab1}>
+          <span className={keyword}>const</span> submittedForm = (event:&#160;
+          <span className={keyword}>FormEvent</span>&#60;HTMLFormElement&#62;)
+          =&#62; &#123;
+        </div>
+        <div className={tab2}>
+          <span className={comment}>&#47;&#47; Prevent page reloading</span>
+          <div>
+            event<span className={method}>.preventDefault</span>()
+          </div>
+          <div>
+            <span className={comment}>
+              &#47;&#47; Collects the textarea element
+            </span>
+          </div>
+          <div>
+            <span className={keyword}>const</span> textarea = event
+            <span className={method}>.currentTarget.children</span>[0]&#160;
+            <span className={keyword}>as</span> HTMLTextAreaElement;&#160;
+          </div>
+          <span className={comment}>&#47;&#47; Set the final value</span>
+          <div>
+            setSubmitValue(textarea<span className={method}>.value</span>);
+          </div>
+        </div>
+        <div className={tab1}>&#125;;</div>
+        <br />
+        <div className={tab1}>
+          <div>
+            <span className={comment}>
+              &#47;&#47;When user types within the textarea
+            </span>
+          </div>
+          <div>
+            <span className={keyword}>const</span> changeTextarea =
+            (event:&#160;<span className={keyword}>ChangeEvent</span>) =&#62;
+            &#123;
+          </div>
+        </div>
+        <div className={tab2}>
+          <div className={comment}>
+            &#47;&#47; Collects the textarea element
+          </div>
+          <div>
+            <span className={keyword}>const</span> textarea = event
+            <span className={method}>.currentTarget</span>&#160;
+            <span className={keyword}>as</span> HTMLTextAreaElement;
+          </div>
+          <span className={comment}>
+            &#47;&#47; Update the textarea element value with the user inputs
+          </span>
+          <div>
+            setChangeValue(textarea<span className={method}>.value</span>);
+          </div>
         </div>
 
+        <div className={tab1}>&#125;;</div>
+        <br />
+
+        <div className={tab1}>
+          <div>
+            <span className={keyword}>return</span> (
+          </div>
+        </div>
+        <div className={tab2}>
+          <div>&#60;div&#62;</div>
+        </div>
+        <div className={tab3}>
+          <div>
+            &#60;form&#160;<span className={keyword}>onSubmit</span>
+            =&#123;submittedForm&#125;&#62;
+          </div>
+        </div>
+
+        <div className={tab4}>
+          <div>&#60;textarea</div>
+        </div>
+
+        <div className={tab5}>
+          <div>
+            name=<span className={value}>&#34;textareaName&#34;</span>
+          </div>
+          <div>value=&#123;changeValue&#125;</div>
+          <div>onChange=&#123;changeTextarea&#125;</div>
+        </div>
+
+        <div className={tab4}>/&#62;</div>
+
+        <div className={tab4}>
+          &#60;button type=
+          <span className={value}>&#34;submit&#34;</span>
+          &#62;Submit&#60;/button&#62;
+        </div>
+
+        <div className={tab3}>
+          <div>&#60;/form&#62;</div>
+          <br />
+
+          <div>&#60;div&#62;&#123;submitValue&#125;&#60;/div&#62;</div>
+        </div>
+
+        <div className={tab2}>&#60;/div&#62;</div>
+
+        <div className={tab1}>);</div>
         <div>&#125;;</div>
         {/* END OF */}
-
         <br />
-
-        <div>
-          <span className={`${keyword}`}>function</span>&#160;
-          createTimestampInSqlFormat () &#123;
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>const</span> date =&#160;
-          <span className={`${keyword}`}>new</span>&#160;
-          <span className={`${method}`}>Date</span>();
-        </div>
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> year =&#160; date
-          <span className={`${method}`}>.getFullYear</span>();
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> month =&#160; date
-          <span className={`${method}`}>.getMonth</span>() +&#160;
-          <span className={`${value}`}>1</span>
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> day =&#160; date
-          <span className={`${method}`}>.getDate</span>();
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> hour =&#160; date
-          <span className={`${method}`}>.getHours</span>();
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> minute =&#160; date
-          <span className={`${method}`}>.getMinutes</span>();
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> second =&#160; date
-          <span className={`${method}`}>.getSeconds</span>();
-        </div>
-
-        <br />
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>const</span> timestampArray = [year,
-          month, day, hour, minute, seconds];
-        </div>
-
-        <br />
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>let</span> timestampString = &#34;&#34;
-        </div>
-
-        <br />
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>for</span> (
-          <span className={`${keyword}`}>let</span> dateNumber&#160;
-          <span className={`${keyword}`}>of</span>&#160; timestampArray) &#123;
-        </div>
-        <div className={`${comment} ${tab2}`}>
-          &#47;&#47; if number is less than 10 than add a 0 in front of it
-        </div>
-        <div className={`${tab2}`}>
-          <span className={`${keyword}`}>if</span> (dateNumber &#62;=&#160;
-          <span className={`${value}`}>10</span>) &#123;
-        </div>
-        <div className={`${tab3}`}>timestampString += dateNumber;</div>
-        <div className={`${tab2}`}>
-          &#125; <span className={`${keyword}`}>else</span> &#123;
-        </div>
-        <div className={`${tab3}`}>
-          timestamString += `<span className={`${value}`}>0</span>
-          $&#123;dateNumber&#125;`;
-        </div>
-        <div className={`${tab2}`}>&#125;</div>
-        <div className={`${tab1}`}>&#125;</div>
-
-        <br />
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>const/</span> timestampRegEx =
-          /(\d&#123;4&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)/g;
-        </div>
-
-        <br />
-
-        <div className={`${comment} ${tab1}`}>
-          &#47;&#47; create the sql timestamp format.You could change the format
-          here if need be&#160;
-        </div>
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>const/</span> timestamp =
-          timestampString<span className={`${method}`}>.replace</span>(
-        </div>
-        <div className={`${tab2}`}>timestampRegEx,</div>
-        <div className={`${tab2}`}>
-          <span className={`${value}`}>&#34;$1-$2-$3 $4:$5:$6&#34;</span>
-        </div>
-        <div className={`${tab1}`}>);</div>
-
-        <br />
-
-        <div className={`${tab1}`}>
-          <span className={`${keyword}`}>return</span> timestamp;
-        </div>
-        <div>&#125;</div>
       </code>
     </pre>
   );

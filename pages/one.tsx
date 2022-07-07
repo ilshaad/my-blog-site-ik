@@ -1,26 +1,27 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 
-export default function One() {
-  // for the change event
-  const [changeValue, setChangeValue] = useState<string>("initial");
-  // for the submit event
-  const [submittedValue, setSubmittedValue] = useState<string>("");
+export default function FormControl() {
+  // For the change event
+  const [changeValue, setChangeValue] = useState<string>("initial value");
 
-  // when user submit form
+  // For the submit event
+  const [submitValue, setSubmitValue] = useState<string>("");
+
+  // When user submit form
   const submittedForm = (event: FormEvent<HTMLFormElement>) => {
+    // Prevent page reloading
     event.preventDefault();
-
-    // collects the textarea element
+    // Collects the textarea element
     const textarea = event.currentTarget.children[0] as HTMLTextAreaElement;
-
-    setSubmittedValue(textarea.value);
+    // Set the final value
+    setSubmitValue(textarea.value);
   };
 
-  // when user types within the textarea
-  const changedTextarea = (event: ChangeEvent) => {
+  //When user types within the textarea
+  const changeTextarea = (event: ChangeEvent) => {
+    // Collects the textarea element
     const textarea = event.currentTarget as HTMLTextAreaElement;
-
-    // collects the textarea element
+    // Update the textarea element value with the user inputs
     setChangeValue(textarea.value);
   };
 
@@ -30,13 +31,12 @@ export default function One() {
         <textarea
           name="textareaName"
           value={changeValue}
-          onChange={changedTextarea}
+          onChange={changeTextarea}
         />
-
         <button type="submit">Submit</button>
       </form>
 
-      <div>{submittedValue}</div>
+      <div>{submitValue}</div>
     </div>
   );
 }
