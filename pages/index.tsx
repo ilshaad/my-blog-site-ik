@@ -11,8 +11,8 @@ import Github_anchor_svg from "../components/anchor_svg/Github_anchor_svg";
 import Home_anchor_svg from "../components/anchor_svg/Home_anchor_svg";
 import LinkedIn_anchor_svg from "../components/anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "../components/anchor_svg/Portfolio_anchor_svg";
-import styles from "../styles/pages/index.module.scss";
 import { blogsData } from "../scripts/blogsData";
+import styles from "../styles/pages/index.module.scss";
 
 const Home: NextPage = () => {
   const {
@@ -234,9 +234,9 @@ const Home: NextPage = () => {
 
           {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
-            It is always tricky when creating forms, especially when it is a
-            large form. You have to configure your inputs you want the user to
-            insert but also be able to collect
+            If you are into programming, then you will likely have heard of DRY
+            (don&#39; repeat yourself). Basically, writing the same code
+            repeatedly can be quite tedious. And it
           </p>
 
           <span className={`mt-n4`}>...</span>
@@ -250,6 +250,52 @@ const Home: NextPage = () => {
             className={`${blogDate} d-block text-end mb-2`}
           >
             {blogsData.blog4.dateDisplay}
+          </time>
+        </Row>
+
+        {/* /blog/5 */}
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+            Deploy multiple Docker containers to Heroku using Github Actions
+          </h4>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Docker
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Docker Compose
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Heroku
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Github Actions
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Fullstack - client side rendering
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            Sometimes the client side has to produce the date of the user
+            interaction before sending it to the server api. And sometimes they
+            have to format the date and time
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/5" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog5.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog5.dateDisplay}
           </time>
         </Row>
       </Container>

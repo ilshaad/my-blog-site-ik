@@ -1,9 +1,6 @@
-// COPY VERSION OF ADDING ANOTHER BLOG POST
-//    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
-
-// tite:  Create an instance with Axios
-// date: 2022 07 17 Sunday
-// blog4
+// tite:  Deploy multiple Docker containers to Heroku using Github Actions
+// date: 2022 08 01 Monday
+// blog5
 
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
@@ -39,18 +36,20 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog4Image from "../../public/blog4img/Axios Instance.jpg";
+import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 // iK code block I used
-import {
-  InstanceCreateCode,
-  FetchInstanceCode,
-} from "../../components/blogPostCodes/Blog4";
+import Blog1 from "../../components/blogPostCodes/Blog1";
 import Link from "next/link";
+import {
+  DockerComposeFile,
+  DockerfileFrontend,
+  GithubActionsFile,
+} from "../../components/blogPostCodes/Blog5";
 
 type Props = {};
 
-export default function blog1({}: Props) {
+export default function blog5({}: Props) {
   const {
     blogPostPage,
     svgLinks,
@@ -61,15 +60,18 @@ export default function blog1({}: Props) {
   } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
-  const { blog4 } = blogsData;
+  const { blog5 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
-        <title>Create an instance with Axios | Ilshaad Blog</title>
+        <title>
+          Deploy multiple Docker containers to Heroku using Github Actions |
+          Ilshaad Blog
+        </title>
         <meta
           name="description"
-          content="Create an instance with Axios | Ilshaad Blog"
+          content="Deploy multiple Docker containers to Heroku using Github Actions | Ilshaad Blog"
         />
 
         <link
@@ -132,31 +134,31 @@ export default function blog1({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog4Image} alt="blog 4 image" />
+        <Image src={blog1Image} alt="blog 1 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Create an instance with Axios
+          Deploy multiple Docker containers to Heroku using Github Actions
         </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>7 min read</p>
+        <p className={`${minuteRead} text-center`}>4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
       {/* iK collect your blog date from blogsData object */}
       <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime={blog4.dateTime_attribute}
+          dateTime={blog5.dateTime_attribute}
           className={`${blogDate} d-block text-center`}
         >
-          {blog4.dateDisplay}
+          {blog5.dateDisplay}
         </time>
       </Row>
 
@@ -166,13 +168,19 @@ export default function blog1({}: Props) {
         <h5 className={`text-center`}>Prequisite:</h5>
         <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Javascript
+            Docker
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Axios
+            Docker Compose
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            REST API
+            Heroku
+          </Badge>
+          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+            Github Actions
+          </Badge>
+          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+            Fullstack - client side rendering
           </Badge>
         </div>
       </Row>
@@ -191,65 +199,87 @@ export default function blog1({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;If you are into programming,
-            then you will likely have heard of DRY (don&#39; repeat yourself).
-            Basically, writing the same code repeatedly can be quite tedious.
-            And it becomes more tedious when trying to remember the url to make
-            your Axios fetch a request every time. Would it not be great to just
-            type in the url once, and code any methods you require out of it.
-            Plus, you configure to any specific pathnames and query string.
-            That&#39;s where the&#160;
-            <span className={codeText}>create()</span>&#160;method comes in.
+            &#160;&#160;&#160;&#160;&#160;&#160;It is very common deploying apps
+            using CI/CD (Continous Integration / Continous Delivery). Actually
+            depending which cloud application platform provider you use, all you
+            will need to do is git push your app and they will setup a pipeline
+            and deploy on app online for you. But it starts to get a bit
+            complicated when you want to configure the pipeline yourself to
+            match your app needs, plus not too mention it could get expensive
+            real fast too.
+          </p>
+          <p>
+            What if you have a fullstack app which is using clint side
+            rendering. It would mean that you will need to hook up the frontend
+            and backend api together since they are considered as separate apps
+            within the repo. Usually that is not a problem in itself, but it
+            gets tricky if you want to implement a pipeline to both the
+            applications. To throw in another spanner in the works, lets say we
+            are wrapping the frontend and backend in a Docker container. We are
+            going to be doing exactly this, using Heroku as your cloud provider.
           </p>
 
           <p>
-            Axios provides a number of methods you can use, but&#160;
-            <span className={codeText}>create()</span> is one of the most useful
-            ones. It creates an instance Promise object of the url API.And you
-            can use that instance Promise however many times you like and
-            whichever methods you need.
+            Now it is worth noting that, Heroku already provide a container
+            deployment service, but it is not ideal when you have a fullstack
+            CSR app (containing both frontend and backend), since you will have
+            to git push them individually. Plus having full control of your
+            Docker means you control all app version package from breaking and
+            testing.
           </p>
-
           <p>
-            Usually it is best to create a separate file just for the instance
-            alone, and then we can import the instance to any file.
+            Lets assume your frontend and backend is setup within your repo, we
+            should first create a&#160;
+            <span className={codeText}>Dockerfile</span> file for each app,
+            which should look something like this:
           </p>
         </Col>
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
         <Col xs={12}>
-          <InstanceCreateCode />
+          <DockerfileFrontend />
         </Col>
 
         <Col xs={12}>
           <p>
-            Creating an instance is simple enough, you only need the url API and
-            optionally set a timeout. Once done, we can now use it freely and
-            however many times we want, without having to memorise the url
-            again. The instance is a Promise object, so when we use it, we get
-            the Resolved or Rejected response. Let&#39;s check out the example
-            below:
+            Do not forget to create a&#160;
+            <span className={codeText}>Dockerfile</span> file for your backend
+            app too. Which should look very similar to the frontend&#160;
+            <span className={codeText}>Dockerfile</span> file.
+          </p>
+          <p>
+            When both&#160;<span className={codeText}>Dockerfile</span> files
+            are working, you can proceed with Docker compose which infuses both
+            containers together.
           </p>
         </Col>
 
         <Col xs={12}>
-          <FetchInstanceCode />
+          <DockerComposeFile />
         </Col>
 
         <Col xs={12}>
           <p>
-            As you can see, the instance is easy to use, just like a normal
-            fetch request promise object. And it is matched with its flexibility
-            because, as mentioned before, you can use any methods you want (eg.
-            POST, PUT, DELETE, etc) the same way as GET, you can configure the
-            headers, insert a body, etc...
+            Use the&#160;<span className={codeText}>docker-compose up</span>
+            &#160;command in the terminal to ensure everything is running
+            smoothly.
           </p>
+
           <p>
-            So if you have begun a project, knowing you are going to use the
-            same url API over and over, Axios instance is definitely the way to
-            go.
+            Now we can move onto the next step which is to create the Github
+            Actions pipeline (be sure to have already create an account with
+            Github and Heroku prior). The Github Actions file is quite
+            straightforword but you will need a few things beforehand. Collect
+            your Heroku email address and your Heroku api key, which can be
+            found in your Heroku account settings. Once you got that, go to your
+            app Github repo, and you set your secrets (found in your repo
+            settings) zzzzzzzzzzzzz
           </p>
+        </Col>
+
+        <Col xs={12}>
+          <GithubActionsFile />
         </Col>
       </Row>
     </Container>

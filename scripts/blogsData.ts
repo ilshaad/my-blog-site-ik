@@ -30,4 +30,10 @@ export const blogsData: blogsDataType = {
     dateDisplay: "2022 July 17th Sunday",
     dateTime_attribute: "2022-07-17",
   },
+
+  blog5: {
+    title: "Deploy multiple Docker containers to Heroku using Github Actions",
+    dateDisplay: "2022 August 1st Monday",
+    dateTime_attribute: "2022-08-01",
+  },
 };

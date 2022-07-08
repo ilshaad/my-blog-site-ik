@@ -4,25 +4,25 @@
 import React from "react";
 import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
 
+// all the styles
+const {
+  preCode,
+  codeTag,
+  comment,
+  keyword,
+  method,
+  value,
+  tab1,
+  tab2,
+  tab3,
+  tab4,
+  tab5,
+  tab6,
+} = styles;
+
 type Props = {};
 
-export function InstanceCreate({}: Props) {
-  // all the styles
-  const {
-    preCode,
-    codeTag,
-    comment,
-    keyword,
-    method,
-    value,
-    tab1,
-    tab2,
-    tab3,
-    tab4,
-    tab5,
-    tab6,
-  } = styles;
-
+export function InstanceCreateCode({}: Props) {
   return (
     <pre className={`${preCode} mx-auto`}>
       <code className={`${codeTag} mx-auto`} role="code">
@@ -45,7 +45,7 @@ export function InstanceCreate({}: Props) {
           <div>
             <span className={keyword}>const</span> baseUrl =&#160;
             <span className={value}>
-              &#34;https://jsonplaceholder.typicode.com/users&#34;
+              &#34;https://jsonplaceholder.typicode.com/users&#34;&#160;
             </span>
           </div>
 
@@ -76,6 +76,79 @@ export function InstanceCreate({}: Props) {
     </pre>
   );
 }
+
+export const FetchInstanceCode = () => {
+  return (
+    <pre className={`${preCode} mx-auto`}>
+      <code className={`${codeTag} mx-auto`} role="code">
+        <div>
+          <span className={keyword}>import</span> jsonP_instance&#160;
+          <span className={keyword}>from</span>
+          &#160;&#34;./apiInstance/jsonPlaceholder.js&#34;;
+        </div>
+        <br />
+
+        <div className={tab1}>
+          <div className={comment}>
+            &#47;&#47; GET all users from Json Placeholder api
+          </div>
+          <div className={comment}>
+            &#47;&#47; Same as GET
+            &#34;https://jsonplaceholder.typicode.com/users&#34;
+          </div>
+          <div>jsonP_instance()</div>
+        </div>
+
+        <div className={tab2}>
+          <div>
+            <span className={method}>.get</span>(
+            <span className={value}>&#34;/&#34;</span>)
+          </div>
+
+          <div>
+            <span className={method}>.then</span>(response =&#62; console
+            <span className={method}>.log</span>(response.data)
+          </div>
+
+          <div>
+            <span className={method}>.catch</span>(error =&#62; console
+            <span className={method}>.error</span>(error.data);
+          </div>
+        </div>
+        <br />
+
+        <div className={tab1}>
+          <div className={comment}>
+            &#47;&#47; GET one user from Json Placeholder api
+          </div>
+          <div className={comment}>
+            &#47;&#47; Same as GET
+            &#34;https://jsonplaceholder.typicode.com/users/1&#34;
+          </div>
+          <div>jsonP_instance()</div>
+        </div>
+
+        <div className={tab2}>
+          <div>
+            <span className={method}>.get</span>(
+            <span className={value}>&#34;/1&#34;</span>)
+          </div>
+
+          <div>
+            <span className={method}>.then</span>(response =&#62; console
+            <span className={method}>.log</span>(response.data)
+          </div>
+
+          <div>
+            <span className={method}>.catch</span>(error =&#62; console
+            <span className={method}>.error</span>(error.data);
+          </div>
+        </div>
+      </code>
+    </pre>
+  );
+};
+
 // https://jsonplaceholder.typicode.com/users
 // /  &#47;
 // !  &#33;

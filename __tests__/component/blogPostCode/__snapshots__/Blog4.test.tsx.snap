@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog4/> code for blog4 component snapshot Blog4 code tag <FetchInstanceCode/> 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        <span
+          class="keyword"
+        >
+          import
+        </span>
+         jsonP_instance 
+        <span
+          class="keyword"
+        >
+          from
+        </span>
+         "./apiInstance/jsonPlaceholder.js";
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <div
+          class="comment"
+        >
+          // GET all users from Json Placeholder api
+        </div>
+        <div
+          class="comment"
+        >
+          // Same as GET "https://jsonplaceholder.typicode.com/users"
+        </div>
+        <div>
+          jsonP_instance()
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          <span
+            class="method"
+          >
+            .get
+          </span>
+          (
+          <span
+            class="value"
+          >
+            "/"
+          </span>
+          )
+        </div>
+        <div>
+          <span
+            class="method"
+          >
+            .then
+          </span>
+          (response =&gt; console
+          <span
+            class="method"
+          >
+            .log
+          </span>
+          (response.data)
+        </div>
+        <div>
+          <span
+            class="method"
+          >
+            .catch
+          </span>
+          (error =&gt; console
+          <span
+            class="method"
+          >
+            .error
+          </span>
+          (error.data);
+        </div>
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <div
+          class="comment"
+        >
+          // GET one user from Json Placeholder api
+        </div>
+        <div
+          class="comment"
+        >
+          // Same as GET "https://jsonplaceholder.typicode.com/users/1"
+        </div>
+        <div>
+          jsonP_instance()
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          <span
+            class="method"
+          >
+            .get
+          </span>
+          (
+          <span
+            class="value"
+          >
+            "/1"
+          </span>
+          )
+        </div>
+        <div>
+          <span
+            class="method"
+          >
+            .then
+          </span>
+          (response =&gt; console
+          <span
+            class="method"
+          >
+            .log
+          </span>
+          (response.data)
+        </div>
+        <div>
+          <span
+            class="method"
+          >
+            .catch
+          </span>
+          (error =&gt; console
+          <span
+            class="method"
+          >
+            .error
+          </span>
+          (error.data);
+        </div>
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog4/> code for blog4 component snapshot Blog4 code tag <InstanceCreateCode/> 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // ./apiInstance/jsonPlaceholder.js file
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          import
+        </span>
+         axios 
+        <span
+          class="keyword"
+        >
+          from
+        </span>
+         "axios";
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          export default function
+        </span>
+         jsonP_instance() {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           baseUrl = 
+          <span
+            class="value"
+          >
+            "https://jsonplaceholder.typicode.com/users" 
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           instance = axios
+          <span
+            class="method"
+          >
+            .create
+          </span>
+          ({
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          baseURL: baseUrl,
+        </div>
+        <div>
+          timeout: 
+          <span
+            class="value"
+          >
+            4000
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          });
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           instance;
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+    </code>
+  </pre>
+</div>
+`;
