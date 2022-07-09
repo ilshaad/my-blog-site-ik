@@ -1,7 +1,6 @@
 // also includes github / linkedin / portrolio / mail me (contact me) icons links
 
 import React from "react";
-import { Container } from "react-bootstrap";
 // import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
 // import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
 // import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";

@@ -1,0 +1,644 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog5/> code for blog5 component snapshot DockerComposeFile code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        # ./docker-compose.yml file
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          version
+        </span>
+        :
+        <span
+          class="value"
+        >
+           "3.8"
+        </span>
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          services
+        </span>
+        :
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          frontendApp
+        </span>
+        :
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          build
+        </span>
+        :
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            context
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            ./frontend
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            dockerfile
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            Dockerfile 
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          ports
+        </span>
+        :
+      </div>
+      <div
+        class="tab3"
+      >
+        - 
+        <span
+          class="value"
+        >
+          "3000:3000"
+        </span>
+      </div>
+      <br />
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          backendApp
+        </span>
+        :
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          build
+        </span>
+        :
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            context
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            ./backend
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            dockerfile
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            Dockerfile
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          ports
+        </span>
+        :
+      </div>
+      <div
+        class="tab3"
+      >
+        - 
+        <span
+          class="value"
+        >
+          "4000:4000"
+        </span>
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog5/> code for blog5 component snapshot DockerfileFrontend code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        <div>
+          # ./frontend/Dockerfile file
+        </div>
+        <br />
+        <div>
+          # Create a Node.js and Alpine container
+        </div>
+        <div>
+          # Use whatever is the latest version from Docker hub
+        </div>
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          FROM
+        </span>
+         
+        <span
+          class="value"
+        >
+          node:18.5.0-alpine3.16
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # Create directory your app will be build in within the Alpine container
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          WORKDIR
+        </span>
+         
+        <span
+          class="value"
+        >
+          /frontend
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # copy both your package.json and package-lock-json file within the /frontend directory 
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          COPY
+        </span>
+         
+        <span
+          class="value"
+        >
+          ./package.json .
+        </span>
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          COPY
+        </span>
+         
+        <span
+          class="value"
+        >
+          ./package.lock.json .
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # Install packages
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          RUN
+        </span>
+         
+        <span
+          class="value"
+        >
+          npm ci
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # After install, copy all files within ./frontend directory
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          COPY
+        </span>
+         
+        <span
+          class="value"
+        >
+          . .
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # Build your app
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          RUN
+        </span>
+         
+        <span
+          class="value"
+        >
+          npm run build
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        # Expose frontend app port number
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          EXPOSE
+        </span>
+         
+        <span
+          class="value"
+        >
+          3000
+        </span>
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        Run your frontend server
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          CMD
+        </span>
+         
+        <span
+          class="value"
+        >
+          npm run server
+        </span>
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog5/> code for blog5 component snapshot GithubActionsFile code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        ./.github/workflows/main.yml
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          name
+        </span>
+        : 
+        <span
+          class="value"
+        >
+          Fullstack CSR app
+        </span>
+      </div>
+      <div
+        class="comment"
+      >
+        # Setup trigger deployment when you git push in the master branch
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          on
+        </span>
+        :
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          push
+        </span>
+        :
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          branches
+        </span>
+        :
+      </div>
+      <div
+        class="tab3"
+      >
+        - 
+        <span
+          class="value"
+        >
+          master
+        </span>
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          jobs
+        </span>
+        :
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          build
+        </span>
+        :
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            runs-on
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            ubuntu-latest
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            steps
+          </span>
+          :
+        </div>
+      </div>
+      <div
+        class="tab3"
+      >
+        <div
+          class="comment"
+        >
+          # Looks at your repositoty
+        </div>
+        <div>
+          - 
+          <span
+            class="keyword"
+          >
+            uses
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            actions/checkout@v2
+          </span>
+        </div>
+        <div
+          class="comment"
+        >
+          # Create and deploy your multiple containers
+        </div>
+        <div>
+          - 
+          <span
+            class="keyword"
+          >
+            name
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            Deploy multiple Docker images to Heroku apps
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab4"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            uses
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            snithyanantham/docker-compose-mulitple-apps-heroku-deploy@v1.0
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            id
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            heroku
+          </span>
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            with
+          </span>
+          :
+        </div>
+      </div>
+      <div
+        class="tab5"
+      >
+        <div
+          class="comment"
+        >
+          # Your Heroku email address
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            email
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            \${{ secrets.HEROKU_EMAIL }}
+          </span>
+        </div>
+        <div
+          class="comment"
+        >
+          # Your Heroku api key
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            api_key
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            \${{ secrets.HEROKU_API_KEY }}
+          </span>
+        </div>
+        <div
+          class="comment"
+        >
+          # path to your docker-compose file
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            docker_compose_file
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            "./docker-compose.yml"
+          </span>
+        </div>
+        <div
+          class="comment"
+        >
+          # Set Docker images name, Heroku app name and Heroku app type
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            heroku_apps
+          </span>
+          : 
+          <span
+            class="value"
+          >
+            '[{"imagename":"fullstack_frontendApp", "appname":"frontend", "apptype";"web"}, {"imagename"fullstack_backendApp", "appname":"backend", "apptype":"web"}]' 
+          </span>
+        </div>
+      </div>
+    </code>
+  </pre>
+</div>
+`;

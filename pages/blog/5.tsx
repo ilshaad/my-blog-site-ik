@@ -1,4 +1,4 @@
-// tite:  Deploy multiple Docker containers to Heroku using Github Actions
+// tite:  Deploy multiple Docker containers pipeline using Github Actions and Heroku
 // date: 2022 08 01 Monday
 // blog5
 
@@ -10,6 +10,7 @@
 // -write the material as you would
 // -check spelling grammer
 // -estimate reading time
+// -enter the prequisite knowledge level list base on your material
 // -find or create image for blog post
 //   -save image within dropbox blog-site folder
 //   -save image within /public folder in you app
@@ -19,16 +20,16 @@
 //   - ./__tests__/components/blogPostCodes/Blog1.test.tsx	(for possible code blocks you may use within the blog page)
 // -update / page blog list
 
-import React from "react";
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import { Badge, Breadcrumb, Col, Container, Row } from "react-bootstrap";
 
-import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
-import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
-import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_svg";
-import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
 import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
+import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
+import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
+import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
+import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_svg";
 
 import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
 
@@ -36,11 +37,9 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
+import blog5Image from "../../public/blog5img/blog5.jpg";
 
 // iK code block I used
-import Blog1 from "../../components/blogPostCodes/Blog1";
-import Link from "next/link";
 import {
   DockerComposeFile,
   DockerfileFrontend,
@@ -66,12 +65,12 @@ export default function blog5({}: Props) {
     <Container className={`${blogPostPage}`}>
       <Head>
         <title>
-          Deploy multiple Docker containers to Heroku using Github Actions |
-          Ilshaad Blog
+          Deploy multiple Docker containers pipeline using Github Actions and
+          Heroku | Ilshaad Blog
         </title>
         <meta
           name="description"
-          content="Deploy multiple Docker containers to Heroku using Github Actions | Ilshaad Blog"
+          content="Deploy multiple Docker containers pipeline using Github Actions and Heroku | Ilshaad Blog"
         />
 
         <link
@@ -91,7 +90,7 @@ export default function blog5({}: Props) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="apple-mobile-web-app-title" content="Ilshaad blog" />
         <meta name="application-name" content="Ilshaad blog" />
@@ -134,21 +133,22 @@ export default function blog5({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog1Image} alt="blog 1 image" />
+        <Image src={blog5Image} alt="blog 5 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Deploy multiple Docker containers to Heroku using Github Actions
+          Deploy multiple Docker containers pipeline using Github Actions and
+          Heroku
         </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>4 min read</p>
+        <p className={`${minuteRead} text-center`}>8 min read</p>
       </Row>
 
       {/* iK date your blog post */}
@@ -182,7 +182,22 @@ export default function blog5({}: Props) {
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Fullstack - client side rendering
           </Badge>
+          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+            CI/CD
+          </Badge>
         </div>
+      </Row>
+
+      {/* list expert level knowledge of each prequisite skills required by reader to understand and do within this blog */}
+      <Row style={{ fontSize: "0.9rem" }}>
+        <Col xs={{ span: 9, offset: 1 }}>
+          <ul>
+            <li>Should have good knowledge of Docker and Docker-Compose</li>
+            <li>Installed Docker within your local device</li>
+            <li>Should be registered to Heroku and Github</li>
+            <li>Basic understanding of CSR and CI/CD</li>
+          </ul>
+        </Col>
       </Row>
 
       {/* Do not touch */}
@@ -199,37 +214,38 @@ export default function blog5({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;It is very common deploying apps
-            using CI/CD (Continous Integration / Continous Delivery). Actually
-            depending which cloud application platform provider you use, all you
-            will need to do is git push your app and they will setup a pipeline
-            and deploy on app online for you. But it starts to get a bit
-            complicated when you want to configure the pipeline yourself to
-            match your app needs, plus not too mention it could get expensive
-            real fast too.
+            &#160;&#160;&#160;&#160;&#160;&#160;It is very common to deploy apps
+            using CI/CD (Continuous Integration / Continuous Delivery).
+            Actually, depending on which cloud application platform provider you
+            use, all you will need to do is git push your app and they will
+            setup a pipeline and deploy the app online for you. But it starts to
+            get a bit complicated when you want to configure the pipeline
+            yourself to match your app needs, plus, not to mention, it could get
+            expensive real fast too.
           </p>
           <p>
-            What if you have a fullstack app which is using clint side
-            rendering. It would mean that you will need to hook up the frontend
+            What if you have a fullstack app which is using client side
+            rendering? It would mean that you will need to hook up the frontend
             and backend api together since they are considered as separate apps
-            within the repo. Usually that is not a problem in itself, but it
+            within the repo. Usually, that is not a problem in itself, but it
             gets tricky if you want to implement a pipeline to both the
-            applications. To throw in another spanner in the works, lets say we
-            are wrapping the frontend and backend in a Docker container. We are
-            going to be doing exactly this, using Heroku as your cloud provider.
+            applications. To throw in another spanner in the works, let&#39;s
+            say we are wrapping the frontend and backend in a Docker container.
+            We are going to be doing exactly this, using Heroku as your cloud
+            provider.
           </p>
 
           <p>
-            Now it is worth noting that, Heroku already provide a container
+            Now it is worth noting that Heroku already provides a container
             deployment service, but it is not ideal when you have a fullstack
             CSR app (containing both frontend and backend), since you will have
-            to git push them individually. Plus having full control of your
-            Docker means you control all app version package from breaking and
+            to git push them individually. Plus, having full control of your
+            Docker means you control all app version packages from breaking and
             testing.
           </p>
           <p>
-            Lets assume your frontend and backend is setup within your repo, we
-            should first create a&#160;
+            Let&#39;s assume your frontend and backend is setup within your
+            repo, we should first create a&#160;
             <span className={codeText}>Dockerfile</span> file for each app,
             which should look something like this:
           </p>
@@ -245,12 +261,12 @@ export default function blog5({}: Props) {
           <p>
             Do not forget to create a&#160;
             <span className={codeText}>Dockerfile</span> file for your backend
-            app too. Which should look very similar to the frontend&#160;
+            app too. It should look very similar to the frontend&#160;
             <span className={codeText}>Dockerfile</span> file.
           </p>
           <p>
             When both&#160;<span className={codeText}>Dockerfile</span> files
-            are working, you can proceed with Docker compose which infuses both
+            are working, you can proceed with Docker Compose which infuses both
             containers together.
           </p>
         </Col>
@@ -267,19 +283,39 @@ export default function blog5({}: Props) {
           </p>
 
           <p>
-            Now we can move onto the next step which is to create the Github
-            Actions pipeline (be sure to have already create an account with
-            Github and Heroku prior). The Github Actions file is quite
-            straightforword but you will need a few things beforehand. Collect
-            your Heroku email address and your Heroku api key, which can be
-            found in your Heroku account settings. Once you got that, go to your
-            app Github repo, and you set your secrets (found in your repo
-            settings) zzzzzzzzzzzzz
+            Now we can move onto the next step, which is to create the Github
+            Actions CI/CD pipeline (be sure you have already been registered
+            with Github and Heroku prior). The Github Actions file is quite
+            straightforward but you will need a few things beforehand; your
+            Heroku email address and your Heroku api key, which can be found in
+            your Heroku account settings. Once you get that, go to your Github
+            app repo, and you set your environment secrets variables (found in
+            your repo settings). Be sure to set&#160;
+            <span className={codeText}>HEROKU_EMAIL</span> and&#160;
+            <span className={codeText}>HEROKU_API_KEY</span> keys exactly as
+            shown because your Github Actions file will search for these two
+            secrets in order to give you access to your Heroku account.
+          </p>
+          <p>
+            After you have set your repo secrets, we can now create the Github
+            Actions file to deploy your fullstack docker containers.
           </p>
         </Col>
 
         <Col xs={12}>
           <GithubActionsFile />
+        </Col>
+
+        <Col xs={12}>
+          <p>
+            If all done correctly, everytime you git push your local repo,
+            Github Actions will build your Docker images and deploy to Heroku.
+          </p>
+          <p>
+            It does require a bit of configuration on your behalf, but once
+            completed, in the long run it will serve you well, saving you more
+            time.
+          </p>
         </Col>
       </Row>
     </Container>

@@ -4,7 +4,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
 import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
-import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
+// import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
 import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
 import styles from "../styles/components/AsideBox.module.scss";
@@ -58,13 +58,19 @@ export default function AsideBox({}: Props) {
         <h6 className={`text-center mt-2 mb-1 text-decoration-underline`}>
           About
         </h6>
-        <p className={`${aboutBox} mb-2`}>
+        {/* <p className={`${aboutBox} mb-2`}>
           My name is Ilshaad, and I have been in web development for quite a
           while now. Whilst I will always consider myself a student, I also
           think it is important to give back to the community. So, this blog is
           to share some of my knowledge / how to / solutions that I have come
           across. Feel free to contact me if there is something I can help with.
+        </p> */}
+
+        <p className={`${aboutBox} mb-2`}>
+          My name is Ilshaad. I am a Web developer. I believe in giving back to
+          the community, so I share what I know and hopefully it will help you.
         </p>
+        <p className={aboutBox}>Eat, Sleep, Code, Repeat!</p>
       </div>
     </div>
   );

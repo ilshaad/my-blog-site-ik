@@ -1,7 +1,7 @@
 // COPY VERSION OF ADDING ANOTHER BLOG POST
 //    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
 
-// tite:  Create an instance with Axios
+// tite:  Create an Axios instance
 // date: 2022 07 17 Sunday
 // blog4
 
@@ -66,10 +66,10 @@ export default function blog1({}: Props) {
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
-        <title>Create an instance with Axios | Ilshaad Blog</title>
+        <title>Create an Axios instance | Ilshaad Blog</title>
         <meta
           name="description"
-          content="Create an instance with Axios | Ilshaad Blog"
+          content="Create an Axios instance | Ilshaad Blog"
         />
 
         <link
@@ -89,7 +89,7 @@ export default function blog1({}: Props) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="apple-mobile-web-app-title" content="Ilshaad blog" />
         <meta name="application-name" content="Ilshaad blog" />
@@ -139,7 +139,7 @@ export default function blog1({}: Props) {
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Create an instance with Axios
+          Create an Axios instance
         </h1>
       </Row>
 
@@ -175,6 +175,16 @@ export default function blog1({}: Props) {
             REST API
           </Badge>
         </div>
+      </Row>
+
+      {/* list expert level knowledge of each prequisite skills required by reader to understand and do within this blog */}
+      <Row style={{ fontSize: "0.9rem" }}>
+        <Col xs={{ span: 9, offset: 1 }}>
+          <ul>
+            <li>Should have good knowledge of Javascript and REST API</li>
+            <li>At least know the basics of Axios</li>
+          </ul>
+        </Col>
       </Row>
 
       {/* Do not touch */}

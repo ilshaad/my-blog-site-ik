@@ -209,9 +209,9 @@ exports[`<2/> blog page snapshot blog post 2 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-07-04"
+        datetime="2022-07-20"
       >
-        2022 July 4th Monday
+        2022 July 20th Wednesday
       </time>
     </div>
     <div
@@ -240,6 +240,23 @@ exports[`<2/> blog page snapshot blog post 2 1`] = `
         >
           Regular Expression
         </span>
+      </div>
+    </div>
+    <div
+      class="row"
+      style="font-size: 0.9rem;"
+    >
+      <div
+        class="col-9 offset-1"
+      >
+        <ul>
+          <li>
+            Should have good knowledge of Javascript
+          </li>
+          <li>
+            Basic Regular Expression and SQL know how, but not required if you only want to copy code snippet
+          </li>
+        </ul>
       </div>
     </div>
     <div

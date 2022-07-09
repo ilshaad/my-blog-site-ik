@@ -89,7 +89,7 @@ export default function blog1({}: Props) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="apple-mobile-web-app-title" content="Ilshaad blog" />
         <meta name="application-name" content="Ilshaad blog" />
@@ -175,6 +175,17 @@ export default function blog1({}: Props) {
             React
           </Badge>
         </div>
+      </Row>
+
+      {/* list expert level knowledge of each prequisite skills required by reader to understand and do within this blog */}
+      <Row style={{ fontSize: "0.9rem" }}>
+        <Col xs={{ span: 9, offset: 1 }}>
+          <ul>
+            <li>
+              Should have good knowledge of Javascript, Typescript and React
+            </li>
+          </ul>
+        </Col>
       </Row>
 
       {/* Do not touch */}

@@ -209,9 +209,9 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-07-08"
+        datetime="2022-08-21"
       >
-        2022 July 8th Friday
+        2022 August 21st Sunday
       </time>
     </div>
     <div
@@ -240,6 +240,20 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
         >
           React
         </span>
+      </div>
+    </div>
+    <div
+      class="row"
+      style="font-size: 0.9rem;"
+    >
+      <div
+        class="col-9 offset-1"
+      >
+        <ul>
+          <li>
+            Should have good knowledge of Javascript, Typescript and React
+          </li>
+        </ul>
       </div>
     </div>
     <div

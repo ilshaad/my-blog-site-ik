@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="apple-mobile-web-app-title" content="Ilshaad blog" />
         <meta name="application-name" content="Ilshaad blog" />
@@ -94,82 +94,53 @@ const Home: NextPage = () => {
 
       {/* blog post collection list */}
       <Container fluid as="ul" data-testid="blog list box">
-        {/* /blog/1 */}
+        {/* /blog/5 */}
         <Row as="li" className="bg-light border border-2 mb-3">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
+            Deploy multiple Docker containers pipeline using Github Actions and
+            Heroku
           </h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
+              Docker
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              SQL
+              Docker Compose
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
+              Heroku
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Github Actions
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Fullstack - client side rendering
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              CI/CD
             </Badge>
           </div>
 
           {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
+            It is very common to deploy apps using CI/CD (Continuous Integration
+            / Continuous Delivery). Actually, depending on which cloud
+            application platform provider you use
           </p>
 
           <span className={`mt-n4`}>...</span>
 
-          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
+          <Link href="/blog/5" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
           </Link>
 
           <time
-            dateTime={blogsData.blog1.dateTime_attribute}
+            dateTime={blogsData.blog5.dateTime_attribute}
             className={`${blogDate} d-block text-end mb-2`}
           >
-            {blogsData.blog1.dateDisplay}
-          </time>
-        </Row>
-
-        {/* /blog/2 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>Parse SQL timestamp</h4>
-
-          {/* list of prequisite skills for the blog */}
-          <div>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Javascript
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              SQL
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Regular Expression
-            </Badge>
-          </div>
-
-          {/* must contain at least 163 characters */}
-          <p className={`${index_page_blogPostSample} mt-1`}>
-            If you regularly collect api data from the server, you might
-            sometimes notice something peculiar when gathering the date data.
-            The date value could appear as&#160;
-            <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>.
-          </p>
-
-          <span className={`mt-n4`}>...</span>
-
-          <Link href="/blog/2" className={`${indexPage_readMoreLink}`}>
-            Read more &rarr;
-          </Link>
-
-          <time
-            dateTime={blogsData.blog2.dateTime_attribute}
-            className={`${blogDate} d-block text-end mb-2`}
-          >
-            {blogsData.blog2.dateDisplay}
+            {blogsData.blog5.dateDisplay}
           </time>
         </Row>
 
@@ -213,10 +184,50 @@ const Home: NextPage = () => {
           </time>
         </Row>
 
+        {/* /blog/1 */}
+        <Row as="li" className="bg-light border border-2 mb-3">
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+            Create timestamp in SQL format
+          </h4>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              SQL
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Regular Expression
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            Sometimes the client side has to produce the date of the user
+            interaction before sending it to the server api. And sometimes they
+            have to format the date and time
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog1.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog1.dateDisplay}
+          </time>
+        </Row>
+
         {/* /blog/4 */}
         <Row as="li" className="bg-light border border-2 mb-3">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create an instance with Axios
+            Create an Axios instance
           </h4>
 
           {/* list of prequisite skills for the blog */}
@@ -253,49 +264,42 @@ const Home: NextPage = () => {
           </time>
         </Row>
 
-        {/* /blog/5 */}
+        {/* /blog/2 */}
         <Row as="li" className="bg-light border border-2 mb-3">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Deploy multiple Docker containers to Heroku using Github Actions
-          </h4>
+          <h4 className={`${blogPostTitle} mt-2 mb-1`}>Parse SQL timestamp</h4>
 
           {/* list of prequisite skills for the blog */}
           <div>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Docker
+              Javascript
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Docker Compose
+              SQL
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Heroku
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Github Actions
-            </Badge>
-            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Fullstack - client side rendering
+              Regular Expression
             </Badge>
           </div>
 
           {/* must contain at least 163 characters */}
           <p className={`${index_page_blogPostSample} mt-1`}>
-            Sometimes the client side has to produce the date of the user
-            interaction before sending it to the server api. And sometimes they
-            have to format the date and time
+            If you regularly collect api data from the server, you might
+            sometimes notice something peculiar when gathering the date data.
+            The date value could appear as&#160;
+            <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>.
           </p>
 
           <span className={`mt-n4`}>...</span>
 
-          <Link href="/blog/5" className={`${indexPage_readMoreLink}`}>
+          <Link href="/blog/2" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
           </Link>
 
           <time
-            dateTime={blogsData.blog5.dateTime_attribute}
+            dateTime={blogsData.blog2.dateTime_attribute}
             className={`${blogDate} d-block text-end mb-2`}
           >
-            {blogsData.blog5.dateDisplay}
+            {blogsData.blog2.dateDisplay}
           </time>
         </Row>
       </Container>

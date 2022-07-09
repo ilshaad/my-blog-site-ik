@@ -16,7 +16,7 @@ describe("<4/> blog page", () => {
     const { getByRole } = blogFourPage();
 
     const h1 = getByRole("heading", {
-      name: /Create an instance with Axios/,
+      name: /Create an Axios instance/,
     });
 
     expect(h1).toBeInTheDocument();

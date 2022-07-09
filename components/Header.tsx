@@ -11,11 +11,11 @@ import { Col, Container, Navbar, Placeholder, Row } from "react-bootstrap";
 import styles from "../styles/components/Header.module.scss";
 
 import rsImage from "../public/mstile-150x150.png";
-import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
-import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
-import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
-import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
-import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
+// import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";
+// import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
+// import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
+// import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
+// import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
 
 type Props = {};
 

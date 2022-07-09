@@ -1,35 +1,27 @@
 /** @type {import('next').NextConfig} */
 
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
+const withPWA = require("next-pwa");
 
-// module.exports = nextConfig;
-
-// const withMDX = require("@next/mdx")({
-//   extension: /\.mdx?$/,
-//   options: {
-//     remarkPlugins: [],
-//     rehypePlugins: [],
-//     // If you use `MDXProvider`, uncomment the following line.
-//     // providerImportSource: "@mdx-js/react",
-//   },
-// });
-
-// module.exports = withMDX({
-//   // Append the default value with md extensions
-//   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-//   reactStrictMode: true,
-// });
-
-// /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+  },
   reactStrictMode: true,
   async rewrites() {
     return {
       afterFiles: [{ source: "/:path*", destination: "/_404/:path*" }],
     };
   },
-};
+});
 
-module.exports = nextConfig;
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+//   async rewrites() {
+//     return {
+//       afterFiles: [{ source: "/:path*", destination: "/_404/:path*" }],
+//     };
+//   },
+// };
+
+// module.exports = nextConfig;

@@ -10,6 +10,7 @@
 // -write the material as you would
 // -check spelling grammer
 // -estimate reading time
+// -enter the prequisite knowledge level list base on your material
 // -find or create image for blog post
 //   -save image within dropbox blog-site folder
 //   -save image within /public folder in you app
@@ -22,6 +23,7 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import { Badge, Breadcrumb, Col, Container, Row } from "react-bootstrap";
 
 import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
@@ -40,7 +42,6 @@ import blog1Image from "../../public/blog1img/timestampInSqlFormat.jpg";
 
 // iK code block I used
 import Blog1 from "../../components/blogPostCodes/Blog1";
-import Link from "next/link";
 
 type Props = {};
 
@@ -84,7 +85,7 @@ export default function blog1({}: Props) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="apple-mobile-web-app-title" content="Ilshaad blog" />
         <meta name="application-name" content="Ilshaad blog" />
@@ -173,8 +174,21 @@ export default function blog1({}: Props) {
         </div>
       </Row>
 
+      {/* list expert level knowledge of each prequisite skills required by reader to understand and do within this blog */}
+      <Row style={{ fontSize: "0.9rem" }}>
+        <Col xs={{ span: 9, offset: 1 }}>
+          <ul>
+            <li>Should have good knowledge of Javascript and SQL</li>
+            <li>
+              Basic Regular Expression know how, but not required if you only
+              want to copy code snippet
+            </li>
+          </ul>
+        </Col>
+      </Row>
+
       {/* Do not touch */}
-      <Row className={`text-primary w-75 mx-auto overflow-hidden mt-2`}>
+      <Row className={`text-primary w-75 mx-auto overflow-hidden mt-1`}>
         <hr />
       </Row>
 
