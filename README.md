@@ -6,7 +6,7 @@
 
 The app is a blog site. I have learnt a lot from the web community, and I believe in giving back. So I write blog articles in the hope that it will help other web developers, who are struggling with certain topics that I come across.
 
-## Main technologies I used in the app!
+## Main technologies I used in the app:
 
 - React
 - Typescript / Javascript
