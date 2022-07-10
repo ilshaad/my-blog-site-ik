@@ -1,6 +1,6 @@
 # Ilshaad blog app
 
-#####_< ilshaad Kheerdali \/>_
+##### _< ilshaad Kheerdali \/>_
 
 ###### Frontend / React-Typescript app using Next.js
 
