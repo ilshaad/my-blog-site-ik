@@ -1,5 +1,7 @@
 # Ilshaad blog app
 
+#####_< ilshaad Kheerdali \/>_
+
 ###### Frontend / React-Typescript app using Next.js
 
 ## What is the app about?
@@ -29,5 +31,3 @@ The app is a blog site. I have learnt a lot from the web community, and I believ
 ##### Site: [Ilshaad blog site](https://www.ilshaadblog.tk/)
 
 ##### Github: [rechadsalma/my-blog-site-ik](https://github.com/RechadSalma/my-blog-site-ik)
-
-_< ilshaad Kheerdali \/>_
