@@ -139,16 +139,21 @@ export default function Blog3({}: Props) {
 
         <div className={tab5}>
           <div>
-            name=<span className={value}>&#34;textareaName&#34;</span>
+            <span className={keyword}>name</span>=
+            <span className={value}>&#34;textareaName&#34;</span>
           </div>
-          <div>value=&#123;changeValue&#125;</div>
-          <div>onChange=&#123;changeTextarea&#125;</div>
+          <div>
+            <span className={keyword}>value</span>=&#123;changeValue&#125;
+          </div>
+          <div>
+            <span className={keyword}>onChange</span>=&#123;changeTextarea&#125;
+          </div>
         </div>
 
         <div className={tab4}>/&#62;</div>
 
         <div className={tab4}>
-          &#60;button type=
+          &#60;button&#160;<span className={keyword}>type</span>=
           <span className={value}>&#34;submit&#34;</span>
           &#62;Submit&#60;/button&#62;
         </div>

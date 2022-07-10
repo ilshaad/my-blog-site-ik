@@ -15,7 +15,7 @@ exports[`<Blog1/> code for blog1 component snapshot Blog1 code tag 1`] = `
         >
           function
         </span>
-          createTimestampInSqlFormat () {
+          createTimestampInSqlFormat() {
       </div>
       <div
         class="tab1"

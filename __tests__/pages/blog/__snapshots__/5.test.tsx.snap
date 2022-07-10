@@ -218,7 +218,7 @@ exports[`<5/> blog page snapshot blog post 5 1`] = `
       class="mx-auto row"
     >
       <h5
-        class="text-center"
+        class="text-center mb-3"
       >
         Prequisite:
       </h5>
@@ -248,7 +248,7 @@ exports[`<5/> blog page snapshot blog post 5 1`] = `
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          Fullstack - client side rendering
+          Fullstack - Client Side Rendering
         </span>
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"

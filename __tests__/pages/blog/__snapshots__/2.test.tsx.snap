@@ -218,7 +218,7 @@ exports[`<2/> blog page snapshot blog post 2 1`] = `
       class="mx-auto row"
     >
       <h5
-        class="text-center"
+        class="text-center mb-3"
       >
         Prequisite:
       </h5>

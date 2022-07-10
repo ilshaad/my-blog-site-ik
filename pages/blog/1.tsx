@@ -160,7 +160,7 @@ export default function blog1({}: Props) {
       {/* iK put all the programming language you need to know */}
       {/* language know how */}
       <Row className={`mx-auto`}>
-        <h5 className={`text-center`}>Prequisite:</h5>
+        <h5 className={`text-center mb-3`}>Prequisite:</h5>
         <div className={`text-center mt-n2 mb-3`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
             Javascript

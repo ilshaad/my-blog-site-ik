@@ -218,7 +218,7 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
       class="mx-auto row"
     >
       <h5
-        class="text-center"
+        class="text-center mb-3"
       >
         Prequisite:
       </h5>
@@ -623,7 +623,12 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
               class="tab5"
             >
               <div>
-                name=
+                <span
+                  class="keyword"
+                >
+                  name
+                </span>
+                =
                 <span
                   class="value"
                 >
@@ -631,10 +636,20 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
                 </span>
               </div>
               <div>
-                value={changeValue}
+                <span
+                  class="keyword"
+                >
+                  value
+                </span>
+                ={changeValue}
               </div>
               <div>
-                onChange={changeTextarea}
+                <span
+                  class="keyword"
+                >
+                  onChange
+                </span>
+                ={changeTextarea}
               </div>
             </div>
             <div
@@ -645,7 +660,13 @@ exports[`<3/> blog page snapshot blog post 3 1`] = `
             <div
               class="tab4"
             >
-              &lt;button type=
+              &lt;button 
+              <span
+                class="keyword"
+              >
+                type
+              </span>
+              =
               <span
                 class="value"
               >

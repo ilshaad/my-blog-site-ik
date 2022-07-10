@@ -67,8 +67,9 @@ export default function AsideBox({}: Props) {
         </p> */}
 
         <p className={`${aboutBox} mb-2`}>
-          My name is Ilshaad. I am a Web developer. I believe in giving back to
-          the community, so I share what I know and hopefully it will help you.
+          My name is Ilshaad. I am a Web developer. And I believe in giving back
+          to the community, so I share what I know and hopefully it will help
+          you.
         </p>
         <p className={aboutBox}>Eat, Sleep, Code, Repeat!</p>
       </div>

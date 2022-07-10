@@ -87,7 +87,7 @@ const Home: NextPage = () => {
       </Breadcrumb>
 
       <h4
-        className={`text-decoration-underline mt-2 mb-2 ms-2 me-2 ms-xl-4 me-xl-4`}
+        className={`text-decoration-underline mt-2 mb-3 ms-2 me-2 ms-xl-4 me-xl-4`}
       >
         Latest posts:
       </h4>
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
       {/* blog post collection list */}
       <Container fluid as="ul" data-testid="blog list box">
         {/* /blog/5 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
+        <Row as="li" className="bg-light border border-2 mb-4">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Deploy multiple Docker containers pipeline using Github Actions and
             Heroku
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
               Github Actions
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-              Fullstack - client side rendering
+              Fullstack - Client Side Rendering
             </Badge>
             <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
               CI/CD
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
         </Row>
 
         {/* /blog/3 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
+        <Row as="li" className="bg-light border border-2 mb-4">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             How to create a controlled form component with React-Typescript
           </h4>
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
         </Row>
 
         {/* /blog/1 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
+        <Row as="li" className="bg-light border border-2 mb-4">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create timestamp in SQL format
           </h4>
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
         </Row>
 
         {/* /blog/4 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
+        <Row as="li" className="bg-light border border-2 mb-4">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>
             Create an Axios instance
           </h4>
@@ -265,7 +265,7 @@ const Home: NextPage = () => {
         </Row>
 
         {/* /blog/2 */}
-        <Row as="li" className="bg-light border border-2 mb-3">
+        <Row as="li" className="bg-light border border-2 mb-4">
           <h4 className={`${blogPostTitle} mt-2 mb-1`}>Parse SQL timestamp</h4>
 
           {/* list of prequisite skills for the blog */}

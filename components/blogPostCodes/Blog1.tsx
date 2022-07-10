@@ -28,7 +28,7 @@ export default function Blog1({}: Props) {
       <code className={`${codeTag} mx-auto`} role="code">
         <div>
           <span className={`${keyword}`}>function</span>&#160;
-          createTimestampInSqlFormat () &#123;
+          createTimestampInSqlFormat() &#123;
         </div>
         <div className={`${tab1}`}>
           <span className={`${keyword}`}>const</span> date =&#160;

@@ -291,7 +291,12 @@ exports[`<Blog3/> code for blog3 component snapshot Blog3 code tag 1`] = `
         class="tab5"
       >
         <div>
-          name=
+          <span
+            class="keyword"
+          >
+            name
+          </span>
+          =
           <span
             class="value"
           >
@@ -299,10 +304,20 @@ exports[`<Blog3/> code for blog3 component snapshot Blog3 code tag 1`] = `
           </span>
         </div>
         <div>
-          value={changeValue}
+          <span
+            class="keyword"
+          >
+            value
+          </span>
+          ={changeValue}
         </div>
         <div>
-          onChange={changeTextarea}
+          <span
+            class="keyword"
+          >
+            onChange
+          </span>
+          ={changeTextarea}
         </div>
       </div>
       <div
@@ -313,7 +328,13 @@ exports[`<Blog3/> code for blog3 component snapshot Blog3 code tag 1`] = `
       <div
         class="tab4"
       >
-        &lt;button type=
+        &lt;button 
+        <span
+          class="keyword"
+        >
+          type
+        </span>
+        =
         <span
           class="value"
         >
