@@ -26,6 +26,8 @@ The app is a blog site. I have learnt a lot from the web community, and I believ
 
 #### Feel free to contact me if you want to know more about me or the app. Thanks
 
-##### [rechadsalma/my-blog-site-ik](https://github.com/RechadSalma/my-blog-site-ik)
+##### Site: [Ilshaad blog site](https://www.ilshaadblog.tk/)
+
+##### Github: [rechadsalma/my-blog-site-ik](https://github.com/RechadSalma/my-blog-site-ik)
 
 _< ilshaad Kheerdali \/>_
