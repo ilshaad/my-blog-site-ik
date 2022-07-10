@@ -96,10 +96,12 @@ const Home: NextPage = () => {
       <Container fluid as="ul" data-testid="blog list box">
         {/* /blog/5 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Deploy multiple Docker containers pipeline using Github Actions and
-            Heroku
-          </h4>
+          <Link href="/blog/5">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Deploy multiple Docker containers pipeline using Github Actions
+              and Heroku
+            </h4>
+          </Link>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -146,9 +148,11 @@ const Home: NextPage = () => {
 
         {/* /blog/3 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            How to create a controlled form component with React-Typescript
-          </h4>
+          <Link href="/blog/3">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              How to create a controlled form component with React-Typescript
+            </h4>
+          </Link>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -186,9 +190,11 @@ const Home: NextPage = () => {
 
         {/* /blog/1 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create timestamp in SQL format
-          </h4>
+          <Link href="/blog/1">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Create timestamp in SQL format
+            </h4>
+          </Link>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -226,9 +232,11 @@ const Home: NextPage = () => {
 
         {/* /blog/4 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-            Create an Axios instance
-          </h4>
+          <Link href="/blog/4">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Create an Axios instance
+            </h4>
+          </Link>
 
           {/* list of prequisite skills for the blog */}
           <div>
@@ -266,7 +274,11 @@ const Home: NextPage = () => {
 
         {/* /blog/2 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <h4 className={`${blogPostTitle} mt-2 mb-1`}>Parse SQL timestamp</h4>
+          <Link href="/blog/2">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Parse SQL timestamp
+            </h4>
+          </Link>
 
           {/* list of prequisite skills for the blog */}
           <div>

@@ -15,6 +15,11 @@
 
 .blogPostTitle {
   font-weight: 600;
+
+  &:hover {
+    filter: brightness(2);
+    cursor: pointer;
+  }
 }
 
 .index_page_blogPostSample {
