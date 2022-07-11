@@ -192,7 +192,7 @@ exports[`<5/> blog page snapshot blog post 5 1`] = `
       <h1
         class="text-primary mt-3 text-center"
       >
-        Deploy multiple Docker containers pipeline using Github Actions and Heroku
+        Deploy multiple Docker containers using Github Actions and Heroku
       </h1>
     </div>
     <div

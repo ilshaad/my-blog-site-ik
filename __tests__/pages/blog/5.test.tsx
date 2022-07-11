@@ -16,7 +16,7 @@ describe("<5/> blog page", () => {
     const { getByRole } = blogFivePage();
 
     const h1 = getByRole("heading", {
-      name: /Deploy multiple Docker containers pipeline using Github Actions and Heroku/,
+      name: /Deploy multiple Docker containers using Github Actions and Heroku/,
     });
 
     expect(h1).toBeInTheDocument();

@@ -11,10 +11,15 @@ type blogsDataType = {
 // iK ensure to change the order within the index file if you change the order here
 export const blogsData: blogsDataType = {
   blog5: {
-    title:
-      "Deploy multiple Docker containers pipeline using Github Actions and Heroku",
+    title: "Deploy multiple Docker containers using Github Actions and Heroku",
     dateDisplay: "2022 September 2nd Friday",
     dateTime_attribute: "2022-09-02",
+  },
+
+  blog6: {
+    title: "Create an ascending and descending sort function",
+    dateDisplay: "2022 August 30th Tuesday",
+    dateTime_attribute: "2022-08-30",
   },
 
   blog3: {

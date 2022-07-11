@@ -1,0 +1,485 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog6/> code for blog6 component snapshot AscendingFunction code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // Ascending order function (a b c)
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          type
+        </span>
+         Props = {
+      </div>
+      <div
+        class="tab1"
+      >
+        [allOtherProperties: string]: any;
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+         ascendingOrder(
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          arrayOfObjects: Array&lt;Props&gt;,
+        </div>
+        <div>
+          targetedProperty: string
+        </div>
+      </div>
+      <div>
+        ) {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           newArray = [...arrayOfObjects];
+        </div>
+        <br />
+        <div>
+          newArray
+          <span
+            class="method"
+          >
+            .sort
+          </span>
+          ((a: Props, b: Props) =&gt; {
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          a[targetedProperty]
+          <span
+            class="method"
+          >
+            .toLowerCase
+          </span>
+          () &lt; b[targetedProperty]
+          <span
+            class="method"
+          >
+            .toLowerCase
+          </span>
+          () 
+        </div>
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            ?
+          </span>
+           -1
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            :
+          </span>
+           1;
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          });
+        </div>
+        <br />
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           newArray
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        <div>
+          /∗∗ Expected output:
+        </div>
+        <div>
+          [
+        </div>
+        <div
+          class="tab1"
+        >
+          <div>
+            {id: 4, name: "Darwin"},
+          </div>
+          <div>
+            {id: 3, name: "Kratos"}, 
+          </div>
+          <div>
+            {id: 1, name: "Rechad"},
+          </div>
+          <div>
+            {id: 2, name: "Salma"}
+          </div>
+        </div>
+        <div>
+          ]
+        </div>
+        <div>
+          ∗/
+        </div>
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog6/> code for blog6 component snapshot DescendingFunction code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // Descending order function (c b a)
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          type
+        </span>
+         Props = {
+      </div>
+      <div
+        class="tab1"
+      >
+        [allOtherProperties: string]: any;
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+         ascendingOrder(
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          arrayOfObjects: Array&lt;Props&gt;,
+        </div>
+        <div>
+          targetedProperty: string
+        </div>
+      </div>
+      <div>
+        ) {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            const
+          </span>
+           newArray = [...arrayOfObjects];
+        </div>
+        <br />
+        <div>
+          newArray
+          <span
+            class="method"
+          >
+            .sort
+          </span>
+          ((a: Props, b: Props) =&gt; {
+        </div>
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          a[targetedProperty]
+          <span
+            class="method"
+          >
+            .toLowerCase
+          </span>
+          () &gt; b[targetedProperty]
+          <span
+            class="method"
+          >
+            .toLowerCase
+          </span>
+          () 
+        </div>
+      </div>
+      <div
+        class="tab3"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            ?
+          </span>
+           -1
+        </div>
+        <div>
+          <span
+            class="keyword"
+          >
+            :
+          </span>
+           1;
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          });
+        </div>
+        <br />
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           newArray
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        <div>
+          /∗∗ Expected output:
+        </div>
+        <div>
+          [
+        </div>
+        <div
+          class="tab1"
+        >
+          <div>
+            {id: 2, name: "Salma"}
+          </div>
+          <div>
+            {id: 1, name: "Rechad"},
+          </div>
+          <div>
+            {id: 3, name: "Kratos"}, 
+          </div>
+          <div>
+            {id: 4, name: "Darwin"},
+          </div>
+        </div>
+        <div>
+          ]
+        </div>
+        <div>
+          ∗/
+        </div>
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog6/> code for blog6 component snapshot MockDataArrayOfObjects code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        [
+      </div>
+      <div
+        class="tab1"
+      >
+        {
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          id: 
+          <span
+            class="value"
+          >
+            1
+          </span>
+          ,
+        </div>
+        <div>
+          name: 
+          <span
+            class="value"
+          >
+            "Richard"
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        },
+      </div>
+      <div
+        class="tab1"
+      >
+        {
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          id: 
+          <span
+            class="value"
+          >
+            2
+          </span>
+          ,
+        </div>
+        <div>
+          name: 
+          <span
+            class="value"
+          >
+            "Salma"
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        },
+      </div>
+      <div
+        class="tab1"
+      >
+        {
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          id: 
+          <span
+            class="value"
+          >
+            3
+          </span>
+          ,
+        </div>
+        <div>
+          name: 
+          <span
+            class="value"
+          >
+            "Kratos"
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        },
+      </div>
+      <div
+        class="tab1"
+      >
+        {
+      </div>
+      <div
+        class="tab2"
+      >
+        <div>
+          id: 
+          <span
+            class="value"
+          >
+            4
+          </span>
+          ,
+        </div>
+        <div>
+          name: 
+          <span
+            class="value"
+          >
+            "Darwin"
+          </span>
+        </div>
+      </div>
+      <div
+        class="tab1"
+      >
+        },
+      </div>
+      <div>
+        ]
+      </div>
+    </code>
+  </pre>
+</div>
+`;

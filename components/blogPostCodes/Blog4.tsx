@@ -123,7 +123,7 @@ export const FetchInstanceCode = () => {
           </div>
           <div className={comment}>
             &#47;&#47; Same as GET
-            &#34;https://jsonplaceholder.typicode.com/users/1&#34;
+            &#34;https://jsonplaceholder.typicode.com/users/1&#34;&#160;
           </div>
           <div>jsonP_instance()</div>
         </div>

@@ -98,8 +98,7 @@ const Home: NextPage = () => {
         <Row as="li" className="bg-light border border-2 mb-4">
           <Link href="/blog/5">
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
-              Deploy multiple Docker containers pipeline using Github Actions
-              and Heroku
+              Deploy multiple Docker containers using Github Actions and Heroku
             </h4>
           </Link>
 
@@ -143,6 +142,45 @@ const Home: NextPage = () => {
             className={`${blogDate} d-block text-end mb-2`}
           >
             {blogsData.blog5.dateDisplay}
+          </time>
+        </Row>
+
+        {/* /blog/6 */}
+        <Row as="li" className="bg-light border border-2 mb-4">
+          <Link href="/blog/6">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Create an ascending and descending sort function
+            </h4>
+          </Link>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Typescript
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            You will often see on many sites containing some sort of list or
+            table, that it is organised in a particular order, could be by title
+            order, name order or even
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/6" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog6.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog6.dateDisplay}
           </time>
         </Row>
 

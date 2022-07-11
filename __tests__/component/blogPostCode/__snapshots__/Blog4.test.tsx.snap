@@ -99,7 +99,7 @@ exports[`<Blog4/> code for blog4 component snapshot Blog4 code tag <FetchInstanc
         <div
           class="comment"
         >
-          // Same as GET "https://jsonplaceholder.typicode.com/users/1"
+          // Same as GET "https://jsonplaceholder.typicode.com/users/1" 
         </div>
         <div>
           jsonP_instance()

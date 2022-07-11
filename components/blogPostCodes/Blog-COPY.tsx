@@ -4,25 +4,25 @@
 import React from "react";
 import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
 
+// all the styles
+const {
+  preCode,
+  codeTag,
+  comment,
+  keyword,
+  method,
+  value,
+  tab1,
+  tab2,
+  tab3,
+  tab4,
+  tab5,
+  tab6,
+} = styles;
+
 type Props = {};
 
 export default function Blog1({}: Props) {
-  // all the styles
-  const {
-    preCode,
-    codeTag,
-    comment,
-    keyword,
-    method,
-    value,
-    tab1,
-    tab2,
-    tab3,
-    tab4,
-    tab5,
-    tab6,
-  } = styles;
-
   return (
     <pre className={`${preCode} mx-auto`}>
       <code className={`${codeTag} mx-auto`} role="code">

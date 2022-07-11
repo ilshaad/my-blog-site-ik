@@ -2,7 +2,7 @@
 //    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
 
 // tite:  Create timestamp in SQL format
-// date: 2022 06 25 Friday
+// date: iK check blogsData.ts file
 // blog1
 
 // IK TODO LIST FOR NEW BLOGS

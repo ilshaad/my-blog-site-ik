@@ -1,6 +1,9 @@
-// tite:  Deploy multiple Docker containers using Github Actions and Heroku
-// date: 2022 08 01 Monday
-// blog5
+// COPY VERSION OF ADDING ANOTHER BLOG POST
+//    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
+
+// tite:  Ascending or descending sort function for an array of objects
+// date: check blogsData.ts file
+// blog6
 
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
@@ -20,16 +23,17 @@
 //   - ./__tests__/components/blogPostCodes/Blog1.test.tsx	(for possible code blocks you may use within the blog page)
 // -update / page blog list
 
-import Head from "next/head";
+import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import Link from "next/link";
 import { Badge, Breadcrumb, Col, Container, Row } from "react-bootstrap";
 
-import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
-import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
 import Home_anchor_svg from "../../components/anchor_svg/Home_anchor_svg";
-import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
+import Github_anchor_svg from "../../components/anchor_svg/Github_anchor_svg";
 import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_svg";
+import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
+import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
 
 import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
 
@@ -37,18 +41,18 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog5Image from "../../public/blog5img/blog5.jpg";
+import blog6Image from "../../public/blog6img/sql-order-by-ascending-descending.png";
 
 // iK code block I used
 import {
-  DockerComposeFile,
-  DockerfileFrontend,
-  GithubActionsFile,
-} from "../../components/blogPostCodes/Blog5";
+  AscendingFunction,
+  DescendingFunction,
+  MockDataArrayOfObjects,
+} from "../../components/blogPostCodes/Blog6";
 
 type Props = {};
 
-export default function blog5({}: Props) {
+export default function blog6({}: Props) {
   const {
     blogPostPage,
     svgLinks,
@@ -59,18 +63,17 @@ export default function blog5({}: Props) {
   } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
-  const { blog5 } = blogsData;
+  const { blog6 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
         <title>
-          Deploy multiple Docker containers pipeline using Github Actions and
-          Heroku | Ilshaad Blog
+          Create an ascending and descending sort function | Ilshaad Blog
         </title>
         <meta
           name="description"
-          content="Deploy multiple Docker containers using Github Actions and Heroku | Ilshaad Blog"
+          content="Create an ascending and descending sort function | Ilshaad Blog"
         />
 
         <link
@@ -133,31 +136,31 @@ export default function blog5({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog5Image} alt="blog 5 image" />
+        <Image src={blog6Image} alt="blog 6 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Deploy multiple Docker containers using Github Actions and Heroku
+          Create an ascending and descending sort function
         </h1>
       </Row>
 
       {/* iK estimate reading time */}
       {/* length of time you think it complete read */}
       <Row className={`mx-auto`}>
-        <p className={`${minuteRead} text-center`}>8 min read</p>
+        <p className={`${minuteRead} text-center`}>4 min read</p>
       </Row>
 
       {/* iK date your blog post */}
       {/* iK collect your blog date from blogsData object */}
       <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime={blog5.dateTime_attribute}
+          dateTime={blog6.dateTime_attribute}
           className={`${blogDate} d-block text-center`}
         >
-          {blog5.dateDisplay}
+          {blog6.dateDisplay}
         </time>
       </Row>
 
@@ -167,22 +170,10 @@ export default function blog5({}: Props) {
         <h5 className={`text-center mb-3`}>Prequisite:</h5>
         <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Docker
+            Javascript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Docker Compose
-          </Badge>
-          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Heroku
-          </Badge>
-          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Github Actions
-          </Badge>
-          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Fullstack - Client Side Rendering
-          </Badge>
-          <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            CI/CD
+            Typescript
           </Badge>
         </div>
       </Row>
@@ -191,10 +182,10 @@ export default function blog5({}: Props) {
       <Row style={{ fontSize: "0.9rem" }}>
         <Col xs={{ span: 9, offset: 1 }}>
           <ul>
-            <li>Should have good knowledge of Docker and Docker-Compose</li>
-            <li>Installed Docker within your local device</li>
-            <li>Should be registered to Heroku and Github</li>
-            <li>Basic understanding of CSR and CI/CD</li>
+            <li>Basic understanding of Javascript</li>
+            <li>
+              Should at least understand the use of types within Typescript
+            </li>
           </ul>
         </Col>
       </Row>
@@ -213,108 +204,56 @@ export default function blog5({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;It is very common to deploy apps
-            using CI/CD (Continuous Integration / Continuous Delivery).
-            Actually, depending on which cloud application platform provider you
-            use, all you will need to do is git push your app and they will
-            setup a pipeline and deploy the app online for you. But it starts to
-            get a bit complicated when you want to configure the pipeline
-            yourself to match your app needs, plus, not to mention, it could get
-            expensive real fast too.
+            &#160;&#160;&#160;&#160;&#160;&#160;You will often see on many sites
+            containing some sort of list or table, that it is organised in a
+            particular order, could be by title order, name order or even date
+            order. They will sometimes give you a select button to change the
+            order too. But creating a sort function is not straightforward. We
+            are going to focus on creating an alphabetical sort function.
           </p>
           <p>
-            What if you have a fullstack app which is using client side
-            rendering? It would mean that you will need to hook up the frontend
-            and backend api together since they are considered as separate apps
-            within the repo. Usually, that is not a problem in itself, but it
-            gets tricky if you want to implement a pipeline to both the
-            applications. To throw in another spanner in the works, let&#39;s
-            say we are wrapping the frontend and backend in a Docker container.
-            We are going to be doing exactly this, using Heroku as your cloud
-            provider.
+            One of the most important aspects of creating any function, is
+            knowing what data type and data structure is entering the function.
+            And commonly, to have a sort ordered data, the data should ideally
+            be an array of objects literal, so we are going to follow that
+            convention.
           </p>
-
-          <p>
-            Now it is worth noting that Heroku already provides a container
-            deployment service, but it is not ideal when you have a fullstack
-            CSR app (containing both frontend and backend), since you will have
-            to git push them individually. Plus, having full control of your
-            Docker means you control all app version packages from breaking and
-            testing.
-          </p>
-          <p>
-            Let&#39;s assume your frontend and backend is setup within your
-            repo, we should first create a&#160;
-            <span className={codeText}>Dockerfile</span> file for each app,
-            which should look something like this:
-          </p>
+          <p>Imagine we have an array of objects, like this one below:</p>
         </Col>
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
         <Col xs={12}>
-          <DockerfileFrontend />
+          <MockDataArrayOfObjects />
         </Col>
 
         <Col xs={12}>
           <p>
-            Do not forget to create a&#160;
-            <span className={codeText}>Dockerfile</span> file for your backend
-            app too. It should look very similar to the frontend&#160;
-            <span className={codeText}>Dockerfile</span> file.
-          </p>
-          <p>
-            When both&#160;<span className={codeText}>Dockerfile</span> files
-            are working, you can proceed with Docker Compose which infuses both
-            containers together.
+            If we want to order the objects by name alphabetically, we would
+            need to use the&#160;<span className={codeText}>sort()</span>{" "}
+            method. In our function, we should also make two arguments. One is
+            the array of objects, and the second is the targeted property we
+            want to sort in order, and in our case we will be sorting the&#160;
+            <span className={codeText}>name</span> property. Two functions are
+            also required, the ascending function and the descending function.
           </p>
         </Col>
 
         <Col xs={12}>
-          <DockerComposeFile />
+          <AscendingFunction />
         </Col>
 
         <Col xs={12}>
           <p>
-            Use the&#160;<span className={codeText}>docker-compose up</span>
-            &#160;command in the terminal to ensure everything is running
-            smoothly.
-          </p>
-
-          <p>
-            Now we can move onto the next step, which is to create the Github
-            Actions CI/CD pipeline (be sure you have already been registered
-            with Github and Heroku prior). The Github Actions file is quite
-            straightforward but you will need a few things beforehand; your
-            Heroku email address and your Heroku api key, which can be found in
-            your Heroku account settings. Once you get that, go to your Github
-            app repo, and you set your environment secrets variables (found in
-            your repo settings). Be sure to set&#160;
-            <span className={codeText}>HEROKU_EMAIL</span> and&#160;
-            <span className={codeText}>HEROKU_API_KEY</span> keys exactly as
-            shown because your Github Actions file will search for these two
-            secrets in order to give you access to your Heroku account.
-          </p>
-          <p>
-            After you have set your repo secrets, we can now create the Github
-            Actions file to deploy your fullstack docker containers.
+            As you can see, it will return the same array of objects, but in
+            ascending order, and you can now display the list with the help of
+            loops. Now the descending function is exactly the same, but switch
+            from less than operator to more than operator.
           </p>
         </Col>
 
         <Col xs={12}>
-          <GithubActionsFile />
-        </Col>
-
-        <Col xs={12}>
-          <p>
-            If all done correctly, everytime you git push your local repo,
-            Github Actions will build your Docker images and deploy to Heroku.
-          </p>
-          <p>
-            It does require a bit of configuration on your behalf, but once
-            completed, in the long run it will serve you well, saving you more
-            time.
-          </p>
+          <DescendingFunction />
         </Col>
       </Row>
     </Container>

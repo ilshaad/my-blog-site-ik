@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<4/> blog page snapshot blog post 4 1`] = `
+exports[`<6/> blog page snapshot blog post 6 1`] = `
 <div>
   <div
     class="blogPostPage container"
@@ -177,7 +177,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
           />
         </span>
         <img
-          alt="blog 4 image"
+          alt="blog 6 image"
           data-nimg="intrinsic"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -192,7 +192,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
       <h1
         class="text-primary mt-3 text-center"
       >
-        Create an Axios instance
+        Create an ascending and descending sort function
       </h1>
     </div>
     <div
@@ -201,7 +201,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
       <p
         class="minuteRead text-center"
       >
-        7 min read
+        4 min read
       </p>
     </div>
     <div
@@ -209,9 +209,9 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-08-02"
+        datetime="2022-08-30"
       >
-        2022 August 2nd Tuesday
+        2022 August 30th Tuesday
       </time>
     </div>
     <div
@@ -233,12 +233,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          Axios
-        </span>
-        <span
-          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
-        >
-          REST API
+          Typescript
         </span>
       </div>
     </div>
@@ -251,10 +246,10 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
       >
         <ul>
           <li>
-            Should have good knowledge of Javascript and REST API
+            Basic understanding of Javascript
           </li>
           <li>
-            At least know the basics of Axios
+            Should at least understand the use of types within Typescript
           </li>
         </ul>
       </div>
@@ -271,25 +266,176 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
         class="col-12"
       >
         <p>
-                If you are into programming, then you will likely have heard of DRY (don' repeat yourself). Basically, writing the same code repeatedly can be quite tedious. And it becomes more tedious when trying to remember the url to make your Axios fetch a request every time. Would it not be great to just type in the url once, and code any methods you require out of it. Plus, you configure to any specific pathnames and query string. That's where the 
+                You will often see on many sites containing some sort of list or table, that it is organised in a particular order, could be by title order, name order or even date order. They will sometimes give you a select button to change the order too. But creating a sort function is not straightforward. We are going to focus on creating an alphabetical sort function.
+        </p>
+        <p>
+          One of the most important aspects of creating any function, is knowing what data type and data structure is entering the function. And commonly, to have a sort ordered data, the data should ideally be an array of objects literal, so we are going to follow that convention.
+        </p>
+        <p>
+          Imagine we have an array of objects, like this one below:
+        </p>
+      </div>
+      <div
+        class="col-12"
+      >
+        <pre
+          class="preCode mx-auto"
+        >
+          <code
+            class="codeTag mx-auto"
+            role="code"
+          >
+            <div>
+              [
+            </div>
+            <div
+              class="tab1"
+            >
+              {
+            </div>
+            <div
+              class="tab2"
+            >
+              <div>
+                id: 
+                <span
+                  class="value"
+                >
+                  1
+                </span>
+                ,
+              </div>
+              <div>
+                name: 
+                <span
+                  class="value"
+                >
+                  "Richard"
+                </span>
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              },
+            </div>
+            <div
+              class="tab1"
+            >
+              {
+            </div>
+            <div
+              class="tab2"
+            >
+              <div>
+                id: 
+                <span
+                  class="value"
+                >
+                  2
+                </span>
+                ,
+              </div>
+              <div>
+                name: 
+                <span
+                  class="value"
+                >
+                  "Salma"
+                </span>
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              },
+            </div>
+            <div
+              class="tab1"
+            >
+              {
+            </div>
+            <div
+              class="tab2"
+            >
+              <div>
+                id: 
+                <span
+                  class="value"
+                >
+                  3
+                </span>
+                ,
+              </div>
+              <div>
+                name: 
+                <span
+                  class="value"
+                >
+                  "Kratos"
+                </span>
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              },
+            </div>
+            <div
+              class="tab1"
+            >
+              {
+            </div>
+            <div
+              class="tab2"
+            >
+              <div>
+                id: 
+                <span
+                  class="value"
+                >
+                  4
+                </span>
+                ,
+              </div>
+              <div>
+                name: 
+                <span
+                  class="value"
+                >
+                  "Darwin"
+                </span>
+              </div>
+            </div>
+            <div
+              class="tab1"
+            >
+              },
+            </div>
+            <div>
+              ]
+            </div>
+          </code>
+        </pre>
+      </div>
+      <div
+        class="col-12"
+      >
+        <p>
+          If we want to order the objects by name alphabetically, we would need to use the 
           <span
             class="codeText"
           >
-            create()
+            sort()
           </span>
-           method comes in.
-        </p>
-        <p>
-          Axios provides a number of methods you can use, but 
+           
+          method. In our function, we should also make two arguments. One is the array of objects, and the second is the targeted property we want to sort in order, and in our case we will be sorting the 
           <span
             class="codeText"
           >
-            create()
+            name
           </span>
-           is one of the most useful ones. It creates an instance Promise object of the url API.And you can use that instance Promise however many times you like and whichever methods you need.
-        </p>
-        <p>
-          Usually it is best to create a separate file just for the instance alone, and then we can import the instance to any file.
+           property. Two functions are also required, the ascending function and the descending function.
         </p>
       </div>
       <div
@@ -305,30 +451,45 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
             <div
               class="comment"
             >
-              // ./apiInstance/jsonPlaceholder.js file
+              // Ascending order function (a b c)
             </div>
             <div>
               <span
                 class="keyword"
               >
-                import
+                type
               </span>
-               axios 
-              <span
-                class="keyword"
-              >
-                from
-              </span>
-               "axios";
+               Props = {
+            </div>
+            <div
+              class="tab1"
+            >
+              [allOtherProperties: string]: any;
+            </div>
+            <div>
+              };
             </div>
             <br />
             <div>
               <span
                 class="keyword"
               >
-                export default function
+                function
               </span>
-               jsonP_instance() {
+               ascendingOrder(
+            </div>
+            <div
+              class="tab1"
+            >
+              <div>
+                arrayOfObjects: Array&lt;Props&gt;,
+              </div>
+              <div>
+                targetedProperty: string
+              </div>
+            </div>
+            <div>
+              ) {
             </div>
             <div
               class="tab1"
@@ -339,41 +500,56 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
                 >
                   const
                 </span>
-                 baseUrl = 
-                <span
-                  class="value"
-                >
-                  "https://jsonplaceholder.typicode.com/users" 
-                </span>
+                 newArray = [...arrayOfObjects];
               </div>
+              <br />
               <div>
-                <span
-                  class="keyword"
-                >
-                  const
-                </span>
-                 instance = axios
+                newArray
                 <span
                   class="method"
                 >
-                  .create
+                  .sort
                 </span>
-                ({
+                ((a: Props, b: Props) =&gt; {
               </div>
             </div>
             <div
               class="tab2"
             >
               <div>
-                baseURL: baseUrl,
+                a[targetedProperty]
+                <span
+                  class="method"
+                >
+                  .toLowerCase
+                </span>
+                () &lt; b[targetedProperty]
+                <span
+                  class="method"
+                >
+                  .toLowerCase
+                </span>
+                () 
+              </div>
+            </div>
+            <div
+              class="tab3"
+            >
+              <div>
+                <span
+                  class="keyword"
+                >
+                  ?
+                </span>
+                 -1
               </div>
               <div>
-                timeout: 
                 <span
-                  class="value"
+                  class="keyword"
                 >
-                  4000
+                  :
                 </span>
+                 1;
               </div>
             </div>
             <div
@@ -382,17 +558,51 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
               <div>
                 });
               </div>
+              <br />
               <div>
                 <span
                   class="keyword"
                 >
                   return
                 </span>
-                 instance;
+                 newArray
               </div>
             </div>
             <div>
               };
+            </div>
+            <br />
+            <div
+              class="comment"
+            >
+              <div>
+                /∗∗ Expected output:
+              </div>
+              <div>
+                [
+              </div>
+              <div
+                class="tab1"
+              >
+                <div>
+                  {id: 4, name: "Darwin"},
+                </div>
+                <div>
+                  {id: 3, name: "Kratos"}, 
+                </div>
+                <div>
+                  {id: 1, name: "Rechad"},
+                </div>
+                <div>
+                  {id: 2, name: "Salma"}
+                </div>
+              </div>
+              <div>
+                ]
+              </div>
+              <div>
+                ∗/
+              </div>
             </div>
           </code>
         </pre>
@@ -401,7 +611,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
         class="col-12"
       >
         <p>
-          Creating an instance is simple enough, you only need the url API and optionally set a timeout. Once done, we can now use it freely and however many times we want, without having to memorise the url again. The instance is a Promise object, so when we use it, we get the Resolved or Rejected response. Let's check out the example below:
+          As you can see, it will return the same array of objects, but in ascending order, and you can now display the list with the help of loops. Now the descending function is exactly the same, but switch from less than operator to more than operator.
         </p>
       </div>
       <div
@@ -414,160 +624,164 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
             class="codeTag mx-auto"
             role="code"
           >
+            <div
+              class="comment"
+            >
+              // Descending order function (c b a)
+            </div>
             <div>
               <span
                 class="keyword"
               >
-                import
+                type
               </span>
-               jsonP_instance 
+               Props = {
+            </div>
+            <div
+              class="tab1"
+            >
+              [allOtherProperties: string]: any;
+            </div>
+            <div>
+              };
+            </div>
+            <br />
+            <div>
               <span
                 class="keyword"
               >
-                from
+                function
               </span>
-               "./apiInstance/jsonPlaceholder.js";
+               ascendingOrder(
             </div>
-            <br />
             <div
               class="tab1"
             >
-              <div
-                class="comment"
-              >
-                // GET all users from Json Placeholder api
-              </div>
-              <div
-                class="comment"
-              >
-                // Same as GET "https://jsonplaceholder.typicode.com/users"
+              <div>
+                arrayOfObjects: Array&lt;Props&gt;,
               </div>
               <div>
-                jsonP_instance()
+                targetedProperty: string
+              </div>
+            </div>
+            <div>
+              ) {
+            </div>
+            <div
+              class="tab1"
+            >
+              <div>
+                <span
+                  class="keyword"
+                >
+                  const
+                </span>
+                 newArray = [...arrayOfObjects];
+              </div>
+              <br />
+              <div>
+                newArray
+                <span
+                  class="method"
+                >
+                  .sort
+                </span>
+                ((a: Props, b: Props) =&gt; {
               </div>
             </div>
             <div
               class="tab2"
             >
               <div>
+                a[targetedProperty]
                 <span
                   class="method"
                 >
-                  .get
+                  .toLowerCase
                 </span>
-                (
-                <span
-                  class="value"
-                >
-                  "/"
-                </span>
-                )
-              </div>
-              <div>
+                () &gt; b[targetedProperty]
                 <span
                   class="method"
                 >
-                  .then
+                  .toLowerCase
                 </span>
-                (response =&gt; console
-                <span
-                  class="method"
-                >
-                  .log
-                </span>
-                (response.data)
-              </div>
-              <div>
-                <span
-                  class="method"
-                >
-                  .catch
-                </span>
-                (error =&gt; console
-                <span
-                  class="method"
-                >
-                  .error
-                </span>
-                (error.data);
+                () 
               </div>
             </div>
-            <br />
+            <div
+              class="tab3"
+            >
+              <div>
+                <span
+                  class="keyword"
+                >
+                  ?
+                </span>
+                 -1
+              </div>
+              <div>
+                <span
+                  class="keyword"
+                >
+                  :
+                </span>
+                 1;
+              </div>
+            </div>
             <div
               class="tab1"
             >
-              <div
-                class="comment"
-              >
-                // GET one user from Json Placeholder api
-              </div>
-              <div
-                class="comment"
-              >
-                // Same as GET "https://jsonplaceholder.typicode.com/users/1" 
-              </div>
               <div>
-                jsonP_instance()
+                });
+              </div>
+              <br />
+              <div>
+                <span
+                  class="keyword"
+                >
+                  return
+                </span>
+                 newArray
               </div>
             </div>
+            <div>
+              };
+            </div>
+            <br />
             <div
-              class="tab2"
+              class="comment"
             >
               <div>
-                <span
-                  class="method"
-                >
-                  .get
-                </span>
-                (
-                <span
-                  class="value"
-                >
-                  "/1"
-                </span>
-                )
+                /∗∗ Expected output:
               </div>
               <div>
-                <span
-                  class="method"
-                >
-                  .then
-                </span>
-                (response =&gt; console
-                <span
-                  class="method"
-                >
-                  .log
-                </span>
-                (response.data)
+                [
+              </div>
+              <div
+                class="tab1"
+              >
+                <div>
+                  {id: 2, name: "Salma"}
+                </div>
+                <div>
+                  {id: 1, name: "Rechad"},
+                </div>
+                <div>
+                  {id: 3, name: "Kratos"}, 
+                </div>
+                <div>
+                  {id: 4, name: "Darwin"},
+                </div>
               </div>
               <div>
-                <span
-                  class="method"
-                >
-                  .catch
-                </span>
-                (error =&gt; console
-                <span
-                  class="method"
-                >
-                  .error
-                </span>
-                (error.data);
+                ]
+              </div>
+              <div>
+                ∗/
               </div>
             </div>
           </code>
         </pre>
-      </div>
-      <div
-        class="col-12"
-      >
-        <p>
-          As you can see, the instance is easy to use, just like a normal fetch request promise object. And it is matched with its flexibility because, as mentioned before, you can use any methods you want (eg. POST, PUT, DELETE, etc) the same way as GET, you can configure the headers, insert a body, etc...
-        </p>
-        <p>
-          So if you have begun a project, knowing you are going to use the same url API over and over, Axios instance is definitely the way to go.
-        </p>
       </div>
     </div>
   </div>
