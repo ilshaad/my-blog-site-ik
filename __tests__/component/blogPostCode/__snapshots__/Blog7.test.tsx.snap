@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog7/> code for blog7 component snapshot Blog7 code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div>
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+         capitaliseString(string: string) {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           string
+          <span
+            class="method"
+          >
+            .charAt
+          </span>
+          (
+          <span
+            class="value"
+          >
+            0
+          </span>
+          )
+          <span
+            class="method"
+          >
+            .toUpperCase
+          </span>
+          () + string
+          <span
+            class="method"
+          >
+            .slice
+          </span>
+          (
+          <span
+            class="value"
+          >
+            1
+          </span>
+          ); 
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+    </code>
+  </pre>
+</div>
+`;

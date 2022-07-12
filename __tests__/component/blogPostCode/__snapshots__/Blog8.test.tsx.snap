@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog8/> code for blog8 component snapshot Blog8 code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // Most useful HTML entities
+      </div>
+      <div>
+        &#47; = / (Forward slash)
+      </div>
+      <div>
+        &#33; = ! (Exclamation mark)
+      </div>
+      <div>
+        &#40; = ( (Open parenthesis)
+      </div>
+      <div>
+        &#41; = ) (Close parenthesis)
+      </div>
+      <div>
+        &#44; = , (Comman)
+      </div>
+      <div>
+        &#58; = : (Colon)
+      </div>
+      <div>
+        &#59; = ; (Semi-colon)
+      </div>
+      <div>
+        &#63; = ? (Question mark)
+      </div>
+      <div>
+        &#91; = [ (Open bracket)
+      </div>
+      <div>
+        &#93; = ] (Close bracket)
+      </div>
+      <div>
+        &#92; = \\ (Back slash)
+      </div>
+      <div>
+        &#95; = _ (underscore)
+      </div>
+      <div>
+        &#123; = { (Open curly brace)
+      </div>
+      <div>
+        &#125; = } (Close curly brace)
+      </div>
+      <div>
+        &#124; = | (Pipe)
+      </div>
+      <div>
+        &#160; =   (Empty space)
+      </div>
+      <div>
+        &#8208; = ‐ (Hyphen)
+      </div>
+      <div>
+        &#34; = " (Double quote)
+      </div>
+      <div>
+        &#39; = ' (Single quote)
+      </div>
+      <div>
+        &#96; = \` (Grave accent)
+      </div>
+      <div>
+        &#43; = + (Plus)
+      </div>
+      <div>
+        &#8722; = − (Minus)
+      </div>
+      <div>
+        &#61; = = (Equal)
+      </div>
+      <div>
+        &#60; = &lt; (Less than)
+      </div>
+      <div>
+        &#62; = &gt; (Greater than)
+      </div>
+      <div>
+        &#37; = % (Percentage)
+      </div>
+      <div>
+        &#8727; = ∗ (Asterisk)
+      </div>
+    </code>
+  </pre>
+</div>
+`;

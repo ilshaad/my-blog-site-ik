@@ -310,6 +310,81 @@ const Home: NextPage = () => {
           </time>
         </Row>
 
+        {/* /blog/8 */}
+        <Row as="li" className="bg-light border border-2 mb-4">
+          <Link href="/blog/8">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Most common HTML entities you will use
+            </h4>
+          </Link>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              HTML
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            When writing in HTML, you have to follow the conventional tag
+            structure and its keyword characters, and the same goes along with
+            some other framework languages too,
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/8" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog8.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog8.dateDisplay}
+          </time>
+        </Row>
+
+        {/* /blog/7 */}
+        <Row as="li" className="bg-light border border-2 mb-4">
+          <Link href="/blog/7">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Capitalise the first character of a word
+            </h4>
+          </Link>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Typescript
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            There are some occasions when we will need to capitalise on the
+            first character of a word. Mostly, capitalising names is the most
+            commonly used. But regardless of what
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/7" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog7.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog7.dateDisplay}
+          </time>
+        </Row>
+
         {/* /blog/2 */}
         <Row as="li" className="bg-light border border-2 mb-4">
           <Link href="/blog/2">
