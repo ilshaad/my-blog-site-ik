@@ -310,7 +310,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
                 <span
                   class="value"
                 >
-                  "Richard"
+                  "Rechad"
                 </span>
               </div>
             </div>
@@ -541,7 +541,12 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
                 >
                   ?
                 </span>
-                 -1
+                 
+                <span
+                  class="value"
+                >
+                  -1
+                </span>
               </div>
               <div>
                 <span
@@ -549,7 +554,13 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
                 >
                   :
                 </span>
-                 1;
+                 
+                <span
+                  class="value"
+                >
+                  1
+                </span>
+                ;
               </div>
             </div>
             <div
@@ -717,7 +728,12 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
                 >
                   ?
                 </span>
-                 -1
+                 
+                <span
+                  class="value"
+                >
+                  -1
+                </span>
               </div>
               <div>
                 <span
@@ -725,7 +741,13 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
                 >
                   :
                 </span>
-                 1;
+                 
+                <span
+                  class="value"
+                >
+                  1
+                </span>
+                ;
               </div>
             </div>
             <div

@@ -34,7 +34,7 @@ export function MockDataArrayOfObjects({}: Props) {
             id:&#160;<span className={value}>1</span>,
           </div>
           <div>
-            name:&#160;<span className={value}>&#34;Richard&#34;</span>
+            name:&#160;<span className={value}>&#34;Rechad&#34;</span>
           </div>
         </div>
         <div className={tab1}>&#125;,</div>
@@ -128,11 +128,13 @@ export function AscendingFunction() {
 
         <div className={tab3}>
           <div>
-            <span className={keyword}>?</span> -1
+            <span className={keyword}>?</span>&#160;
+            <span className={value}>-1</span>
           </div>
 
           <div>
-            <span className={keyword}>:</span> 1;
+            <span className={keyword}>:</span>&#160;
+            <span className={value}>1</span>;
           </div>
         </div>
 
@@ -221,11 +223,13 @@ export function DescendingFunction() {
 
         <div className={tab3}>
           <div>
-            <span className={keyword}>?</span> -1
+            <span className={keyword}>?</span>&#160;
+            <span className={value}>-1</span>
           </div>
 
           <div>
-            <span className={keyword}>:</span> 1;
+            <span className={keyword}>:</span>&#160;
+            <span className={value}>1</span>;
           </div>
         </div>
 

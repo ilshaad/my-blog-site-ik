@@ -102,7 +102,12 @@ exports[`<Blog6/> code for blog6 component snapshot AscendingFunction code tag 1
           >
             ?
           </span>
-           -1
+           
+          <span
+            class="value"
+          >
+            -1
+          </span>
         </div>
         <div>
           <span
@@ -110,7 +115,13 @@ exports[`<Blog6/> code for blog6 component snapshot AscendingFunction code tag 1
           >
             :
           </span>
-           1;
+           
+          <span
+            class="value"
+          >
+            1
+          </span>
+          ;
         </div>
       </div>
       <div
@@ -272,7 +283,12 @@ exports[`<Blog6/> code for blog6 component snapshot DescendingFunction code tag 
           >
             ?
           </span>
-           -1
+           
+          <span
+            class="value"
+          >
+            -1
+          </span>
         </div>
         <div>
           <span
@@ -280,7 +296,13 @@ exports[`<Blog6/> code for blog6 component snapshot DescendingFunction code tag 
           >
             :
           </span>
-           1;
+           
+          <span
+            class="value"
+          >
+            1
+          </span>
+          ;
         </div>
       </div>
       <div
@@ -374,7 +396,7 @@ exports[`<Blog6/> code for blog6 component snapshot MockDataArrayOfObjects code 
           <span
             class="value"
           >
-            "Richard"
+            "Rechad"
           </span>
         </div>
       </div>
