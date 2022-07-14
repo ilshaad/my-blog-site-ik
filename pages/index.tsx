@@ -310,6 +310,45 @@ const Home: NextPage = () => {
           </time>
         </Row>
 
+        {/* /blog/9 */}
+        <Row as="li" className="bg-light border border-2 mb-4">
+          <Link href="/blog/9">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Create a React HOC scaffold
+            </h4>
+          </Link>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              React
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            React components are the most common function you will use. I doubt
+            you will be able to get much done without it. But there are
+            occasions when you want to implement
+          </p>
+
+          <span className={`mt-n4`}>...</span>
+
+          <Link href="/blog/9" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog9.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog9.dateDisplay}
+          </time>
+        </Row>
+
         {/* /blog/8 */}
         <Row as="li" className="bg-light border border-2 mb-4">
           <Link href="/blog/8">

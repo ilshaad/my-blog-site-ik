@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog9/> code for blog9 component snapshot ReactComponent code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // Normal react component
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          import
+        </span>
+         React 
+        <span
+          class="keyword"
+        >
+          from
+        </span>
+         "react";
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          const 
+        </span>
+        Component = (arg) =&gt; {
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          return
+        </span>
+         (
+      </div>
+      <div
+        class="tab2"
+      >
+        &lt;div&gt;{arg}&lt;/div&gt;
+      </div>
+      <div
+        class="tab1"
+      >
+        );
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div>
+        <span
+          class="keyword"
+        >
+          export default 
+        </span>
+        Component;
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog9/> code for blog9 component snapshot ReactHOC code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // HOC function
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          export default function
+        </span>
+         Hoc(Component) {
+      </div>
+      <div
+        class="tab1"
+      >
+        <span
+          class="keyword"
+        >
+          function
+        </span>
+         ReactComponent() {
+      </div>
+      <div
+        class="tab2"
+      >
+        <span
+          class="keyword"
+        >
+          return
+        </span>
+         &lt;Component /&gt;
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          };
+        </div>
+        <br />
+        <div>
+          <span
+            class="keyword"
+          >
+            return
+          </span>
+           ReactComponent;
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`<Blog9/> code for blog9 component snapshot UseHOC code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // How to use the HOC function we created
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          const 
+        </span>
+        HOC = Hoc(() =&gt; &lt;Component arg={hello world} /&gt;);
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        // You can now use HOC as JSX component
+      </div>
+      <div>
+        &lt;HOC /&gt;
+      </div>
+    </code>
+  </pre>
+</div>
+`;

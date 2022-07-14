@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<8/> blog page snapshot blog post 8 1`] = `
+exports[`<9/> blog page snapshot blog post 9 1`] = `
 <div>
   <div
     class="blogPostPage container"
@@ -177,7 +177,7 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
           />
         </span>
         <img
-          alt="blog 8 image"
+          alt="blog 9 image"
           data-nimg="intrinsic"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -192,7 +192,7 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
       <h1
         class="text-primary mt-3 text-center"
       >
-        Most common HTML entities you will use
+        Create a React HOC scaffold
       </h1>
     </div>
     <div
@@ -209,9 +209,9 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-07-31"
+        datetime="2022-08-01"
       >
-        2022 July 31st Sunday
+        2022 August 1st Monday
       </time>
     </div>
     <div
@@ -228,7 +228,12 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          HTML
+          React
+        </span>
+        <span
+          class="w-auto mt-1 me-1 badge text-secondary bg-primary"
+        >
+          Javascript
         </span>
       </div>
     </div>
@@ -241,7 +246,10 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
       >
         <ul>
           <li>
-            Simple basic understanding of HTML
+            Must have good understand how React components work
+          </li>
+          <li>
+            Basic level of Javascript
           </li>
         </ul>
       </div>
@@ -258,13 +266,7 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
         class="col-12"
       >
         <p>
-                When writing in HTML, you have to follow the conventional tag structure and its keyword characters, and the same goes along with some other framework languages too, such as React, which writes similar to HTML tag structure. But what if you want to use some of the very same tags or the keywords within your document. For example, let's say you would like to display this 
-          <span
-            class="codeText"
-          >
-            &lt;span&gt;hello&lt;/span&gt;
-          </span>
-           tag within your UI. That is where it can become tricky. Because HTML uses the opening and closing tag as a special keyword character, and it will convert it. This is where HTML entities come in. They are a set of encodes which allow you to write anything within your UI. There are literally hundreds of them, but here is a list of the most common ones you will likely be using often.
+                React components are the most common function you will use. I doubt you will be able to get much done without it. But there are occasions when you want to implement certain functions or modify a component, sort of like middleware. This is where HOC comes in. It stands for Higher Order Component, which basically means that it will take in your React components, implement a certain function you want and output the component to meet your expectations.
         </p>
       </div>
       <div
@@ -280,91 +282,172 @@ exports[`<8/> blog page snapshot blog post 8 1`] = `
             <div
               class="comment"
             >
-              // Most useful HTML entities
+              // HOC function
             </div>
             <div>
-              &#47; = / (Forward slash)
+              <span
+                class="keyword"
+              >
+                export default function
+              </span>
+               Hoc(Component) {
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                function
+              </span>
+               ReactComponent() {
+            </div>
+            <div
+              class="tab2"
+            >
+              <span
+                class="keyword"
+              >
+                return
+              </span>
+               &lt;Component /&gt;
+            </div>
+            <div
+              class="tab1"
+            >
+              <div>
+                };
+              </div>
+              <br />
+              <div>
+                <span
+                  class="keyword"
+                >
+                  return
+                </span>
+                 ReactComponent;
+              </div>
             </div>
             <div>
-              &#33; = ! (Exclamation mark)
-            </div>
-            <div>
-              &#40; = ( (Open parenthesis)
-            </div>
-            <div>
-              &#41; = ) (Close parenthesis)
-            </div>
-            <div>
-              &#44; = , (Comman)
-            </div>
-            <div>
-              &#58; = : (Colon)
-            </div>
-            <div>
-              &#59; = ; (Semi-colon)
-            </div>
-            <div>
-              &#63; = ? (Question mark)
-            </div>
-            <div>
-              &#91; = [ (Open bracket)
-            </div>
-            <div>
-              &#93; = ] (Close bracket)
-            </div>
-            <div>
-              &#92; = \\ (Back slash)
-            </div>
-            <div>
-              &#95; = _ (underscore)
-            </div>
-            <div>
-              &#123; = { (Open curly brace)
-            </div>
-            <div>
-              &#125; = } (Close curly brace)
-            </div>
-            <div>
-              &#124; = | (Pipe)
-            </div>
-            <div>
-              &#160; =   (Empty space)
-            </div>
-            <div>
-              &#8208; = ‐ (Hyphen)
-            </div>
-            <div>
-              &#34; = " (Double quote)
-            </div>
-            <div>
-              &#39; = ' (Single quote)
-            </div>
-            <div>
-              &#96; = \` (Grave accent)
-            </div>
-            <div>
-              &#43; = + (Plus)
-            </div>
-            <div>
-              &#8722; = − (Minus)
-            </div>
-            <div>
-              &#61; = = (Equal)
-            </div>
-            <div>
-              &#60; = &lt; (Less than)
-            </div>
-            <div>
-              &#62; = &gt; (Greater than)
-            </div>
-            <div>
-              &#37; = % (Percentage)
-            </div>
-            <div>
-              &#8727; = ∗ (Asterisk)
+              };
             </div>
           </code>
         </pre>
+      </div>
+      <div
+        class="col-12"
+      >
+        <pre
+          class="preCode mx-auto"
+        >
+          <code
+            class="codeTag mx-auto"
+            role="code"
+          >
+            <div
+              class="comment"
+            >
+              // Normal react component
+            </div>
+            <div>
+              <span
+                class="keyword"
+              >
+                import
+              </span>
+               React 
+              <span
+                class="keyword"
+              >
+                from
+              </span>
+               "react";
+            </div>
+            <br />
+            <div>
+              <span
+                class="keyword"
+              >
+                const 
+              </span>
+              Component = (arg) =&gt; {
+            </div>
+            <div
+              class="tab1"
+            >
+              <span
+                class="keyword"
+              >
+                return
+              </span>
+               (
+            </div>
+            <div
+              class="tab2"
+            >
+              &lt;div&gt;{arg}&lt;/div&gt;
+            </div>
+            <div
+              class="tab1"
+            >
+              );
+            </div>
+            <div>
+              };
+            </div>
+            <br />
+            <div>
+              <span
+                class="keyword"
+              >
+                export default 
+              </span>
+              Component;
+            </div>
+          </code>
+        </pre>
+      </div>
+      <div
+        class="col-12"
+      >
+        <pre
+          class="preCode mx-auto"
+        >
+          <code
+            class="codeTag mx-auto"
+            role="code"
+          >
+            <div
+              class="comment"
+            >
+              // How to use the HOC function we created
+            </div>
+            <div>
+              <span
+                class="keyword"
+              >
+                const 
+              </span>
+              HOC = Hoc(() =&gt; &lt;Component arg={hello world} /&gt;);
+            </div>
+            <br />
+            <div
+              class="comment"
+            >
+              // You can now use HOC as JSX component
+            </div>
+            <div>
+              &lt;HOC /&gt;
+            </div>
+          </code>
+        </pre>
+      </div>
+      <div
+        class="col-12"
+      >
+        <p>
+          HOC are not necessary but they are very useful and the sooner you start using them, the better your React experience will be.
+        </p>
       </div>
     </div>
   </div>

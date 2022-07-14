@@ -40,9 +40,15 @@ export const blogsData: blogsDataType = {
     dateTime_attribute: "2022-08-02",
   },
 
+  blog9: {
+    title: "Create a React HOC scaffold",
+    dateDisplay: "2022 August 1st Monday",
+    dateTime_attribute: "2022-08-01",
+  },
+
   blog8: {
     title: "Most common HTML entities you will use",
-    dateDisplay: "2022 July 31th Sunday",
+    dateDisplay: "2022 July 31st Sunday",
     dateTime_attribute: "2022-07-31",
   },
 
