@@ -1,9 +1,9 @@
 // COPY VERSION OF ADDING ANOTHER BLOG POST
 //    - REMEMBER IF YOU WANT TO ADD CODES WITHIN THE PAGE, USE THE ./component/blogPostCodes/COPY.tsx TO MAKE A NEW ONE
 
-// tite:  Create a React HOC scaffold
+// tite:  Create a dictionary object with Typescript interface
 // date: iK check blogsData.ts file
-// blog9
+// blog10
 
 // IK TODO LIST FOR NEW BLOGS
 // -note route / title / date on /Route-n-features.txt file in your dropbox folder
@@ -41,18 +41,14 @@ import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPag
 import { blogsData } from "../../scripts/blogsData";
 
 // iK blog image
-import blog9Image from "../../public/blog9img/blog9.jpg";
+import blog10Image from "../../public/blog10img/blog10.jpg";
 
 // iK code block I used
-import {
-  ReactComponent,
-  ReactHOC,
-  UseHOC,
-} from "../../components/blogPostCodes/Blog9";
+import Blog10 from "../../components/blogPostCodes/Blog10";
 
 type Props = {};
 
-export default function blog9({}: Props) {
+export default function blog10({}: Props) {
   const {
     blogPostPage,
     svgLinks,
@@ -63,15 +59,17 @@ export default function blog9({}: Props) {
   } = forAllBlogsPageStyles;
 
   // ensure you are collecting the correct blog number
-  const { blog9 } = blogsData;
+  const { blog10 } = blogsData;
 
   return (
     <Container className={`${blogPostPage}`}>
       <Head>
-        <title>Create a React HOC scaffold | Ilshaad Blog</title>
+        <title>
+          Create a dictionary object with Typescript interface | Ilshaad Blog
+        </title>
         <meta
           name="description"
-          content="Create a React HOC scaffold | Ilshaad Blog"
+          content="Create a dictionary object with Typescript interface | Ilshaad Blog"
         />
 
         <link
@@ -134,14 +132,14 @@ export default function blog9({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog9Image} alt="blog 9 image" />
+        <Image src={blog10Image} alt="blog 10 image" />
       </Row>
 
       {/* iK type your title */}
       {/* blog post title */}
       <Row className={`mx-auto`}>
         <h1 className={`text-primary mt-3 text-center`}>
-          Create a React HOC scaffold
+          Create a dictionary object with Typescript interface
         </h1>
       </Row>
 
@@ -155,10 +153,10 @@ export default function blog9({}: Props) {
       {/* iK collect your blog date from blogsData object */}
       <Row className={`mb-2 mx-auto`}>
         <time
-          dateTime={blog9.dateTime_attribute}
+          dateTime={blog10.dateTime_attribute}
           className={`${blogDate} d-block text-center`}
         >
-          {blog9.dateDisplay}
+          {blog10.dateDisplay}
         </time>
       </Row>
 
@@ -168,10 +166,10 @@ export default function blog9({}: Props) {
         <h5 className={`text-center mb-3`}>Prequisite:</h5>
         <div className={`mt-n2 mb-3 text-center`}>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            React
+            Javascript
           </Badge>
           <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
-            Javascript
+            Typescript
           </Badge>
         </div>
       </Row>
@@ -180,8 +178,8 @@ export default function blog9({}: Props) {
       <Row style={{ fontSize: "0.9rem" }}>
         <Col xs={{ span: 9, offset: 1 }}>
           <ul>
-            <li>React components understanding is a must</li>
-            <li>Basic level of Javascript</li>
+            <li>Should understand Typescript type</li>
+            <li>Basic understanding of Javascript</li>
           </ul>
         </Col>
       </Row>
@@ -200,36 +198,23 @@ export default function blog9({}: Props) {
           {/* iK for inline <code> tags, use codeText eg. &#160;<code className={`${codeText}`}>iKcode</code> */}
           {/* use <h5> for headings if neded */}
           <p>
-            &#160;&#160;&#160;&#160;&#160;&#160;React components are the most
-            common function you will use. I doubt you will be able to get much
-            done without it. But there are occasions when you want to implement
-            certain functions or modify a component, sort of like middleware.
-            This is where HOC comes in. It stands for Higher Order Component,
-            which basically means that it will take in your React components,
-            implement a certain function you want and output the component to
-            meet your expectations.
+            &#160;&#160;&#160;&#160;&#160;&#160;When using Typescript, you
+            sometimes have to define the type of value for any variables. Most
+            of the time, Typescript is smart enough to know what the type is,
+            but there are just a few cases where it cannot define the type for
+            you and you are obligated to define the type. This is especially
+            true of dictionary objects. Most people starting off with Typescript
+            will forget you need to define two types to create a dictionary
+            object. Particularly if the dictionary property names are dynamic
+            names such as id numbers. Anyway, here is a simple type of example
+            so you can understand what needs to be done.
           </p>
         </Col>
 
         {/* iK place any code blocks if you have any for blog post */}
         {/* the code block component */}
         <Col xs={12}>
-          <ReactHOC />
-        </Col>
-
-        <Col xs={12}>
-          <ReactComponent />
-        </Col>
-
-        <Col xs={12}>
-          <UseHOC />
-        </Col>
-
-        <Col xs={12}>
-          <p>
-            HOC are not necessary but they are very useful and the sooner you
-            start using them, the better your React experience will be.
-          </p>
+          <Blog10 />
         </Col>
       </Row>
     </Container>

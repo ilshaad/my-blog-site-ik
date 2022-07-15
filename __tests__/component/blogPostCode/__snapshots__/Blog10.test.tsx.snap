@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog10/> code for blog10 component snapshot Blog10 code tag 1`] = `
+<div>
+  <pre
+    class="preCode mx-auto"
+  >
+    <code
+      class="codeTag mx-auto"
+      role="code"
+    >
+      <div
+        class="comment"
+      >
+        // Define the object type
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          interface 
+        </span>
+        object {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          name: 
+          <span
+            class="value"
+          >
+            string | null
+          </span>
+          ;
+        </div>
+        <div>
+          age: 
+          <span
+            class="value"
+          >
+            number | null
+          </span>
+          ;
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+      <br />
+      <div
+        class="comment"
+      >
+        // Define the dictionary object type 
+      </div>
+      <div>
+        <span
+          class="keyword"
+        >
+          interface 
+        </span>
+        dictionary {
+      </div>
+      <div
+        class="tab1"
+      >
+        <div>
+          [idNumber: 
+          <span
+            class="value"
+          >
+            number
+          </span>
+          ]: object;
+        </div>
+      </div>
+      <div>
+        };
+      </div>
+    </code>
+  </pre>
+</div>
+`;

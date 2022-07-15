@@ -131,7 +131,7 @@ const Home: NextPage = () => {
             application platform provider you use
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/5" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -170,7 +170,7 @@ const Home: NextPage = () => {
             order, name order or even
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/6" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -212,7 +212,7 @@ const Home: NextPage = () => {
             insert but also be able to collect
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/3" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -254,7 +254,7 @@ const Home: NextPage = () => {
             have to format the date and time
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/1" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -296,7 +296,7 @@ const Home: NextPage = () => {
             repeatedly can be quite tedious. And it
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/4" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -335,7 +335,7 @@ const Home: NextPage = () => {
             occasions when you want to implement
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/9" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -371,7 +371,7 @@ const Home: NextPage = () => {
             some other framework languages too,
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/8" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -410,7 +410,7 @@ const Home: NextPage = () => {
             commonly used. But regardless of what
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/7" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
@@ -421,6 +421,45 @@ const Home: NextPage = () => {
             className={`${blogDate} d-block text-end mb-2`}
           >
             {blogsData.blog7.dateDisplay}
+          </time>
+        </Row>
+
+        {/* /blog/10 */}
+        <Row as="li" className="bg-light border border-2 mb-4">
+          <Link href="/blog/10">
+            <h4 className={`${blogPostTitle} mt-2 mb-1`}>
+              Create a dictionary object with Typescript interface
+            </h4>
+          </Link>
+
+          {/* list of prequisite skills for the blog */}
+          <div>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Javascript
+            </Badge>
+            <Badge bg="primary" text="secondary" className={`w-auto mt-1 me-1`}>
+              Typescript
+            </Badge>
+          </div>
+
+          {/* must contain at least 163 characters */}
+          <p className={`${index_page_blogPostSample} mt-1`}>
+            When using Typescript, you sometimes have to define the type of
+            value for any variables. Most of the time, Typescript is smart
+            enough to know what the type is, but
+          </p>
+
+          <span className={`mt-n3`}>...</span>
+
+          <Link href="/blog/1-" className={`${indexPage_readMoreLink}`}>
+            Read more &rarr;
+          </Link>
+
+          <time
+            dateTime={blogsData.blog10.dateTime_attribute}
+            className={`${blogDate} d-block text-end mb-2`}
+          >
+            {blogsData.blog10.dateDisplay}
           </time>
         </Row>
 
@@ -453,7 +492,7 @@ const Home: NextPage = () => {
             <code className={`${codeText}`}>2021-06-01T11:08:01.000Z</code>.
           </p>
 
-          <span className={`mt-n4`}>...</span>
+          <span className={`mt-n3`}>...</span>
 
           <Link href="/blog/2" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;

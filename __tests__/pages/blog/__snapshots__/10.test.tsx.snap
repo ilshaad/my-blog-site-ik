@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<9/> blog page snapshot blog post 9 1`] = `
+exports[`<10/> blog page snapshot blog post 10 1`] = `
 <div>
   <div
     class="blogPostPage container"
@@ -177,7 +177,7 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
           />
         </span>
         <img
-          alt="blog 9 image"
+          alt="blog 10 image"
           data-nimg="intrinsic"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -192,7 +192,7 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
       <h1
         class="text-primary mt-3 text-center"
       >
-        Create a React HOC scaffold
+        Create a dictionary object with Typescript interface
       </h1>
     </div>
     <div
@@ -209,9 +209,9 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-08-01"
+        datetime="2022-07-26"
       >
-        2022 August 1st Monday
+        2022 July 26th Tuesday
       </time>
     </div>
     <div
@@ -228,12 +228,12 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          React
+          Javascript
         </span>
         <span
           class="w-auto mt-1 me-1 badge text-secondary bg-primary"
         >
-          Javascript
+          Typescript
         </span>
       </div>
     </div>
@@ -246,10 +246,10 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
       >
         <ul>
           <li>
-            React components understanding is a must
+            Should understand Typescript type
           </li>
           <li>
-            Basic level of Javascript
+            Basic understanding of Javascript
           </li>
         </ul>
       </div>
@@ -266,7 +266,7 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
         class="col-12"
       >
         <p>
-                React components are the most common function you will use. I doubt you will be able to get much done without it. But there are occasions when you want to implement certain functions or modify a component, sort of like middleware. This is where HOC comes in. It stands for Higher Order Component, which basically means that it will take in your React components, implement a certain function you want and output the component to meet your expectations.
+                When using Typescript, you sometimes have to define the type of value for any variables. Most of the time, Typescript is smart enough to know what the type is, but there are just a few cases where it cannot define the type for you and you are obligated to define the type. This is especially true of dictionary objects. Most people starting off with Typescript will forget you need to define two types to create a dictionary object. Particularly if the dictionary property names are dynamic names such as id numbers. Anyway, here is a simple type of example so you can understand what needs to be done.
         </p>
       </div>
       <div
@@ -282,50 +282,66 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
             <div
               class="comment"
             >
-              // HOC function
+              // Define the object type
             </div>
             <div>
               <span
                 class="keyword"
               >
-                export default function
+                interface 
               </span>
-               Hoc(Component) {
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                function
-              </span>
-               ReactComponent() { 
-            </div>
-            <div
-              class="tab2"
-            >
-              <span
-                class="keyword"
-              >
-                return
-              </span>
-               &lt;Component /&gt;
+              object {
             </div>
             <div
               class="tab1"
             >
               <div>
-                };
-              </div>
-              <br />
-              <div>
+                name: 
                 <span
-                  class="keyword"
+                  class="value"
                 >
-                  return
+                  string | null
                 </span>
-                 ReactComponent;
+                ;
+              </div>
+              <div>
+                age: 
+                <span
+                  class="value"
+                >
+                  number | null
+                </span>
+                ;
+              </div>
+            </div>
+            <div>
+              };
+            </div>
+            <br />
+            <div
+              class="comment"
+            >
+              // Define the dictionary object type 
+            </div>
+            <div>
+              <span
+                class="keyword"
+              >
+                interface 
+              </span>
+              dictionary {
+            </div>
+            <div
+              class="tab1"
+            >
+              <div>
+                [idNumber: 
+                <span
+                  class="value"
+                >
+                  number
+                </span>
+                ]: object;
               </div>
             </div>
             <div>
@@ -333,121 +349,6 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
             </div>
           </code>
         </pre>
-      </div>
-      <div
-        class="col-12"
-      >
-        <pre
-          class="preCode mx-auto"
-        >
-          <code
-            class="codeTag mx-auto"
-            role="code"
-          >
-            <div
-              class="comment"
-            >
-              // Normal react component
-            </div>
-            <div>
-              <span
-                class="keyword"
-              >
-                import
-              </span>
-               React 
-              <span
-                class="keyword"
-              >
-                from
-              </span>
-               "react";
-            </div>
-            <br />
-            <div>
-              <span
-                class="keyword"
-              >
-                const 
-              </span>
-              Component = (arg) =&gt; { 
-            </div>
-            <div
-              class="tab1"
-            >
-              <span
-                class="keyword"
-              >
-                return
-              </span>
-               (
-            </div>
-            <div
-              class="tab2"
-            >
-              &lt;div&gt;{arg}&lt;/div&gt;
-            </div>
-            <div
-              class="tab1"
-            >
-              );
-            </div>
-            <div>
-              };
-            </div>
-            <br />
-            <div>
-              <span
-                class="keyword"
-              >
-                export default 
-              </span>
-              Component;
-            </div>
-          </code>
-        </pre>
-      </div>
-      <div
-        class="col-12"
-      >
-        <pre
-          class="preCode mx-auto"
-        >
-          <code
-            class="codeTag mx-auto"
-            role="code"
-          >
-            <div
-              class="comment"
-            >
-              // How to use the HOC function we created
-            </div>
-            <div>
-              <span
-                class="keyword"
-              >
-                const 
-              </span>
-              HOC = Hoc(() =&gt; &lt;Component arg={hello world} /&gt;); 
-            </div>
-            <br />
-            <div
-              class="comment"
-            >
-              // You can now use HOC as JSX component
-            </div>
-            <div>
-              &lt;HOC /&gt;
-            </div>
-          </code>
-        </pre>
-      </div>
-      <div
-        class="col-12"
-      >
-        <p>
-          HOC are not necessary but they are very useful and the sooner you start using them, the better your React experience will be.
-        </p>
       </div>
     </div>
   </div>

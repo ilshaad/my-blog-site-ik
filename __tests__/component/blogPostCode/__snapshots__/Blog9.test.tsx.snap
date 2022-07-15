@@ -35,7 +35,7 @@ exports[`<Blog9/> code for blog9 component snapshot ReactComponent code tag 1`] 
         >
           const 
         </span>
-        Component = (arg) =&gt; {
+        Component = (arg) =&gt; { 
       </div>
       <div
         class="tab1"
@@ -104,7 +104,7 @@ exports[`<Blog9/> code for blog9 component snapshot ReactHOC code tag 1`] = `
         >
           function
         </span>
-         ReactComponent() {
+         ReactComponent() { 
       </div>
       <div
         class="tab2"
@@ -160,7 +160,7 @@ exports[`<Blog9/> code for blog9 component snapshot UseHOC code tag 1`] = `
         >
           const 
         </span>
-        HOC = Hoc(() =&gt; &lt;Component arg={hello world} /&gt;);
+        HOC = Hoc(() =&gt; &lt;Component arg={hello world} /&gt;); 
       </div>
       <br />
       <div

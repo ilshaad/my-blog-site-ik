@@ -34,7 +34,8 @@ export function ReactHOC({}: Props) {
         </div>
 
         <div className={tab1}>
-          <span className={keyword}>function</span> ReactComponent() &#123;
+          <span className={keyword}>function</span> ReactComponent()
+          &#123;&#160;
         </div>
 
         <div className={tab2}>
@@ -69,7 +70,8 @@ export function ReactComponent({}: Props) {
         <br />
 
         <div>
-          <span className={keyword}>const </span>Component = (arg) =&#62; &#123;
+          <span className={keyword}>const </span>Component = (arg) =&#62;
+          &#123;&#160;
         </div>
 
         <div className={tab1}>
@@ -103,7 +105,7 @@ export function UseHOC({}: Props) {
 
         <div>
           <span className={keyword}>const </span>HOC = Hoc(() =&#62;
-          &#60;Component arg=&#123;hello world&#125; &#47;&#62;);
+          &#60;Component arg=&#123;hello world&#125; &#47;&#62;);&#160;
         </div>
         <br />
 

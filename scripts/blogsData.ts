@@ -58,6 +58,12 @@ export const blogsData: blogsDataType = {
     dateTime_attribute: "2022-07-29",
   },
 
+  blog10: {
+    title: "Create a dictionary object with Typescript interface",
+    dateDisplay: "2022 July 26th Tuesday",
+    dateTime_attribute: "2022-07-26",
+  },
+
   blog2: {
     title: "Parse SQL timestamp",
     dateDisplay: "2022 July 20th Wednesday",
