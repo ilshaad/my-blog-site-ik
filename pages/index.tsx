@@ -451,7 +451,7 @@ const Home: NextPage = () => {
 
           <span className={`mt-n3`}>...</span>
 
-          <Link href="/blog/1-" className={`${indexPage_readMoreLink}`}>
+          <Link href="/blog/10" className={`${indexPage_readMoreLink}`}>
             Read more &rarr;
           </Link>
 
