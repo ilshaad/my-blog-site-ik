@@ -94,7 +94,7 @@ exports[`<Blog9/> code for blog9 component snapshot ReactHOC code tag 1`] = `
         >
           export default function
         </span>
-         Hoc(Component) {
+         Hoc(Component) { 
       </div>
       <div
         class="tab1"

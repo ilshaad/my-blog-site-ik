@@ -30,7 +30,7 @@ export function ReactHOC({}: Props) {
 
         <div>
           <span className={keyword}>export default function</span>
-          &#160;Hoc(Component) &#123;
+          &#160;Hoc(Component) &#123;&#160;
         </div>
 
         <div className={tab1}>

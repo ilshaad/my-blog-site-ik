@@ -290,7 +290,7 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
               >
                 export default function
               </span>
-               Hoc(Component) {
+               Hoc(Component) { 
             </div>
             <div
               class="tab1"
