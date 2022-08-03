@@ -25,7 +25,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
           >
             <a
               class="text-decoration-underline mx-auto"
-              href="https://github.com/RechadSalma/my-blog-site-ik"
+              href="https://github.com/ilshaad/my-blog-site-ik"
               rel="noopener noreferrer"
               target="_blank"
               title="Github"
