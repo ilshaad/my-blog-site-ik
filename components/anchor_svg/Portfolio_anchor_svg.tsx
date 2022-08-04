@@ -5,9 +5,10 @@ type Props = {};
 export default function Portfolio_anchor_svg({}: Props) {
   return (
     <a
-      href="#"
+      href="https://ilshaad.com/"
       className="text-decoration-underline mx-auto"
       target="_blank"
+      rel="noopener noreferrer"
       title="Portfolio site"
     >
       <svg
