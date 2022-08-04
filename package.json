@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "ikclean": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm i && npm update && npm audit fix --force && npm outdated",
+    "ikclean2": "rm -fr node_modules/ package-lock.json .next/ && npm cache clean -vf && npm i && npm outdated",
+    "ikcleanci": "rm -fr node_modules/ .next/ && npm cache clean -vf && npm ci && npm outdated",
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "server": "npm run build && npm run start"
