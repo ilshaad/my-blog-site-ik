@@ -5,7 +5,7 @@ type Props = {};
 export default function LinkedIn_svg({}: Props) {
   return (
     <a
-      href="https://www.linkedin.com/in/rob-c-a7aa08199/"
+      href="https://www.linkedin.com/in/ilshaad/"
       className="text-decoration-underline mx-auto"
       target="_blank"
       rel="noopener noreferrer"
