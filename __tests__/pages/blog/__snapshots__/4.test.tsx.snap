@@ -64,7 +64,7 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
       >
         <a
           class="text-decoration-underline mx-auto"
-          href="https://www.linkedin.com/in/rob-c-a7aa08199/"
+          href="https://www.linkedin.com/in/ilshaad/"
           rel="noopener noreferrer"
           target="_blank"
           title="LinkedIn"
@@ -88,7 +88,8 @@ exports[`<4/> blog page snapshot blog post 4 1`] = `
       >
         <a
           class="text-decoration-underline mx-auto"
-          href="#"
+          href="https://ilshaad.com/"
+          rel="noopener noreferrer"
           target="_blank"
           title="Portfolio site"
         >
