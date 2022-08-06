@@ -15,6 +15,7 @@ The app is a blog site. I have learnt a lot from the web community, and I believ
 - React-Testing-Library
 - Sass / Bootstrap / React-Bootstrap
 - PWA
+- Docker
 - etc...
 
 ## Some key points about the app:
