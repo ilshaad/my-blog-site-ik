@@ -210,9 +210,9 @@ exports[`<9/> blog page snapshot blog post 9 1`] = `
     >
       <time
         class="blogDate d-block text-center"
-        datetime="2022-08-01"
+        datetime="2022-07-07"
       >
-        2022 August 1st Monday
+        2022 July 7th Thursday
       </time>
     </div>
     <div
