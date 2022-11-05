@@ -2,7 +2,8 @@
 
 // iK? begin from 360px & up for starting breakpoint
 .home {
-  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+  font-family: monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+  // font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
   margin-bottom: 1rem;
 }
 
@@ -13,8 +14,13 @@
   // padding-right: 1rem;
 }
 
+.anchor_blogPostTitle {
+  text-decoration: none;
+}
+
 .blogPostTitle {
   font-weight: 600;
+  color: #212529;
 
   &:hover {
     filter: brightness(3);

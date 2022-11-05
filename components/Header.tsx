@@ -127,8 +127,8 @@ export default function Header({}: Props) {
                   <Image
                     src={rsImage}
                     alt="rechadsalma log"
-                    width={"100%"}
-                    height={"100%"}
+                    width={100}
+                    height={100}
                     className={`${rsLogo}`}
                   />
                   <h1 className={`${brandHeading} text-primary`}>
