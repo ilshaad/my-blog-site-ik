@@ -121,9 +121,9 @@ export default function blog1({}: Props) {
       <Breadcrumb
         className={`d-none d-sm-block mt-2 mb-n2 ms-2 me-2 ms-xl-5 me-xl-5`}
       >
-        <Link href="/" passHref>
-          <Breadcrumb.Item className={homeBreadcrumb}>Home</Breadcrumb.Item>
-        </Link>
+        <Breadcrumb.Item className={homeBreadcrumb}>
+          <Link href="/">Home</Link>
+        </Breadcrumb.Item>
 
         <Breadcrumb.Item active>blog</Breadcrumb.Item>
       </Breadcrumb>
