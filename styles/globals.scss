@@ -35,8 +35,10 @@ body,
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+  font-family: monospace, "Roboto", Arial, Helvetica, sans-serif,
     $font-family-sans-serif !important;
+  // font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+  //   $font-family-sans-serif !important;
 }
 
 body {
@@ -61,8 +63,10 @@ body {
   #OuterGrid-header {
     grid-area: OG-header;
 
-    font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+    font-family: monospace, "Roboto", Arial, Helvetica, sans-serif,
       $font-family-sans-serif !important;
+    // font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+    //   $font-family-sans-serif !important;
 
     // background-color: red;
   }
@@ -76,8 +80,10 @@ body {
     // margin-top: 0px;
 
     background-color: #f1f8ff;
-    font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+    font-family: monospace, "Roboto", Arial, Helvetica, sans-serif,
       $font-family-sans-serif;
+    // font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+    //   $font-family-sans-serif;
   }
 
   // will not be display until at bigger screen size

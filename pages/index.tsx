@@ -17,6 +17,7 @@ import styles from "../styles/pages/index.module.scss";
 const Home: NextPage = () => {
   const {
     home,
+    anchor_blogPostTitle,
     blogPostTitle,
     index_page_blogPostSample,
     indexPage_readMoreLink,
@@ -96,7 +97,7 @@ const Home: NextPage = () => {
       <Container fluid as="ul" data-testid="blog list box">
         {/* /blog/5 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/5">
+          <Link href="/blog/5" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Deploy multiple Docker containers using Github Actions and Heroku
             </h4>
@@ -147,7 +148,7 @@ const Home: NextPage = () => {
 
         {/* /blog/6 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/6">
+          <Link href="/blog/6" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Create an ascending and descending sort function
             </h4>
@@ -186,7 +187,7 @@ const Home: NextPage = () => {
 
         {/* /blog/3 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/3">
+          <Link href="/blog/3" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               How to create a controlled form component with React-Typescript
             </h4>
@@ -228,7 +229,7 @@ const Home: NextPage = () => {
 
         {/* /blog/1 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/1">
+          <Link href="/blog/1" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Create timestamp in SQL format
             </h4>
@@ -270,7 +271,7 @@ const Home: NextPage = () => {
 
         {/* /blog/4 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/4">
+          <Link href="/blog/4" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Create an Axios instance
             </h4>
@@ -312,7 +313,7 @@ const Home: NextPage = () => {
 
         {/* /blog/9 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/9">
+          <Link href="/blog/9" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Create a React HOC scaffold
             </h4>
@@ -351,7 +352,7 @@ const Home: NextPage = () => {
 
         {/* /blog/8 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/8">
+          <Link href="/blog/8" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Most common HTML entities you will use
             </h4>
@@ -387,7 +388,7 @@ const Home: NextPage = () => {
 
         {/* /blog/7 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/7">
+          <Link href="/blog/7" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Capitalise the first character of a word
             </h4>
@@ -426,7 +427,7 @@ const Home: NextPage = () => {
 
         {/* /blog/10 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/10">
+          <Link href="/blog/10" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Create a dictionary object with Typescript interface
             </h4>
@@ -465,7 +466,7 @@ const Home: NextPage = () => {
 
         {/* /blog/2 */}
         <Row as="li" className="bg-light border border-2 mb-4">
-          <Link href="/blog/2">
+          <Link href="/blog/2" className={anchor_blogPostTitle}>
             <h4 className={`${blogPostTitle} mt-2 mb-1`}>
               Parse SQL timestamp
             </h4>

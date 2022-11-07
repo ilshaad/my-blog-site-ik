@@ -8,7 +8,8 @@
 
 // iK? begin from 320px & up for starting breakpoint
 .blogPostPage {
-  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+  font-family: monospace, "Roboto", Arial, Helvetica, sans-serif !important;
+  // font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif !important;
   width: 95%;
   margin-bottom: 1rem;
 }
@@ -21,6 +22,11 @@
 
 .homeBreadcrumb a {
   text-decoration: none !important;
+}
+
+.blogImg {
+  width: 100%;
+  height: 100%;
 }
 
 .minuteRead {
