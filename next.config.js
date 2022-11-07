@@ -15,21 +15,21 @@
 // });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  async rewrites() {
-    return {
-      afterFiles: [{ source: "/:path*", destination: "/_404/:path*" }],
-    };
-  },
-};
+// const nextConfig = {
+//   reactStrictMode: true,
+//   async rewrites() {
+//     return {
+//       afterFiles: [{ source: "/:path*", destination: "/_404/:path*" }],
+//     };
+//   },
+// };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
 
-// const withPWA = require('next-pwa')({
-//   dest: 'public'
-// })
+const withPWA = require("next-pwa")({
+  dest: "public",
+});
 
-// module.exports = withPWA({
-//   // next.js config
-// })
+module.exports = withPWA({
+  // next.js config
+});

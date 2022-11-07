@@ -66,6 +66,7 @@ export default function blog2({}: Props) {
   const {
     blogPostPage,
     svgLinks,
+    blogImg,
     blogDate,
     minuteRead,
     codeText,
@@ -132,7 +133,7 @@ export default function blog2({}: Props) {
       <Breadcrumb
         className={`d-none d-sm-block mt-2 mb-n2 ms-2 me-2 ms-xl-5 me-xl-5`}
       >
-        <Breadcrumb.Item className={homeBreadcrumb}>
+        <Breadcrumb.Item linkAs={"div"} className={homeBreadcrumb}>
           <Link href="/">Home</Link>
         </Breadcrumb.Item>
 
@@ -141,7 +142,7 @@ export default function blog2({}: Props) {
 
       {/* iK insert your image */}
       <Row className="mt-3 ms-2 me-2 ms-xl-5 me-xl-5">
-        <Image src={blog2Image} alt="blog 2 image" />
+        <Image src={blog2Image} alt="blog 2 image" className={blogImg} />
       </Row>
 
       {/* iK type your title */}
