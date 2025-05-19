@@ -12,7 +12,7 @@ import Home_anchor_svg from "../components/anchor_svg/Home_anchor_svg";
 import LinkedIn_anchor_svg from "../components/anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "../components/anchor_svg/Portfolio_anchor_svg";
 import { blogsData } from "../scripts/blogsData";
-import styles from "../styles/pages/index.module.scss";
+import styles from "../styles/pages/index.module.css";
 
 const Home: NextPage = () => {
   const {

@@ -1,0 +1,211 @@
+/*  ! iK this sass bootstrap is a setup for Outer-grid : header / main / footer
+  You will need to create the component/element first & add the id's within
+ Outer-grid uses css grid & consist of header / main / footer */
+
+/* @import "./customBootstrap.scss"; */
+/*  @import "../components/OuterGrid.scss";
+ @import url("https:fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"); */
+@import url("https:fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto:wght@700&display=swap");
+/*  font-family: 'Roboto', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+
+ iK? xx-small small phones (above 360px)
+ X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+ No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+ #####################################################
+ x-Small devices (small phones, 320px and up)
+ STARTING BREAKPOINT
+ ##################################################### */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*  font-family: "Montserrat", cursive, monospace, "Roboto", Arial, Helvetica,
+   sans-serif, $font-family-sans-serif; */
+}
+
+:root {
+  /* ! ZZZZZZZZZZZZZZZZZZZZZ */
+  /* Primary color set as purple */
+  --bs-primary: #800080;
+  --bs-primary-rgb: 128, 0, 128;
+
+  /* Secondary color set as green */
+  --bs-secondary: #008000;
+  --bs-secondary-rgb: 0, 128, 0;
+}
+/*  * to get react component full 100 width & height of the screen */
+root,
+html,
+body,
+#root,
+#root > div#OuterGrid {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: monospace, "Roboto", Arial, Helvetica, sans-serif;
+  /* $font-family-sans-serif !important; */
+  /*  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+     $font-family-sans-serif !important; */
+  /* --primary: #780206; */
+  --gradientBackground: linear-gradient(to right, #061161, #780206);
+  --breadcrumb-divider: ">";
+}
+
+body {
+  background-color: rgb(237 255 0 / 31%);
+}
+
+/*  * Setup up Outer-grid of the screen (OuterGrid.tsx component) */
+#OuterGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  /*  1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to */
+  grid-template-rows: 163px minmax(max-content, 1fr) 28px;
+  grid-template-areas:
+    "OG-header"
+    "OG-main"
+    "OG-footer";
+  width: 100%;
+  height: 100%;
+
+  /*  background-color: rgb(131, 130, 130);
+   background-color: rgb(237 255 0 / 31%); */
+
+  #OuterGrid-header {
+    grid-area: OG-header;
+
+    font-family: monospace, "Roboto", Arial, Helvetica, sans-serif;
+    /* $font-family-sans-serif !important; */
+    /*  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+       $font-family-sans-serif !important;
+
+     background-color: red; */
+  }
+
+  #OuterGrid-main {
+    grid-area: OG-main;
+    /*  overflow-x: auto; */
+
+    width: 93%;
+    margin: 0.1rem auto 7px auto; /* center the box */
+    /*  margin-top: 0px; */
+
+    background-color: #f1f8ff;
+    font-family: monospace, "Roboto", Arial, Helvetica, sans-serif;
+    /* $font-family-sans-serif; */
+    /*  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
+       $font-family-sans-serif; */
+  }
+
+  /*  will not be display until at bigger screen size */
+  #OuterGrid-aside {
+    grid-area: OG-aside;
+    display: none;
+
+    font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif;
+    /* $font-family-sans-serif; */
+
+    /*  background-color: pink; */
+  }
+
+  #OuterGrid-footer {
+    grid-area: OG-footer;
+    background: linear-gradient(to right, #061161, #780206);
+
+    font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica;
+
+    /*  background-color: yellow; */
+  }
+}
+
+/*  ! iK Beware I notice media query does not work accordingly unless your elements have higher specificity than < 576px. Not sure if this is a one off or not?
+ * However the other breakpoints are working fine with each other so you do not have to compete for specificity there
+
+ * breakpoint of > 360px */
+@media screen and (min-width: 360px) {
+  #OuterGrid {
+    grid-template-rows: 148px minmax(max-content, 1fr) 28px;
+  }
+}
+/*  breakpoint of > 360px
+
+ #####################################################
+ Small devices (landscape phones, 576px and up)
+ ##################################################### */
+@media (min-width: 576px) {
+  /* @include media-breakpoint-up(sm) { */
+  #OuterGrid {
+    grid-template-columns: 1fr 8fr 3fr 1fr;
+    grid-template-rows: 120px 1fr 28px;
+    grid-template-areas:
+      "OG-header OG-header OG-header OG-header"
+      ". OG-main OG-aside ."
+      "OG-footer OG-footer OG-footer OG-footer";
+
+    #OuterGrid-main {
+      overflow-x: auto;
+      /*  width: 108%;
+       margin-left: -2.5rem; */
+      margin-top: 0.5rem;
+      /*  margin: 10px auto;  center the box */
+    }
+
+    #OuterGrid-aside {
+      display: block;
+
+      width: 100%;
+      margin: 10px 0; /* keeping box to the left because it looks better */
+    }
+  }
+}
+
+/*  #####################################################
+ Medium devices (tablets, 768px and up)
+ #####################################################
+ @include media-breakpoint-up(md) {
+   #OuterGrid-main {
+      overflow-x: auto;
+      width: 108%;
+     margin-left: -3rem !important;
+      margin-top: 0.5rem;
+      margin: 10px auto;  center the box
+   }
+ }
+
+ #####################################################
+ Large devices (desktops, 992px and up)
+ ##################################################### */
+/* @include media-breakpoint-up(lg) { */
+@media (min-width: 992px) {
+  #OuterGrid {
+    grid-template-columns: 2fr 11fr 3fr 2fr;
+    grid-template-rows: 100px 1fr 28px;
+  }
+
+  /*    #OuterGrid-main {
+        overflow-x: auto;
+       width: 112%;
+       margin-left: -5rem !important;
+        margin-top: 0.5rem;
+        margin: 10px auto;  center the box
+     } */
+}
+
+/*  #####################################################
+ X-Large devices (large desktops, 1200px and up)
+ #####################################################
+ @include media-breakpoint-up(xl) {
+   #OuterGrid {
+      grid-template-columns: 2fr 7fr 3fr 2fr;
+     grid-template-rows: 125px 1fr 55px;
+   }
+ }
+
+ #####################################################
+ XX-Large devices (larger desktops, 1400px and up)
+ #####################################################
+ @include media-breakpoint-up(xxl) {
+ } */

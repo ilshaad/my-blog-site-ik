@@ -33,7 +33,7 @@ import Portfolio_anchor_svg from "../../components/anchor_svg/Portfolio_anchor_s
 import LinkedIn_anchor_svg from "../../components/anchor_svg/LinkedIn_anchor_svg";
 import EmailMe_anchor_svg from "../../components/anchor_svg/EmailMe_anchor_svg";
 
-import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.scss";
+import forAllBlogsPageStyles from "../../styles/pages/blogsExtras/forAllBlogsPageStyles.module.css";
 
 // blogs data object
 import { blogsData } from "../../scripts/blogsData";
