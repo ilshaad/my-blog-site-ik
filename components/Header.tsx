@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Col, Container, Navbar, Placeholder, Row } from "react-bootstrap";
 
-import styles from "../styles/components/Header.module.scss";
+import styles from "../styles/components/Header.module.css";
 
 import rsImage from "../public/mstile-150x150.png";
 // import EmailMe_anchor_svg from "./anchor_svg/EmailMe_anchor_svg";

@@ -26,16 +26,14 @@
    sans-serif, $font-family-sans-serif; */
 }
 
-:root {
-  /* ! ZZZZZZZZZZZZZZZZZZZZZ */
-  /* Primary color set as purple */
+/* :root {
   --bs-primary: #800080;
   --bs-primary-rgb: 128, 0, 128;
 
-  /* Secondary color set as green */
   --bs-secondary: #008000;
   --bs-secondary-rgb: 0, 128, 0;
-}
+} */
+
 /*  * to get react component full 100 width & height of the screen */
 root,
 html,
@@ -50,8 +48,25 @@ body,
   /*  font-family: "Montserrat", monospace, "Roboto", Arial, Helvetica, sans-serif,
      $font-family-sans-serif !important; */
   /* --primary: #780206; */
-  --gradientBackground: linear-gradient(to right, #061161, #780206);
+
+  /*Bootstrap customization  */
+  /* --gradientBackground: linear-gradient(to right, #061161, #780206); */
   --breadcrumb-divider: ">";
+
+  /* BOOTSTRAP CUSTOMIZATION FOR ITS CLASSES */
+  /* Primary color: Deep Red */
+  --bs-primary: #780206;
+  --bs-primary-rgb: 120, 2, 6;
+
+  /* Secondary color: Semi-Transparent Yellow */
+  --bs-secondary: rgba(237, 255, 0, 0.31);
+  --bs-secondary-rgb: 237, 255, 0;
+
+  /* Gradient colors */
+  --bs-gradientBackground: linear-gradient(to right, #061161, #780206);
+  /* RGB components for individual colors */
+  --bs-gradient-start-rgb: 6, 17, 97; /* Equivalent of #061161 */
+  --bs-gradient-end-rgb: 120, 2, 6; /* Equivalent of #780206 */
 }
 
 body {
