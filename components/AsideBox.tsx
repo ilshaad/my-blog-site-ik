@@ -7,7 +7,7 @@ import Github_anchor_svg from "./anchor_svg/Github_anchor_svg";
 // import Home_anchor_svg from "./anchor_svg/Home_anchor_svg";
 import LinkedIn_anchor_svg from "./anchor_svg/LinkedIn_anchor_svg";
 import Portfolio_anchor_svg from "./anchor_svg/Portfolio_anchor_svg";
-import styles from "../styles/components/AsideBox.module.scss";
+import styles from "../styles/components/AsideBox.module.css";
 
 type Props = {};
 
@@ -18,7 +18,7 @@ export default function AsideBox({}: Props) {
     <div data-testid="AsideBox_component" className={`${AsideBox_component}`}>
       {/* svg links */}
       <div className="bg-light border border-3 border-primary mx-auto">
-        <Container fluid={true} className={` text-primary mx-auto`}>
+        <Container fluid={true} className={`text-primary mx-auto`}>
           <h6
             className={`w-100 text-center mt-2 text-decoration-underline text-dark`}
           >

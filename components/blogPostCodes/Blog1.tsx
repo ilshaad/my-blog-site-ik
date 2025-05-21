@@ -2,7 +2,7 @@
 // iKBIM ensure you put empty space &#160; for the longest code block so it will add a nice padding to the end
 
 import React from "react";
-import styles from "../../styles/components/blogPosts/codesStyle.module.scss";
+import styles from "../../styles/components/blogPosts/codesStyle.module.css";
 
 type Props = {};
 
