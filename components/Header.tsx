@@ -43,7 +43,7 @@ export default function Header({}: Props) {
   // quote cannot be longer than 174 characters otherwise it will overflow outside the header component
   useEffect(() => {
     axios
-      .get("https://api.quotable.io/random")
+      .get("http://api.quotable.io/random")
       .then((res) => {
         const { data } = res;
 

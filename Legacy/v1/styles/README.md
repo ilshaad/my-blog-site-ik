@@ -1,10 +1,13 @@
 ik 20250517
 iK changes I have made so far
 
+- place old files (particularly sass) in v1 legacy directory
 - upgraded every package, including for it to work on node v24
 - Switching from sass to css
   - because bootstrap was giving error warnings on the terminal as their package have not upgraded their sass
     - they still use @import, but sass now use @use
+  - no need to change the nesting because css now support nesting too
+- I fixed the quote api as it was not working, but the issue was on their side, I just remove the s in the https which seem to work fine now
 
 # Ilshaad blog site
 
