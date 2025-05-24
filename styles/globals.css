@@ -78,7 +78,7 @@ body,
   display: grid;
   grid-template-columns: 100%;
   /*  1fr is a bit dodgy when it comes to navbar sandwich & does not take the 100% width like it is suppose to */
-  grid-template-rows: 163px minmax(max-content, 1fr) 28px;
+  grid-template-rows: 172px minmax(max-content, 1fr) 28px;
   grid-template-areas:
     "OG-header"
     "OG-main"
@@ -142,7 +142,7 @@ body,
  * breakpoint of > 360px */
 @media screen and (min-width: 360px) {
   #OuterGrid {
-    grid-template-rows: 148px minmax(max-content, 1fr) 28px;
+    grid-template-rows: 172px minmax(max-content, 1fr) 28px;
   }
 }
 /*  breakpoint of > 360px
@@ -154,7 +154,7 @@ body,
   /* @include media-breakpoint-up(sm) { */
   #OuterGrid {
     grid-template-columns: 1fr 8fr 3fr 1fr;
-    grid-template-rows: 120px 1fr 28px;
+    grid-template-rows: 141px 1fr 28px;
     grid-template-areas:
       "OG-header OG-header OG-header OG-header"
       ". OG-main OG-aside ."
@@ -197,7 +197,7 @@ body,
 @media (min-width: 992px) {
   #OuterGrid {
     grid-template-columns: 2fr 11fr 3fr 2fr;
-    grid-template-rows: 100px 1fr 28px;
+    grid-template-rows: 122px 1fr 28px;
   }
 
   /*    #OuterGrid-main {
