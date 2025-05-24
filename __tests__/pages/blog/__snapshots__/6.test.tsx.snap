@@ -45,7 +45,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
       >
         <a
           class="text-decoration-underline mx-auto"
-          href="https://github.com/ilshaad/my-blog-site-ik"
+          href="https://github.com/ilshaad"
           rel="noopener noreferrer"
           target="_blank"
           title="Github"
