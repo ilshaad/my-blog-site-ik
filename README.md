@@ -19,7 +19,7 @@ The app is a blog site. I have learnt a lot from the web community, and I believ
 - Next.js
 - Jest
 - React-Testing-Library
-- Sass / Bootstrap / React-Bootstrap
+- Bootstrap / React-Bootstrap
 - PWA
 - Docker
 - etc...

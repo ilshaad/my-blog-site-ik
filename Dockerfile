@@ -1,6 +1,7 @@
 # create node & alpine
 # FROM node:16.14.2-alpine3.15
-FROM node:18.7.0-alpine3.16
+# FROM node:18.7.0-alpine3.16
+FROM node:24.0.2-alpine3.21
 
 # set directory to work within
 WORKDIR /my-blog-site-ik
@@ -25,4 +26,5 @@ RUN npm run build
 EXPOSE 3000
 
 # CMD to start server. eg. node ./src/server.js
-CMD npm run server
+# CMD npm run server
+CMD npm run start
