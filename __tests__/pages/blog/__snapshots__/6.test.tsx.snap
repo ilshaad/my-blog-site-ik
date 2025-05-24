@@ -16,7 +16,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
           title="Homepage"
         >
           <svg
-            class="bi bi-house text-decoration-underline mx-auto p-0 w-auto"
+            class="bi bi-house text-decoration-underline mx-auto p-0 w-auto text-primary"
             fill="currentColor"
             height="16"
             style="cursor: pointer;"
@@ -51,7 +51,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
           title="Github"
         >
           <svg
-            class="bi bi-github"
+            class="bi bi-github text-primary"
             fill="currentColor"
             height="16"
             viewBox="0 0 16 16"
@@ -75,7 +75,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
           title="LinkedIn"
         >
           <svg
-            class="bi bi-linkedin"
+            class="bi bi-linkedin text-primary"
             fill="currentColor"
             height="16"
             viewBox="0 0 16 16"
@@ -128,7 +128,7 @@ exports[`<6/> blog page snapshot blog post 6 1`] = `
           title="Email me"
         >
           <svg
-            class="bi bi-envelope-fill"
+            class="bi bi-envelope-fill text-primary"
             fill="currentColor"
             height="16"
             viewBox="0 0 16 16"

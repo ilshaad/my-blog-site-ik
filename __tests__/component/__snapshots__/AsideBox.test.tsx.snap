@@ -10,7 +10,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
       class="bg-light border border-3 border-primary mx-auto"
     >
       <div
-        class=" text-primary mx-auto container-fluid"
+        class="text-primary mx-auto container-fluid"
       >
         <h6
           class="w-100 text-center mt-2 text-decoration-underline text-dark"
@@ -31,7 +31,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
               title="Github"
             >
               <svg
-                class="bi bi-github"
+                class="bi bi-github text-primary"
                 fill="currentColor"
                 height="16"
                 viewBox="0 0 16 16"
@@ -55,7 +55,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
               title="LinkedIn"
             >
               <svg
-                class="bi bi-linkedin"
+                class="bi bi-linkedin text-primary"
                 fill="currentColor"
                 height="16"
                 viewBox="0 0 16 16"
@@ -108,7 +108,7 @@ exports[`<Aside/> renders both svg link box & blog description box 1`] = `
               title="Email me"
             >
               <svg
-                class="bi bi-envelope-fill"
+                class="bi bi-envelope-fill text-primary"
                 fill="currentColor"
                 height="16"
                 viewBox="0 0 16 16"
